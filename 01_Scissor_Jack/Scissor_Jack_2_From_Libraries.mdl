@@ -1,0 +1,1308 @@
+Model {
+  Name			  "Scissor_Jack_2_From_Libraries"
+  Version		  7.9
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.33"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  Description		  " \nCopyright 2012 The MathWorks, Inc."
+  SavedCharacterEncoding  "windows-1252"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  UserBdParams		  "PhysicalModelingChecksum;PhysicalModelingParameterChecksum;PhysicalModelingProducts"
+  PhysicalModelingChecksum "3671616422"
+  PhysicalModelingParameterChecksum "2746627658"
+  PhysicalModelingProducts "SimMechanics|Simscape"
+  Created		  "Tue Feb 07 20:36:04 2012"
+  Creator		  "smiller"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "smiller"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri May 04 21:42:46 2012"
+  RTWModifiedTimeStamp	  251828331
+  ModelVersionFormat	  "1.%<AutoIncrement:33>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    1
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "Scissors_2e"
+    overrideMode_	    [0.0]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "Scissors_2e"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      2
+      Version		      "1.12.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  3
+	  Version		  "1.12.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode15s"
+	  SolverName		  "ode15s"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  4
+	  Version		  "1.12.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  5
+	  Version		  "1.12.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  6
+	  Version		  "1.12.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Enable All"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  7
+	  Version		  "1.12.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  8
+	  Version		  "1.12.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  9
+	  Version		  "1.12.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  10
+	  Version		  "1.12.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    9
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      11
+	      Version		      "1.12.0"
+	      Array {
+		Type			"Cell"
+		Dimension		21
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      12
+	      Version		      "1.12.0"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      CodeExecutionProfiling  off
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	SSC.SimscapeCC {
+	  $ObjectID		  13
+	  Version		  "1.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "Name"
+	    PropName		    "DisabledProps"
+	  }
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    MECH.SimMechanicsCC {
+	      $ObjectID		      14
+	      Version		      "1.12.0"
+	      Name		      "SimMechanics"
+	      WarnOnRedundantConstraints on
+	      WarnOnSingularInitialAssembly off
+	      ShowCutJoints	      off
+	      VisOnUpdateDiagram      off
+	      VisDuringSimulation     off
+	      EnableVisSimulationTime on
+	      VisSampleTime	      "0"
+	      DisableBodyVisControl   off
+	      ShowCG		      on
+	      ShowCS		      on
+	      ShowOnlyPortCS	      off
+	      HighlightModel	      on
+	      FramesToBeSkipped	      "0"
+	      AnimationDelay	      "3"
+	      RecordAVI		      off
+	      CompressAVI	      on
+	      AutoFitVis	      "off"
+	      EnableSelection	      on
+	      LastVizWinPosition      "[-1 -1 -1 -1]"
+	      CamPosition	      "[0 0 0]"
+	      CamTarget		      "[0 0 -1]"
+	      CamUpVector	      "[0 1 0]"
+	      CamHeight		      "-1"
+	      CamViewAngle	      "0"
+	      VisBackgroundColor      "[0.9 0.9 0.95]"
+	      DefaultBodyColor	      "[1 0 0]"
+	      MDLBodyVisualizationType "Convex hull from body CS locations"
+	      OVRRIDBodyVisualizationType "NONE"
+	    }
+	    simmechanics.ConfigurationSet {
+	      $ObjectID		      15
+	      Version		      "1.12.0"
+	      Description	      "SimMechanics 2G"
+	      Array {
+		Type			"Handle"
+		Dimension		2
+		simmechanics.DiagnosticsConfigSet {
+		  $ObjectID		  16
+		  Version		  "1.12.0"
+		  Description		  "Diagnostics"
+		  Name			  "DiagnosticsConfigSet"
+		  SimMechanicsInvalidVisualProperty "warning"
+		  SimMechanicsCrossSectionNullEdge "warning"
+		  SimMechanicsUnconnectedFramePorts "warning"
+		  SimMechanicsRedundantBlock "warning"
+		  SimMechanicsConflictingReferenceFrames "warning"
+		  SimMechanicsRigidlyBoundBlock	"error"
+		  SimMechanicsUnsatisfiedHighPriorityTargets "warning"
+		  SimMechanicsJointTargetOverSpecification "error"
+		}
+		simmechanics.ExplorerConfigSet {
+		  $ObjectID		  17
+		  Version		  "1.12.0"
+		  Description		  "Explorer"
+		  Name			  "ExplorerConfigSet"
+		  SimMechanicsOpenEditorOnUpdate on
+		  InternalSimMechanicsExplorerSettings "<ExplorerConfiguration><canonicalview>default</canonicalview><TilePanel><Til"
+		  "eInfo><Tiles Columns=\"1\" Count=\"1\" Rows=\"1\"><Column Left=\"2\" Weight=\"1\"/><Column Left=\"398\"/><Row Top="
+		  "\"2\" Weight=\"1\"/><Row Top=\"485\"/><Tile Height=\"1\" Width=\"1\" X=\"0\" Y=\"0\"/></Tiles></TileInfo><SceneInf"
+		  "o><SceneViewer><BGColor><R>0.60000002384185791</R><G>0.60000002384185791</G><B>0.60000002384185791</B></BGColor><C"
+		  "amera><Position><X>3.2859961690169355</X><Y>-2.0633210752222544</Y><Z>3.0220407044155104</Z></Position><Center><X>"
+		  "0.90554353575728674</X><Y>0.31713155803735188</Y><Z>0.6415880711558668</Z></Center><Up><X>-0.40824829046386307</X>"
+		  "<Y>0.40824829046386307</Y><Z>0.81649658092772615</Z></Up><Left>-1.0483565211296082</Left><Right>1.0483565211296082"
+		  "</Right><Bottom>-0.67385462522506712</Bottom><Top>0.67385462522506712</Top></Camera></SceneViewer></SceneInfo></Ti"
+		  "lePanel></ExplorerConfiguration>"
+		}
+		PropName		"Components"
+	      }
+	      Name		      "SimMechanics2G"
+	    }
+	    PropName		    "Components"
+	  }
+	  Name			  "Simscape"
+	  EditingMode		  "Full"
+	  ExplicitSolverDiagnosticOptions "warning"
+	  GlobalZcOffDiagnosticOptions "warning"
+	  SimscapeLogType	  "none"
+	  SimscapeLogName	  "simlog"
+	  SimscapeLogDecimation	  1
+	  SimscapeLogLimitData	  on
+	  SimscapeLogDataHistory  5000
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 392, 180, 1288, 848 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    2
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+  }
+  System {
+    Name		    "Scissor_Jack_2_From_Libraries"
+    Location		    [48, 155, 411, 675]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "175"
+    Block {
+      BlockType		      Reference
+      Name		      "Base\nBlocks"
+      SID		      "174"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [44, 180, 86, 235]
+      BlockRotation	      270
+      LibraryVersion	      "1.187"
+      FontName		      "Arial"
+      FontSize		      12
+      SourceBlock	      "Scissor_Parts_Lib/Base\nBlocks"
+      SourceType	      "Base Blocks"
+      block_length	      "Scissor_Lift_Param.Base_Block.Length"
+      block_width	      "Scissor_Lift_Param.Base_Block.Width"
+      block_height	      "Scissor_Lift_Param.Base_Block.Height"
+      shaft_radius	      "Scissor_Lift_Param.Roller.Shaft_Radius"
+      shaft_length	      "Scissor_Lift_Param.Roller.Shaft_Length"
+      material_density	      "Scissor_Lift_Param.Base_Block.Density"
+      material_color	      "Scissor_Lift_Param.Base_Block.Color"
+      material_opacity	      "Scissor_Lift_Param.Base_Block.Opacity"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Base\nRoller"
+      SID		      "172"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [269, 175, 311, 230]
+      BlockRotation	      270
+      LibraryVersion	      "1.187"
+      FontName		      "Arial"
+      FontSize		      12
+      SourceBlock	      "Scissor_Parts_Lib/Base\nRoller"
+      SourceType	      "Base Roller"
+      roller_length	      "6"
+      roller_radius	      "8"
+      shaft_length	      "Scissor_Lift_Param.Roller.Shaft_Length"
+      shaft_radius	      "Scissor_Lift_Param.Roller.Shaft_Radius"
+      material_density	      "1000"
+      material_color	      "[0 0.6 0.8]"
+      material_opacity	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Inner\nLink"
+      SID		      "168"
+      Ports		      [0, 0, 0, 0, 0, 0, 3]
+      Position		      [55, 15, 115, 55]
+      BlockRotation	      270
+      BlockMirror	      on
+      LibraryVersion	      "1.187"
+      FontName		      "Arial"
+      FontSize		      12
+      SourceBlock	      "Scissor_Parts_Lib/Link\n3 Holes"
+      SourceType	      "Connector Link, 2 Holes"
+      L			      "240"
+      W			      "15"
+      T			      "4"
+      r			      "5"
+      rho		      "10"
+      clr_string	      "Yellow"
+      opc		      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Mechanism \nConfiguration"
+      SID		      "1"
+      Ports		      [0, 0, 0, 0, 0, 0, 1]
+      Position		      [210, 400, 250, 440]
+      ZOrder		      1
+      BlockMirror	      on
+      LibraryVersion	      "1.1"
+      FontName		      "Arial"
+      FontSize		      12
+      SourceBlock	      "sm_lib/Utilities/Mechanism \nConfiguration"
+      SourceType	      ""
+      ClassName		      "MechanismConfiguration"
+      GravityVector	      "[0 0 -9.81]"
+      GravityUnits	      "m/s^2"
+      AllowGravitySignal      "off"
+      LinearizationDelta      "0.001"
+      BlockFunction	      "simmechanics.library.utilities.mechanism_configuration"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Outer\nLink"
+      SID		      "169"
+      Ports		      [0, 0, 0, 0, 0, 0, 3]
+      Position		      [240, 15, 300, 55]
+      BlockRotation	      270
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      LibraryVersion	      "1.187"
+      FontName		      "Arial"
+      FontSize		      12
+      SourceBlock	      "Scissor_Parts_Lib/Link\n3 Holes"
+      SourceType	      "Connector Link, 2 Holes"
+      L			      "240"
+      W			      "15"
+      T			      "4"
+      r			      "5"
+      rho		      "10"
+      clr_string	      "Red"
+      opc		      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Pris\nRoller\nTrack"
+      SID		      "141"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [270, 255, 310, 295]
+      ZOrder		      7
+      BlockRotation	      270
+      LibraryVersion	      "1.1"
+      FontName		      "Arial"
+      FontSize		      12
+      SourceBlock	      "sm_lib/Joints/Prismatic \nJoint"
+      SourceType	      ""
+      ClassName		      "PrismaticJoint"
+      SenseConstraintForceX   "off"
+      SenseConstraintForceY   "off"
+      SenseConstraintForceZ   "off"
+      SenseConstraintTorqueX  "off"
+      SenseConstraintTorqueY  "off"
+      SenseConstraintTorqueZ  "off"
+      ConstraintWrenchDir     "FollowerOnBase"
+      ConstraintWrenchFrame   "BaseFrame"
+      EquilibriumPosition     "0"
+      EquilibriumPositionUnits "m"
+      SpringStiffness	      "0"
+      SpringStiffnessUnits    "N/m"
+      DampingCoefficient      "0"
+      DampingCoefficientUnits "N/(m/s)"
+      ActuationMode	      "NoActuation"
+      SensePosition	      "off"
+      SenseVelocity	      "off"
+      SenseAcceleration	      "off"
+      SenseTorqueForce	      "off"
+      PositionTargetValue     "0"
+      PositionTargetValueUnits "m"
+      PositionTargetSpecify   "off"
+      PositionTargetPriority  "High"
+      VelocityTargetValue     "0"
+      VelocityTargetValueUnits "m/s"
+      VelocityTargetSpecify   "off"
+      VelocityTargetPriority  "High"
+      BlockFunction	      "simmechanics.library.joints.prismatic_joint"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Rev\nInner F"
+      SID		      "7"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [45, 115, 85, 155]
+      ZOrder		      9
+      BlockRotation	      270
+      NamePlacement	      "alternate"
+      LibraryVersion	      "1.1"
+      FontName		      "Arial"
+      FontSize		      12
+      SourceBlock	      "sm_lib/Joints/Revolute Joint"
+      SourceType	      ""
+      ClassName		      "RevoluteJoint"
+      SenseConstraintForceX   "off"
+      SenseConstraintForceY   "off"
+      SenseConstraintForceZ   "off"
+      SenseConstraintTorqueX  "off"
+      SenseConstraintTorqueY  "off"
+      SenseConstraintTorqueZ  "off"
+      ConstraintWrenchDir     "FollowerOnBase"
+      ConstraintWrenchFrame   "BaseFrame"
+      EquilibriumPosition     "45"
+      EquilibriumPositionUnits "deg"
+      SpringStiffness	      "1000"
+      SpringStiffnessUnits    "N*m/rad"
+      DampingCoefficient      "400"
+      DampingCoefficientUnits "N*m/(rad/s)"
+      ActuationMode	      "NoActuation"
+      SensePosition	      "off"
+      SenseVelocity	      "off"
+      SenseAcceleration	      "off"
+      SenseTorqueForce	      "off"
+      PositionTargetValue     "0"
+      PositionTargetValueUnits "rad"
+      PositionTargetSpecify   "off"
+      PositionTargetPriority  "High"
+      VelocityTargetValue     "0"
+      VelocityTargetValueUnits "rad/s"
+      VelocityTargetSpecify   "off"
+      VelocityTargetPriority  "High"
+      BlockFunction	      "simmechanics.library.joints.revolute_joint"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Rev\nOuter R"
+      SID		      "16"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [270, 110, 310, 150]
+      ZOrder		      9
+      BlockRotation	      270
+      BlockMirror	      on
+      LibraryVersion	      "1.1"
+      FontName		      "Arial"
+      FontSize		      12
+      SourceBlock	      "sm_lib/Joints/Revolute Joint"
+      SourceType	      ""
+      ClassName		      "RevoluteJoint"
+      SenseConstraintForceX   "off"
+      SenseConstraintForceY   "off"
+      SenseConstraintForceZ   "off"
+      SenseConstraintTorqueX  "off"
+      SenseConstraintTorqueY  "off"
+      SenseConstraintTorqueZ  "off"
+      ConstraintWrenchDir     "FollowerOnBase"
+      ConstraintWrenchFrame   "BaseFrame"
+      EquilibriumPosition     "0"
+      EquilibriumPositionUnits "rad"
+      SpringStiffness	      "0"
+      SpringStiffnessUnits    "N*m/rad"
+      DampingCoefficient      "0"
+      DampingCoefficientUnits "N*m/(rad/s)"
+      ActuationMode	      "NoActuation"
+      SensePosition	      "off"
+      SenseVelocity	      "off"
+      SenseAcceleration	      "off"
+      SenseTorqueForce	      "off"
+      PositionTargetValue     "0"
+      PositionTargetValueUnits "rad"
+      PositionTargetSpecify   "off"
+      PositionTargetPriority  "High"
+      VelocityTargetValue     "0"
+      VelocityTargetValueUnits "rad/s"
+      VelocityTargetSpecify   "off"
+      VelocityTargetPriority  "High"
+      BlockFunction	      "simmechanics.library.joints.revolute_joint"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Revolute\nOuter Shaft"
+      SID		      "11"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [115, 65, 155, 105]
+      ZOrder		      9
+      LibraryVersion	      "1.1"
+      FontName		      "Arial"
+      FontSize		      12
+      SourceBlock	      "sm_lib/Joints/Revolute Joint"
+      SourceType	      ""
+      ClassName		      "RevoluteJoint"
+      SenseConstraintForceX   "off"
+      SenseConstraintForceY   "off"
+      SenseConstraintForceZ   "off"
+      SenseConstraintTorqueX  "off"
+      SenseConstraintTorqueY  "off"
+      SenseConstraintTorqueZ  "off"
+      ConstraintWrenchDir     "FollowerOnBase"
+      ConstraintWrenchFrame   "BaseFrame"
+      EquilibriumPosition     "0"
+      EquilibriumPositionUnits "rad"
+      SpringStiffness	      "0"
+      SpringStiffnessUnits    "N*m/rad"
+      DampingCoefficient      "0"
+      DampingCoefficientUnits "N*m/(rad/s)"
+      ActuationMode	      "NoActuation"
+      SensePosition	      "off"
+      SenseVelocity	      "off"
+      SenseAcceleration	      "off"
+      SenseTorqueForce	      "off"
+      PositionTargetValue     "0"
+      PositionTargetValueUnits "rad"
+      PositionTargetSpecify   "off"
+      PositionTargetPriority  "High"
+      VelocityTargetValue     "0"
+      VelocityTargetValueUnits "rad/s"
+      VelocityTargetSpecify   "off"
+      VelocityTargetPriority  "High"
+      BlockFunction	      "simmechanics.library.joints.revolute_joint"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Shaft"
+      SID		      "175"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [180, 64, 235, 106]
+      BackgroundColor	      "yellow"
+      LibraryVersion	      "1.187"
+      FontName		      "Arial"
+      FontSize		      12
+      SourceBlock	      "Scissor_Parts_Lib/Shaft"
+      SourceType	      "Cylindrical Shaft"
+      L			      "10"
+      r			      "5"
+      theta		      "0"
+      z_ori		      "Local -Z"
+      Ro		      "1000"
+      clr		      "[0.0 0.6 0.8]"
+      opc		      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Solver\nConfiguration"
+      SID		      "2"
+      Ports		      [0, 0, 0, 0, 0, 0, 1]
+      Position		      [90, 404, 135, 436]
+      ZOrder		      3
+      LibraryVersion	      "1.1"
+      FontName		      "Arial"
+      FontSize		      12
+      SourceBlock	      "nesl_utility/Solver\nConfiguration"
+      SourceType	      "Solver\nConfiguration"
+      PhysicalDomain	      "network_engine_domain"
+      LeftPortType	      "input"
+      RightPortType	      "generic"
+      SubClassName	      "solver"
+      UseCustomDae	      off
+      DoDC		      off
+      ResidualTolerance	      "1e-9"
+      UseLocalSolver	      off
+      LocalSolverChoice	      "NE_BACKWARD_EULER_ADVANCER"
+      LocalSolverSampleTime   ".001"
+      DoFixedCost	      off
+      MaxNonlinIter	      "3"
+      MaxModeIter	      "2"
+      LinearAlgebra	      "Sparse"
+      Accelerate	      off
+      Profile		      off
+      UseLocalSampling	      off
+      DelaysMemoryBudget      "1024"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Transform\nBlock Roller"
+      SID		      "155"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [220, 305, 260, 345]
+      ZOrder		      2
+      LibraryVersion	      "1.1"
+      FontName		      "Arial"
+      FontSize		      12
+      SourceBlock	      "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+      SourceType	      ""
+      ClassName		      "RigidTransform"
+      TranslationMethod	      "StandardAxis"
+      TranslationLengthUnit   "cm"
+      TranslationStandardAxis "-Z"
+      TranslationStandardOffset	"10"
+      TranslationCartesianOffset "[0 0 0]"
+      TranslationROffset      "0"
+      TranslationROffsetUnits "m"
+      TranslationZOffset      "0"
+      TranslationZOffsetUnits "m"
+      TranslationThetaOffset  "0"
+      TranslationThetaOffsetUnits "deg"
+      RotationMethod	      "StandardAxis"
+      RotationAngleUnits      "deg"
+      RotationStandardAxis    "+Y"
+      RotationAngle	      "90"
+      RotationArbitraryAxis   "[0 0 1]"
+      FollAlignAxisA	      "+X"
+      BaseAlignAxisA	      "+Y"
+      FollAlignAxisB	      "+Y"
+      BaseAlignAxisB	      "+Z"
+      BlockFunction	      "simmechanics.library.frames_transforms.rigid_transform"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Transform\nWorld Block"
+      SID		      "9"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [155, 350, 195, 390]
+      ZOrder		      2
+      BlockRotation	      270
+      NamePlacement	      "alternate"
+      LibraryVersion	      "1.1"
+      FontName		      "Arial"
+      FontSize		      12
+      SourceBlock	      "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+      SourceType	      ""
+      ClassName		      "RigidTransform"
+      TranslationMethod	      "None"
+      TranslationLengthUnit   "m"
+      TranslationStandardAxis "+X"
+      TranslationStandardOffset	"0"
+      TranslationCartesianOffset "[0 0 0]"
+      TranslationROffset      "0"
+      TranslationROffsetUnits "m"
+      TranslationZOffset      "0"
+      TranslationZOffsetUnits "m"
+      TranslationThetaOffset  "0"
+      TranslationThetaOffsetUnits "deg"
+      RotationMethod	      "StandardAxis"
+      RotationAngleUnits      "deg"
+      RotationStandardAxis    "+X"
+      RotationAngle	      "90"
+      RotationArbitraryAxis   "[0 0 1]"
+      FollAlignAxisA	      "+X"
+      BaseAlignAxisA	      "+Y"
+      FollAlignAxisB	      "+Y"
+      BaseAlignAxisB	      "+Z"
+      BlockFunction	      "simmechanics.library.frames_transforms.rigid_transform"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "World Frame"
+      SID		      "3"
+      Ports		      [0, 0, 0, 0, 0, 0, 1]
+      Position		      [155, 460, 195, 500]
+      ZOrder		      4
+      BlockRotation	      270
+      NamePlacement	      "alternate"
+      LibraryVersion	      "1.1"
+      FontName		      "Arial"
+      FontSize		      12
+      SourceBlock	      "sm_lib/Frames and\n Transforms/World Frame"
+      SourceType	      ""
+      ClassName		      "WorldFrame"
+      BlockFunction	      "simmechanics.library.frames_transforms.world_frame"
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Inner\nLink"
+      SrcPort		      RConn1
+      DstBlock		      "Rev\nInner F"
+      DstPort		      RConn1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Rev\nOuter R"
+      SrcPort		      RConn1
+      DstBlock		      "Base\nRoller"
+      DstPort		      RConn1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Rev\nOuter R"
+      SrcPort		      LConn1
+      DstBlock		      "Outer\nLink"
+      DstPort		      RConn3
+    }
+    Line {
+      LineType		      "Connection"
+      FontName		      "Arial"
+      FontSize		      12
+      Points		      [175, 420; -25, 0]
+      DstBlock		      "Solver\nConfiguration"
+      DstPort		      RConn1
+      Branch {
+	ConnectType		"SRC_DEST"
+	SrcBlock		"World Frame"
+	SrcPort			RConn1
+	Points			[0, -25]
+      }
+      Branch {
+	ConnectType		"SRC_DEST"
+	SrcBlock		"Transform\nWorld Block"
+	SrcPort			LConn1
+	Points			[0, 15]
+      }
+      Branch {
+	ConnectType		"SRC_DEST"
+	SrcBlock		"Mechanism \nConfiguration"
+	SrcPort			RConn1
+	Points			[-20, 0]
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Base\nBlocks"
+      SrcPort		      RConn1
+      DstBlock		      "Rev\nInner F"
+      DstPort		      LConn1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Transform\nBlock Roller"
+      SrcPort		      RConn1
+      Points		      [15, 0]
+      DstBlock		      "Pris\nRoller\nTrack"
+      DstPort		      LConn1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Pris\nRoller\nTrack"
+      SrcPort		      RConn1
+      DstBlock		      "Base\nRoller"
+      DstPort		      LConn1
+    }
+    Line {
+      LineType		      "Connection"
+      FontName		      "Arial"
+      FontSize		      12
+      Points		      [175, 325; -110, 0; 0, -75]
+      DstBlock		      "Base\nBlocks"
+      DstPort		      LConn1
+      Branch {
+	ConnectType		"SRC_DEST"
+	SrcBlock		"Transform\nBlock Roller"
+	SrcPort			LConn1
+	Points			[-30, 0]
+      }
+      Branch {
+	ConnectType		"SRC_SRC"
+	DstBlock		"Transform\nWorld Block"
+	DstPort			RConn1
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      Labels		      [1, 0]
+      SrcBlock		      "Shaft"
+      SrcPort		      LConn1
+      DstBlock		      "Revolute\nOuter Shaft"
+      DstPort		      RConn1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Shaft"
+      SrcPort		      RConn1
+      Points		      [20, 0]
+      DstBlock		      "Outer\nLink"
+      DstPort		      RConn2
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Revolute\nOuter Shaft"
+      SrcPort		      LConn1
+      Points		      [-15, 0]
+      DstBlock		      "Inner\nLink"
+      DstPort		      RConn2
+    }
+  }
+}

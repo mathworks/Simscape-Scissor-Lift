@@ -1,0 +1,5774 @@
+Model {
+  Name			  "Scissor_Lift_2_Spring_Actuation"
+  Version		  7.9
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.88"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  Description		  " \nCopyright 2012 The MathWorks, Inc."
+  SavedCharacterEncoding  "windows-1252"
+  PostLoadFcn		  "warning off mech2:compiler:topologyAnalysis:DanglingBlock\n"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  UserBdParams		  "PhysicalModelingChecksum;PhysicalModelingParameterChecksum;PhysicalModelingProducts"
+  PhysicalModelingChecksum "829238580"
+  PhysicalModelingParameterChecksum "421393677"
+  PhysicalModelingProducts "SimMechanics|Simscape"
+  Created		  "Thu Jan 26 10:26:13 2012"
+  Creator		  "smiller"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "smiller"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri May 04 21:43:09 2012"
+  RTWModifiedTimeStamp	  251828343
+  ModelVersionFormat	  "1.%<AutoIncrement:88>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    1
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "Scissor_Lift_2_Spring_Actuation"
+    overrideMode_	    [0.0]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "Scissor_Lift_2_Spring_Actuation"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      2
+      Version		      "1.12.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  3
+	  Version		  "1.12.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "1e-4"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "1e-2"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode15s"
+	  SolverName		  "ode15s"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  4
+	  Version		  "1.12.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  5
+	  Version		  "1.12.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  6
+	  Version		  "1.12.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Enable All"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  7
+	  Version		  "1.12.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  8
+	  Version		  "1.12.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  9
+	  Version		  "1.12.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  10
+	  Version		  "1.12.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    9
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      11
+	      Version		      "1.12.0"
+	      Array {
+		Type			"Cell"
+		Dimension		21
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      12
+	      Version		      "1.12.0"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      CodeExecutionProfiling  off
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	SSC.SimscapeCC {
+	  $ObjectID		  13
+	  Version		  "1.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "Name"
+	    PropName		    "DisabledProps"
+	  }
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    MECH.SimMechanicsCC {
+	      $ObjectID		      14
+	      Version		      "1.12.0"
+	      Name		      "SimMechanics"
+	      WarnOnRedundantConstraints on
+	      WarnOnSingularInitialAssembly off
+	      ShowCutJoints	      off
+	      VisOnUpdateDiagram      off
+	      VisDuringSimulation     off
+	      EnableVisSimulationTime on
+	      VisSampleTime	      "0"
+	      DisableBodyVisControl   off
+	      ShowCG		      on
+	      ShowCS		      on
+	      ShowOnlyPortCS	      off
+	      HighlightModel	      on
+	      FramesToBeSkipped	      "0"
+	      AnimationDelay	      "3"
+	      RecordAVI		      off
+	      CompressAVI	      on
+	      AutoFitVis	      "off"
+	      EnableSelection	      on
+	      LastVizWinPosition      "[-1 -1 -1 -1]"
+	      CamPosition	      "[0 0 0]"
+	      CamTarget		      "[0 0 -1]"
+	      CamUpVector	      "[0 1 0]"
+	      CamHeight		      "-1"
+	      CamViewAngle	      "0"
+	      VisBackgroundColor      "[0.9 0.9 0.95]"
+	      DefaultBodyColor	      "[1 0 0]"
+	      MDLBodyVisualizationType "Convex hull from body CS locations"
+	      OVRRIDBodyVisualizationType "NONE"
+	    }
+	    simmechanics.ConfigurationSet {
+	      $ObjectID		      15
+	      Version		      "1.12.0"
+	      Description	      "SimMechanics 2G"
+	      Array {
+		Type			"Handle"
+		Dimension		2
+		simmechanics.DiagnosticsConfigSet {
+		  $ObjectID		  16
+		  Version		  "1.12.0"
+		  Description		  "Diagnostics"
+		  Name			  "DiagnosticsConfigSet"
+		  SimMechanicsInvalidVisualProperty "warning"
+		  SimMechanicsCrossSectionNullEdge "warning"
+		  SimMechanicsUnconnectedFramePorts "warning"
+		  SimMechanicsRedundantBlock "warning"
+		  SimMechanicsConflictingReferenceFrames "warning"
+		  SimMechanicsRigidlyBoundBlock	"error"
+		  SimMechanicsUnsatisfiedHighPriorityTargets "warning"
+		  SimMechanicsJointTargetOverSpecification "error"
+		}
+		simmechanics.ExplorerConfigSet {
+		  $ObjectID		  17
+		  Version		  "1.12.0"
+		  Description		  "Explorer"
+		  Name			  "ExplorerConfigSet"
+		  SimMechanicsOpenEditorOnUpdate on
+		  InternalSimMechanicsExplorerSettings "<ExplorerConfiguration><canonicalview>default</canonicalview><TilePanel><Til"
+		  "eInfo><Tiles Columns=\"1\" Count=\"1\" Rows=\"1\"><Column Left=\"2\" Weight=\"1\"/><Column Left=\"398\"/><Row Top="
+		  "\"2\" Weight=\"1\"/><Row Top=\"485\"/><Tile Height=\"1\" Width=\"1\" X=\"0\" Y=\"0\"/></Tiles></TileInfo><SceneInf"
+		  "o><SceneViewer><BGColor><R>0.60000002384185791</R><G>0.60000002384185791</G><B>0.60000002384185791</B></BGColor><C"
+		  "amera><Position><X>5.9281055778528522</X><Y>-5.497525414498786</Y><Z>4.0727654141199023</Z></Position><Center><X>1"
+		  ".3999999761581421</X><Y>0</Y><Z>1.5331412553787231</Z></Center><Up><X>-0.23055989473784222</X><Y>0.245112917896620"
+		  "82</Y><Z>0.94168030266045166</Z></Up><Left>-1.6471169292926788</Left><Right>1.6471169292926788</Right><Bottom>-2.5"
+		  "798462629318237</Bottom><Top>2.5798462629318237</Top></Camera></SceneViewer></SceneInfo></TilePanel></ExplorerConf"
+		  "iguration>"
+		}
+		PropName		"Components"
+	      }
+	      Name		      "SimMechanics2G"
+	    }
+	    PropName		    "Components"
+	  }
+	  Name			  "Simscape"
+	  EditingMode		  "Full"
+	  ExplicitSolverDiagnosticOptions "warning"
+	  GlobalZcOffDiagnosticOptions "warning"
+	  SimscapeLogType	  "none"
+	  SimscapeLogName	  "simlog"
+	  SimscapeLogDecimation	  1
+	  SimscapeLogLimitData	  on
+	  SimscapeLogDataHistory  5000
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 504, 225, 1416, 931 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    2
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      PMIOPort
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "Array"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+  }
+  System {
+    Name		    "Scissor_Lift_2_Spring_Actuation"
+    Location		    [11, 117, 365, 653]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "1955"
+    Block {
+      BlockType		      Scope
+      Name		      "Actuation"
+      SID		      "1722"
+      Ports		      [2]
+      Position		      [155, 16, 185, 54]
+      ZOrder		      -3
+      FontName		      "Arial"
+      FontSize		      12
+      Floating		      off
+      Location		      [376, 131, 639, 424]
+      Open		      on
+      NumInputPorts	      "2"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.501960784313725 0.501960784313725 0.501960784313725]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[2 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      ShowLegends	      off
+      TimeRange		      "10"
+      YMin		      "1.744052650646057~-0.2"
+      YMax		      "2.541057843255645~0.3"
+      SaveName		      "ScopeData3"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Actuator"
+      SID		      "1736"
+      Ports		      [0, 1, 0, 0, 0, 1, 1]
+      Position		      [87, 185, 118, 235]
+      BlockRotation	      270
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      FontSize		      12
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Actuator"
+	Location		[33, 211, 659, 409]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Cylinder\nCollar"
+	  SID			  "1738"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [150, 29, 205, 71]
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Collar"
+	  SourceType		  ""
+	  collar_length		  "Scissor_Lift_Param.Actuator.Collar.Length"
+	  collar_radius		  "Scissor_Lift_Param.Actuator.Collar.Radius"
+	  cylinder_length	  "Scissor_Lift_Param.Actuator.Cylinder.Length"
+	  cylinder_radius	  "Scissor_Lift_Param.Actuator.Cylinder.Radius"
+	  cylinder_ori		  "Local +Z"
+	  material_density	  "Scissor_Lift_Param.Actuator.Collar.Density"
+	  material_color	  "Scissor_Lift_Param.Actuator.Collar.Color"
+	  material_opacity	  "Scissor_Lift_Param.Actuator.Collar.Opacity"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  SID			  "1739"
+	  Ports			  [2, 1]
+	  Position		  [400, 103, 405, 172]
+	  ZOrder		  -16
+	  ShowName		  off
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "PS-Simulink\nConverter"
+	  SID			  "1740"
+	  Ports			  [0, 1, 0, 0, 0, 1]
+	  Position		  [330, 105, 360, 135]
+	  ZOrder		  1
+	  ShowName		  off
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "nesl_utility/PS-Simulink\nConverter"
+	  SourceType		  "PS-Simulink\nConverter"
+	  PhysicalDomain	  "network_engine_domain"
+	  LeftPortType		  "input"
+	  RightPortType		  "output"
+	  SubClassName		  "ps_output"
+	  Unit			  "1"
+	  AffineConversion	  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "PS-Simulink\nConverter1"
+	  SID			  "1741"
+	  Ports			  [0, 1, 0, 0, 0, 1]
+	  Position		  [330, 140, 360, 170]
+	  ZOrder		  1
+	  ShowName		  off
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "nesl_utility/PS-Simulink\nConverter"
+	  SourceType		  "PS-Simulink\nConverter"
+	  PhysicalDomain	  "network_engine_domain"
+	  LeftPortType		  "input"
+	  RightPortType		  "output"
+	  SubClassName		  "ps_output"
+	  Unit			  "1"
+	  AffineConversion	  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Piston"
+	  SID			  "1892"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [325, 29, 375, 71]
+	  BlockMirror		  on
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Piston"
+	  SourceType		  ""
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  GeneratePreprocessorConditionals off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Piston\nCollar"
+	  SID			  "1747"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [405, 29, 460, 71]
+	  BlockMirror		  on
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Collar"
+	  SourceType		  ""
+	  collar_length		  "Scissor_Lift_Param.Actuator.Collar.Length"
+	  collar_radius		  "Scissor_Lift_Param.Actuator.Collar.Radius"
+	  cylinder_length	  "Scissor_Lift_Param.Actuator.Piston_Seat.Length"
+	  cylinder_radius	  "Scissor_Lift_Param.Actuator.Piston_Seat.Radius"
+	  cylinder_ori		  "Local -Z"
+	  material_density	  "Scissor_Lift_Param.Actuator.Collar.Density"
+	  material_color	  "Scissor_Lift_Param.Actuator.Collar.Color"
+	  material_opacity	  "Scissor_Lift_Param.Actuator.Collar.Opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Prismatic \nJoint"
+	  SID			  "1748"
+	  Ports			  [0, 0, 0, 0, 0, 1, 3]
+	  Position		  [240, 45, 280, 85]
+	  ZOrder		  7
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Joints/Prismatic \nJoint"
+	  SourceType		  ""
+	  ClassName		  "PrismaticJoint"
+	  SenseConstraintForceX	  "off"
+	  SenseConstraintForceY	  "off"
+	  SenseConstraintForceZ	  "off"
+	  SenseConstraintTorqueX  "off"
+	  SenseConstraintTorqueY  "off"
+	  SenseConstraintTorqueZ  "off"
+	  ConstraintWrenchDir	  "FollowerOnBase"
+	  ConstraintWrenchFrame	  "BaseFrame"
+	  EquilibriumPosition	  "Scissor_Lift_Param.Actuator.Spring.Equilibrium_Position"
+	  EquilibriumPositionUnits "cm"
+	  SpringStiffness	  "Scissor_Lift_Param.Actuator.Spring.Stiffness"
+	  SpringStiffnessUnits	  "N/m"
+	  DampingCoefficient	  "Scissor_Lift_Param.Actuator.Spring.Damping"
+	  DampingCoefficientUnits "N/(m/s)"
+	  ActuationMode		  "NoActuation"
+	  SensePosition		  "on"
+	  SenseVelocity		  "on"
+	  SenseAcceleration	  "off"
+	  SenseTorqueForce	  "off"
+	  PositionTargetValue	  "0"
+	  PositionTargetValueUnits "m"
+	  PositionTargetSpecify	  "off"
+	  PositionTargetPriority  "High"
+	  VelocityTargetValue	  "0"
+	  VelocityTargetValueUnits "m/s"
+	  VelocityTargetSpecify	  "off"
+	  VelocityTargetPriority  "High"
+	  BlockFunction		  "simmechanics.library.joints.prismatic_joint"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Rev\nBracket1 Cyl"
+	  SID			  "1749"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [80, 30, 120, 70]
+	  ZOrder		  9
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Joints/Revolute Joint"
+	  SourceType		  ""
+	  ClassName		  "RevoluteJoint"
+	  SenseConstraintForceX	  "off"
+	  SenseConstraintForceY	  "off"
+	  SenseConstraintForceZ	  "off"
+	  SenseConstraintTorqueX  "off"
+	  SenseConstraintTorqueY  "off"
+	  SenseConstraintTorqueZ  "off"
+	  ConstraintWrenchDir	  "FollowerOnBase"
+	  ConstraintWrenchFrame	  "BaseFrame"
+	  EquilibriumPosition	  "0"
+	  EquilibriumPositionUnits "rad"
+	  SpringStiffness	  "0"
+	  SpringStiffnessUnits	  "N*m/rad"
+	  DampingCoefficient	  "0"
+	  DampingCoefficientUnits "N*m/(rad/s)"
+	  ActuationMode		  "NoActuation"
+	  SensePosition		  "off"
+	  SenseVelocity		  "off"
+	  SenseAcceleration	  "off"
+	  SenseTorqueForce	  "off"
+	  PositionTargetValue	  "0"
+	  PositionTargetValueUnits "rad"
+	  PositionTargetSpecify	  "off"
+	  PositionTargetPriority  "High"
+	  VelocityTargetValue	  "0"
+	  VelocityTargetValueUnits "rad/s"
+	  VelocityTargetSpecify	  "off"
+	  VelocityTargetPriority  "High"
+	  BlockFunction		  "simmechanics.library.joints.revolute_joint"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Rev\nBracket2 Cyl"
+	  SID			  "1750"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [500, 30, 540, 70]
+	  ZOrder		  9
+	  BlockMirror		  on
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Joints/Revolute Joint"
+	  SourceType		  ""
+	  ClassName		  "RevoluteJoint"
+	  SenseConstraintForceX	  "off"
+	  SenseConstraintForceY	  "off"
+	  SenseConstraintForceZ	  "off"
+	  SenseConstraintTorqueX  "off"
+	  SenseConstraintTorqueY  "off"
+	  SenseConstraintTorqueZ  "off"
+	  ConstraintWrenchDir	  "FollowerOnBase"
+	  ConstraintWrenchFrame	  "BaseFrame"
+	  EquilibriumPosition	  "0"
+	  EquilibriumPositionUnits "rad"
+	  SpringStiffness	  "0"
+	  SpringStiffnessUnits	  "N*m/rad"
+	  DampingCoefficient	  "0"
+	  DampingCoefficientUnits "N*m/(rad/s)"
+	  ActuationMode		  "NoActuation"
+	  SensePosition		  "off"
+	  SenseVelocity		  "off"
+	  SenseAcceleration	  "off"
+	  SenseTorqueForce	  "off"
+	  PositionTargetValue	  "0"
+	  PositionTargetValueUnits "rad"
+	  PositionTargetSpecify	  "off"
+	  PositionTargetPriority  "High"
+	  VelocityTargetValue	  "0"
+	  VelocityTargetValueUnits "rad/s"
+	  VelocityTargetSpecify	  "off"
+	  VelocityTargetPriority  "High"
+	  BlockFunction		  "simmechanics.library.joints.revolute_joint"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "S3"
+	  SID			  "1753"
+	  Position		  [575, 42, 605, 58]
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "1"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "S1"
+	  SID			  "1754"
+	  Position		  [15, 42, 40, 58]
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "2"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "pv"
+	  SID			  "1755"
+	  Position		  [450, 133, 480, 147]
+	  ZOrder		  -9
+	  FontName		  "Arial"
+	  FontSize		  12
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "PS-Simulink\nConverter1"
+	  SrcPort		  LConn1
+	  Points		  [-10, 0; 0, -75]
+	  DstBlock		  "Prismatic \nJoint"
+	  DstPort		  RConn3
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "pv"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "PS-Simulink\nConverter1"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "PS-Simulink\nConverter"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Prismatic \nJoint"
+	  SrcPort		  RConn2
+	  Points		  [20, 0]
+	  DstBlock		  "PS-Simulink\nConverter"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Rev\nBracket1 Cyl"
+	  SrcPort		  LConn1
+	  DstBlock		  "S1"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "S3"
+	  SrcPort		  RConn1
+	  DstBlock		  "Rev\nBracket2 Cyl"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Rev\nBracket2 Cyl"
+	  SrcPort		  RConn1
+	  DstBlock		  "Piston\nCollar"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Piston\nCollar"
+	  SrcPort		  RConn1
+	  DstBlock		  "Piston"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Prismatic \nJoint"
+	  SrcPort		  RConn1
+	  DstBlock		  "Piston"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Cylinder\nCollar"
+	  SrcPort		  RConn1
+	  Points		  [5, 0]
+	  DstBlock		  "Prismatic \nJoint"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Cylinder\nCollar"
+	  SrcPort		  LConn1
+	  DstBlock		  "Rev\nBracket1 Cyl"
+	  DstPort		  RConn1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Cart"
+      SID		      "1893"
+      Ports		      [0, 0, 0, 0, 0, 1, 4]
+      Position		      [128, 360, 292, 410]
+      BlockRotation	      270
+      FontName		      "Arial"
+      FontSize		      12
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Cart"
+	Location		[41, 206, 555, 580]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Base\nLI"
+	  SID			  "1894"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [124, 65, 166, 120]
+	  BlockRotation		  270
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Base\nBlocks"
+	  SourceType		  "Base Blocks"
+	  block_length		  "Scissor_Lift_Param.Base_Block.Length"
+	  block_width		  "Scissor_Lift_Param.Base_Block.Width"
+	  block_height		  "Scissor_Lift_Param.Base_Block.Height"
+	  shaft_radius		  "Scissor_Lift_Param.Roller.Shaft_Radius"
+	  shaft_length		  "Scissor_Lift_Param.Roller.Shaft_Length"
+	  material_density	  "Scissor_Lift_Param.Base_Block.Density"
+	  material_color	  "Scissor_Lift_Param.Base_Block.Color"
+	  material_opacity	  "Scissor_Lift_Param.Base_Block.Opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Base\nRI"
+	  SID			  "1895"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [319, 65, 361, 120]
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Base\nBlocks"
+	  SourceType		  "Base Blocks"
+	  block_length		  "Scissor_Lift_Param.Base_Block.Length"
+	  block_width		  "Scissor_Lift_Param.Base_Block.Width"
+	  block_height		  "Scissor_Lift_Param.Base_Block.Height"
+	  shaft_radius		  "Scissor_Lift_Param.Roller.Shaft_Radius"
+	  shaft_length		  "Scissor_Lift_Param.Roller.Shaft_Length"
+	  material_density	  "Scissor_Lift_Param.Base_Block.Density"
+	  material_color	  "Scissor_Lift_Param.Base_Block.Color"
+	  material_opacity	  "Scissor_Lift_Param.Base_Block.Opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Pris\nRoller LO"
+	  SID			  "1896"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [30, 150, 70, 190]
+	  ZOrder		  7
+	  BlockRotation		  270
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Joints/Prismatic \nJoint"
+	  SourceType		  ""
+	  ClassName		  "PrismaticJoint"
+	  SenseConstraintForceX	  "off"
+	  SenseConstraintForceY	  "off"
+	  SenseConstraintForceZ	  "off"
+	  SenseConstraintTorqueX  "off"
+	  SenseConstraintTorqueY  "off"
+	  SenseConstraintTorqueZ  "off"
+	  ConstraintWrenchDir	  "FollowerOnBase"
+	  ConstraintWrenchFrame	  "BaseFrame"
+	  EquilibriumPosition	  "0"
+	  EquilibriumPositionUnits "m"
+	  SpringStiffness	  "0"
+	  SpringStiffnessUnits	  "N/m"
+	  DampingCoefficient	  "0"
+	  DampingCoefficientUnits "N/(m/s)"
+	  ActuationMode		  "NoActuation"
+	  SensePosition		  "off"
+	  SenseVelocity		  "off"
+	  SenseAcceleration	  "off"
+	  SenseTorqueForce	  "off"
+	  PositionTargetValue	  "Scissor_Lift_Param.Roller.Init_Pos_Target"
+	  PositionTargetValueUnits "cm"
+	  PositionTargetSpecify	  "on"
+	  PositionTargetPriority  "High"
+	  VelocityTargetValue	  "0"
+	  VelocityTargetValueUnits "m/s"
+	  VelocityTargetSpecify	  "off"
+	  VelocityTargetPriority  "High"
+	  BlockFunction		  "simmechanics.library.joints.prismatic_joint"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Pris\nRoller RI"
+	  SID			  "1897"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [435, 150, 475, 190]
+	  ZOrder		  7
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Joints/Prismatic \nJoint"
+	  SourceType		  ""
+	  ClassName		  "PrismaticJoint"
+	  SenseConstraintForceX	  "off"
+	  SenseConstraintForceY	  "off"
+	  SenseConstraintForceZ	  "off"
+	  SenseConstraintTorqueX  "off"
+	  SenseConstraintTorqueY  "off"
+	  SenseConstraintTorqueZ  "off"
+	  ConstraintWrenchDir	  "FollowerOnBase"
+	  ConstraintWrenchFrame	  "BaseFrame"
+	  EquilibriumPosition	  "0"
+	  EquilibriumPositionUnits "m"
+	  SpringStiffness	  "0"
+	  SpringStiffnessUnits	  "N/m"
+	  DampingCoefficient	  "0"
+	  DampingCoefficientUnits "N/(m/s)"
+	  ActuationMode		  "NoActuation"
+	  SensePosition		  "off"
+	  SenseVelocity		  "off"
+	  SenseAcceleration	  "off"
+	  SenseTorqueForce	  "off"
+	  PositionTargetValue	  "0"
+	  PositionTargetValueUnits "m"
+	  PositionTargetSpecify	  "off"
+	  PositionTargetPriority  "High"
+	  VelocityTargetValue	  "0"
+	  VelocityTargetValueUnits "m/s"
+	  VelocityTargetSpecify	  "off"
+	  VelocityTargetPriority  "High"
+	  BlockFunction		  "simmechanics.library.joints.prismatic_joint"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Roller\nLI"
+	  SID			  "1898"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [28, 65, 72, 120]
+	  BlockRotation		  270
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Base\nRoller"
+	  SourceType		  "Base Roller"
+	  roller_length		  "Scissor_Lift_Param.Roller.Roller_Length"
+	  roller_radius		  "Scissor_Lift_Param.Roller.Roller_Radius"
+	  shaft_length		  "Scissor_Lift_Param.Roller.Shaft_Length"
+	  shaft_radius		  "Scissor_Lift_Param.Roller.Shaft_Radius"
+	  material_density	  "Scissor_Lift_Param.Roller.Density"
+	  material_color	  "Scissor_Lift_Param.Roller.Color"
+	  material_opacity	  "Scissor_Lift_Param.Roller.Opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Roller\nRI"
+	  SID			  "1899"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [433, 65, 477, 120]
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Base\nRoller"
+	  SourceType		  "Base Roller"
+	  roller_length		  "Scissor_Lift_Param.Roller.Roller_Length"
+	  roller_radius		  "Scissor_Lift_Param.Roller.Roller_Radius"
+	  shaft_length		  "Scissor_Lift_Param.Roller.Shaft_Length"
+	  shaft_radius		  "Scissor_Lift_Param.Roller.Shaft_Radius"
+	  material_density	  "Scissor_Lift_Param.Roller.Density"
+	  material_color	  "Scissor_Lift_Param.Roller.Color"
+	  material_opacity	  "Scissor_Lift_Param.Roller.Opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transform\nLBlock"
+	  SID			  "1900"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [175, 200, 215, 240]
+	  ZOrder		  2
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	  SourceType		  ""
+	  ClassName		  "RigidTransform"
+	  TranslationMethod	  "Cartesian"
+	  TranslationLengthUnit	  "cm"
+	  TranslationStandardAxis "+Y"
+	  TranslationStandardOffset "Scissor_Lift_Param.Cart.Platform.Height/2"
+	  TranslationCartesianOffset "[20 0 Scissor_Lift_Param.Link_Separation.Outer_Outer/2-Scissor_Lift_Param.Link_Separati"
+	  "on.Outer_Inner]"
+	  TranslationROffset	  "0"
+	  TranslationROffsetUnits "m"
+	  TranslationZOffset	  "0"
+	  TranslationZOffsetUnits "m"
+	  TranslationThetaOffset  "0"
+	  TranslationThetaOffsetUnits "deg"
+	  RotationMethod	  "None"
+	  RotationAngleUnits	  "deg"
+	  RotationStandardAxis	  "+X"
+	  RotationAngle		  "90"
+	  RotationArbitraryAxis	  "[0 0 1]"
+	  FollAlignAxisA	  "+X"
+	  BaseAlignAxisA	  "+Y"
+	  FollAlignAxisB	  "+Y"
+	  BaseAlignAxisB	  "+Z"
+	  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transform\nLBlockTrack"
+	  SID			  "1901"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [70, 200, 110, 240]
+	  ZOrder		  2
+	  BlockMirror		  on
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	  SourceType		  ""
+	  ClassName		  "RigidTransform"
+	  TranslationMethod	  "StandardAxis"
+	  TranslationLengthUnit	  "cm"
+	  TranslationStandardAxis "+Z"
+	  TranslationStandardOffset "Scissor_Lift_Param.Link_Separation.Outer_Inner"
+	  TranslationCartesianOffset "[0 0 0]"
+	  TranslationROffset	  "0"
+	  TranslationROffsetUnits "m"
+	  TranslationZOffset	  "0"
+	  TranslationZOffsetUnits "m"
+	  TranslationThetaOffset  "0"
+	  TranslationThetaOffsetUnits "deg"
+	  RotationMethod	  "StandardAxis"
+	  RotationAngleUnits	  "deg"
+	  RotationStandardAxis	  "+Y"
+	  RotationAngle		  "90"
+	  RotationArbitraryAxis	  "[0 0 1]"
+	  FollAlignAxisA	  "+X"
+	  BaseAlignAxisA	  "+Y"
+	  FollAlignAxisB	  "+Y"
+	  BaseAlignAxisB	  "+Z"
+	  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transform\nRBlock"
+	  SID			  "1902"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [275, 200, 315, 240]
+	  ZOrder		  2
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	  SourceType		  ""
+	  ClassName		  "RigidTransform"
+	  TranslationMethod	  "Cartesian"
+	  TranslationLengthUnit	  "cm"
+	  TranslationStandardAxis "+Y"
+	  TranslationStandardOffset "Scissor_Lift_Param.Cart.Platform.Height/2"
+	  TranslationCartesianOffset "[20 0 -Scissor_Lift_Param.Link_Separation.Outer_Outer/2+Scissor_Lift_Param.Link_Separat"
+	  "ion.Outer_Inner]"
+	  TranslationROffset	  "0"
+	  TranslationROffsetUnits "m"
+	  TranslationZOffset	  "0"
+	  TranslationZOffsetUnits "m"
+	  TranslationThetaOffset  "0"
+	  TranslationThetaOffsetUnits "deg"
+	  RotationMethod	  "None"
+	  RotationAngleUnits	  "deg"
+	  RotationStandardAxis	  "+X"
+	  RotationAngle		  "90"
+	  RotationArbitraryAxis	  "[0 0 1]"
+	  FollAlignAxisA	  "+X"
+	  BaseAlignAxisA	  "+Y"
+	  FollAlignAxisB	  "+Y"
+	  BaseAlignAxisB	  "+Z"
+	  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transform\nRBlockTrack"
+	  SID			  "1903"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [375, 200, 415, 240]
+	  ZOrder		  2
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	  SourceType		  ""
+	  ClassName		  "RigidTransform"
+	  TranslationMethod	  "StandardAxis"
+	  TranslationLengthUnit	  "cm"
+	  TranslationStandardAxis "-Z"
+	  TranslationStandardOffset "Scissor_Lift_Param.Link_Separation.Outer_Inner"
+	  TranslationCartesianOffset "[0 0 0]"
+	  TranslationROffset	  "0"
+	  TranslationROffsetUnits "m"
+	  TranslationZOffset	  "0"
+	  TranslationZOffsetUnits "m"
+	  TranslationThetaOffset  "0"
+	  TranslationThetaOffsetUnits "deg"
+	  RotationMethod	  "StandardAxis"
+	  RotationAngleUnits	  "deg"
+	  RotationStandardAxis	  "+Y"
+	  RotationAngle		  "90"
+	  RotationArbitraryAxis	  "[0 0 1]"
+	  FollAlignAxisA	  "+X"
+	  BaseAlignAxisA	  "+Y"
+	  FollAlignAxisB	  "+Y"
+	  BaseAlignAxisB	  "+Z"
+	  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Wheels"
+	  SID			  "1904"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [215, 260, 275, 300]
+	  BlockRotation		  270
+	  FontName		  "Arial"
+	  FontSize		  12
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Wheels"
+	    Location		    [57, 242, 392, 550]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Front Axle"
+	      SID		      "1905"
+	      Ports		      [0, 0, 0, 0, 0, 1]
+	      Position		      [165, 36, 215, 74]
+	      FontName		      "Arial"
+	      FontSize		      12
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Front Axle"
+		Location		[423, 207, 840, 438]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Axle"
+		  SID			  "1906"
+		  Ports			  [0, 0, 0, 0, 0, 1, 2]
+		  Position		  [144, 70, 286, 120]
+		  BlockRotation		  270
+		  BlockMirror		  on
+		  FontName		  "Arial"
+		  FontSize		  12
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  MaskType		  "Axle"
+		  MaskPromptString	  "Axle radius (cm)|Wheel distance (cm)|Rim radius (cm)|Rim thickness (cm)|Density (kg/m^3)|Color"
+		  MaskStyleString	  "edit,edit,edit,edit,edit,edit"
+		  MaskVariables		  "Ra=@1;Wd=@2;Rr=@3;Tr=@4;rho=@5;clr=@6;"
+		  MaskTunableValueString  "on,on,on,on,on,on"
+		  MaskCallbackString	  "|||||"
+		  MaskEnableString	  "on,on,on,on,on,on"
+		  MaskVisibilityString	  "on,on,on,on,on,on"
+		  MaskToolTipString	  "on,on,on,on,on,on"
+		  MaskDisplay		  "image(imread('sm_wlandgear_axle.png'));\nport_label('LConn',1,'M');\nport_label('RConn',1,'L');\np"
+		  "ort_label('RConn',2,'R');"
+		  MaskIconFrame		  on
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "port"
+		  MaskPortRotate	  "physical"
+		  MaskIconUnits		  "autoscale"
+		  MaskValueString	  "Scissor_Lift_Param.Cart.Axle.Radius|Scissor_Lift_Param.Cart.Axle.Wheel_Distance|Scissor_Lift_Pa"
+		  "ram.Cart.Axle.Rim.Radius|Scissor_Lift_Param.Cart.Axle.Rim.Thickness|Scissor_Lift_Param.Cart.Axle.Rim.Density|Sciss"
+		  "or_Lift_Param.Cart.Axle.Rim.Color"
+		  MaskTabNameString	  "Dimensions,Dimensions,Dimensions,Dimensions,Material Properties,Material Properties"
+		  System {
+		    Name		    "Axle"
+		    Location		    [334, 309, 705, 492]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Axle"
+		    SID			    "1907"
+		    Ports		    [0, 0, 0, 0, 0, 0, 1]
+		    Position		    [165, 130, 205, 170]
+		    BlockRotation	    270
+		    LibraryVersion	    "1.1"
+		    FontName		    "Arial"
+		    FontSize		    12
+		    SourceBlock		    "sm_lib/Body Elements/Solid"
+		    SourceType		    ""
+		    ClassName		    "Solid"
+		    InertiaType		    "CalculateFromGeometry"
+		    Mass		    "1"
+		    MassUnits		    "kg"
+		    CenterOfMass	    "[0 0 0]"
+		    CenterOfMassUnits	    "m"
+		    MomentsOfInertia	    "[1 1 1]"
+		    MomentsOfInertiaUnits   "kg*m^2"
+		    ProductsOfInertia	    "[0 0 0]"
+		    ProductsOfInertiaUnits  "kg*m^2"
+		    DensityBased	    "on"
+		    Density		    "rho"
+		    DensityUnits	    "kg/(m^3)"
+		    GraphicType		    "FromGeometry"
+		    MarkerShape		    "Sphere"
+		    MarkerSize		    "10"
+		    MarkerSizeUnits	    "m"
+		    GraphicVisPropType	    "SimpleVisualProperties"
+		    GraphicDiffuseColor	    "clr"
+		    GraphicSpecularColor    "[0.5 0.5 0.5 1.0]"
+		    GraphicAmbientColor	    "[0.5 0.0 0.0 1.0]"
+		    GraphicEmissiveColor    "[0.0 0.0 0.0 1.0]"
+		    GraphicShininess	    "75"
+		    GraphicOpacity	    "1.0"
+		    GeometryShape	    "Cylinder"
+		    RectangleSize	    "[1 1]"
+		    RectangleSizeUnits	    "m"
+		    BrickDimensions	    "[1 1 1]"
+		    BrickDimensionUnits	    "m"
+		    CylinderRadius	    "Ra"
+		    CylinderRadiusUnits	    "cm"
+		    CylinderLength	    "Wd"
+		    CylinderLengthUnits	    "cm"
+		    SphereRadius	    "1"
+		    SphereRadiusUnits	    "m"
+		    EllipsoidRadii	    "[1 1 1]"
+		    EllipsoidRadiiUnits	    "m"
+		    ExtrusionCrossSection   "[1 1; -1 1; -1 -1; 1 -1]"
+		    ExtrusionCrossSectionUnits "m"
+		    ExtrusionLength	    "1"
+		    ExtrusionLengthUnits    "m"
+		    PolygonNumSides	    "3"
+		    PolygonOuterRadius	    "1"
+		    PolygonOuterRadiusUnits "m"
+		    ExtGeomFileUnits	    "m"
+		    BlockFunction	    "simmechanics.library.body_elements.solid"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Left\nRim"
+		    SID			    "1908"
+		    Ports		    [0, 0, 0, 0, 0, 0, 1]
+		    Position		    [55, 130, 95, 170]
+		    BlockRotation	    270
+		    LibraryVersion	    "1.1"
+		    FontName		    "Arial"
+		    FontSize		    12
+		    SourceBlock		    "sm_lib/Body Elements/Solid"
+		    SourceType		    ""
+		    ClassName		    "Solid"
+		    InertiaType		    "CalculateFromGeometry"
+		    Mass		    "1"
+		    MassUnits		    "kg"
+		    CenterOfMass	    "[0 0 0]"
+		    CenterOfMassUnits	    "m"
+		    MomentsOfInertia	    "[1 1 1]"
+		    MomentsOfInertiaUnits   "kg*m^2"
+		    ProductsOfInertia	    "[0 0 0]"
+		    ProductsOfInertiaUnits  "kg*m^2"
+		    DensityBased	    "on"
+		    Density		    "rho"
+		    DensityUnits	    "kg/(m^3)"
+		    GraphicType		    "FromGeometry"
+		    MarkerShape		    "Sphere"
+		    MarkerSize		    "10"
+		    MarkerSizeUnits	    "m"
+		    GraphicVisPropType	    "SimpleVisualProperties"
+		    GraphicDiffuseColor	    "clr"
+		    GraphicSpecularColor    "[0.5 0.5 0.5 1.0]"
+		    GraphicAmbientColor	    "[0.5 0.0 0.0 1.0]"
+		    GraphicEmissiveColor    "[0.0 0.0 0.0 1.0]"
+		    GraphicShininess	    "75"
+		    GraphicOpacity	    "1.0"
+		    GeometryShape	    "Cylinder"
+		    RectangleSize	    "[1 1]"
+		    RectangleSizeUnits	    "m"
+		    BrickDimensions	    "[1 1 1]"
+		    BrickDimensionUnits	    "m"
+		    CylinderRadius	    "Rr"
+		    CylinderRadiusUnits	    "cm"
+		    CylinderLength	    "Tr"
+		    CylinderLengthUnits	    "cm"
+		    SphereRadius	    "1"
+		    SphereRadiusUnits	    "m"
+		    EllipsoidRadii	    "[1 1 1]"
+		    EllipsoidRadiiUnits	    "m"
+		    ExtrusionCrossSection   "[1 1; -1 1; -1 -1; 1 -1]"
+		    ExtrusionCrossSectionUnits "m"
+		    ExtrusionLength	    "1"
+		    ExtrusionLengthUnits    "m"
+		    PolygonNumSides	    "3"
+		    PolygonOuterRadius	    "1"
+		    PolygonOuterRadiusUnits "m"
+		    ExtGeomFileUnits	    "m"
+		    BlockFunction	    "simmechanics.library.body_elements.solid"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Right\nRim "
+		    SID			    "1909"
+		    Ports		    [0, 0, 0, 0, 0, 0, 1]
+		    Position		    [275, 130, 315, 170]
+		    BlockRotation	    270
+		    LibraryVersion	    "1.1"
+		    FontName		    "Arial"
+		    FontSize		    12
+		    SourceBlock		    "sm_lib/Body Elements/Solid"
+		    SourceType		    ""
+		    ClassName		    "Solid"
+		    InertiaType		    "CalculateFromGeometry"
+		    Mass		    "1"
+		    MassUnits		    "kg"
+		    CenterOfMass	    "[0 0 0]"
+		    CenterOfMassUnits	    "m"
+		    MomentsOfInertia	    "[1 1 1]"
+		    MomentsOfInertiaUnits   "kg*m^2"
+		    ProductsOfInertia	    "[0 0 0]"
+		    ProductsOfInertiaUnits  "kg*m^2"
+		    DensityBased	    "on"
+		    Density		    "rho"
+		    DensityUnits	    "kg/(m^3)"
+		    GraphicType		    "FromGeometry"
+		    MarkerShape		    "Sphere"
+		    MarkerSize		    "10"
+		    MarkerSizeUnits	    "m"
+		    GraphicVisPropType	    "SimpleVisualProperties"
+		    GraphicDiffuseColor	    "clr"
+		    GraphicSpecularColor    "[0.5 0.5 0.5 1.0]"
+		    GraphicAmbientColor	    "[0.5 0.0 0.0 1.0]"
+		    GraphicEmissiveColor    "[0.0 0.0 0.0 1.0]"
+		    GraphicShininess	    "75"
+		    GraphicOpacity	    "1.0"
+		    GeometryShape	    "Cylinder"
+		    RectangleSize	    "[1 1]"
+		    RectangleSizeUnits	    "m"
+		    BrickDimensions	    "[1 1 1]"
+		    BrickDimensionUnits	    "m"
+		    CylinderRadius	    "Rr"
+		    CylinderRadiusUnits	    "cm"
+		    CylinderLength	    "Tr"
+		    CylinderLengthUnits	    "cm"
+		    SphereRadius	    "1"
+		    SphereRadiusUnits	    "m"
+		    EllipsoidRadii	    "[1 1 1]"
+		    EllipsoidRadiiUnits	    "m"
+		    ExtrusionCrossSection   "[1 1; -1 1; -1 -1; 1 -1]"
+		    ExtrusionCrossSectionUnits "m"
+		    ExtrusionLength	    "1"
+		    ExtrusionLengthUnits    "m"
+		    PolygonNumSides	    "3"
+		    PolygonOuterRadius	    "1"
+		    PolygonOuterRadiusUnits "m"
+		    ExtGeomFileUnits	    "m"
+		    BlockFunction	    "simmechanics.library.body_elements.solid"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Transform\nLeft Wheel"
+		    SID			    "1910"
+		    Ports		    [0, 0, 0, 0, 0, 1, 1]
+		    Position		    [105, 50, 145, 90]
+		    BlockMirror		    on
+		    LibraryVersion	    "1.1"
+		    FontName		    "Arial"
+		    FontSize		    12
+		    SourceBlock		    "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+		    SourceType		    ""
+		    ClassName		    "RigidTransform"
+		    TranslationMethod	    "StandardAxis"
+		    TranslationLengthUnit   "cm"
+		    TranslationStandardAxis "-Z"
+		    TranslationStandardOffset "Wd/2 + Tr/2"
+		    TranslationCartesianOffset "[0 0 0]"
+		    TranslationROffset	    "0"
+		    TranslationROffsetUnits "m"
+		    TranslationZOffset	    "0"
+		    TranslationZOffsetUnits "m"
+		    TranslationThetaOffset  "0"
+		    TranslationThetaOffsetUnits	"deg"
+		    RotationMethod	    "None"
+		    RotationAngleUnits	    "deg"
+		    RotationStandardAxis    "+Z"
+		    RotationAngle	    "0"
+		    RotationArbitraryAxis   "[0 0 1]"
+		    FollAlignAxisA	    "+X"
+		    BaseAlignAxisA	    "+Y"
+		    FollAlignAxisB	    "+Y"
+		    BaseAlignAxisB	    "+Z"
+		    BlockFunction	    "simmechanics.library.frames_transforms.rigid_transform"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Transform\nRight Wheel"
+		    SID			    "1911"
+		    Ports		    [0, 0, 0, 0, 0, 1, 1]
+		    Position		    [225, 50, 265, 90]
+		    LibraryVersion	    "1.1"
+		    FontName		    "Arial"
+		    FontSize		    12
+		    SourceBlock		    "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+		    SourceType		    ""
+		    ClassName		    "RigidTransform"
+		    TranslationMethod	    "StandardAxis"
+		    TranslationLengthUnit   "cm"
+		    TranslationStandardAxis "+Z"
+		    TranslationStandardOffset "Wd/2 + Tr/2"
+		    TranslationCartesianOffset "[0 0 0]"
+		    TranslationROffset	    "0"
+		    TranslationROffsetUnits "m"
+		    TranslationZOffset	    "0"
+		    TranslationZOffsetUnits "m"
+		    TranslationThetaOffset  "0"
+		    TranslationThetaOffsetUnits	"deg"
+		    RotationMethod	    "None"
+		    RotationAngleUnits	    "deg"
+		    RotationStandardAxis    "+Z"
+		    RotationAngle	    "0"
+		    RotationArbitraryAxis   "[0 0 1]"
+		    FollAlignAxisA	    "+X"
+		    BaseAlignAxisA	    "+Y"
+		    FollAlignAxisB	    "+Y"
+		    BaseAlignAxisB	    "+Z"
+		    BlockFunction	    "simmechanics.library.frames_transforms.rigid_transform"
+		    }
+		    Block {
+		    BlockType		    PMIOPort
+		    Name		    "L"
+		    SID			    "1912"
+		    Position		    [15, 63, 45, 77]
+		    FontName		    "Arial"
+		    FontSize		    12
+		    Port		    "1"
+		    Side		    "Right"
+		    }
+		    Block {
+		    BlockType		    PMIOPort
+		    Name		    "R"
+		    SID			    "1913"
+		    Position		    [330, 63, 360, 77]
+		    BlockMirror		    on
+		    FontName		    "Arial"
+		    FontSize		    12
+		    Port		    "2"
+		    Side		    "Right"
+		    }
+		    Block {
+		    BlockType		    PMIOPort
+		    Name		    "M"
+		    SID			    "1914"
+		    Position		    [178, 15, 192, 45]
+		    BlockRotation	    270
+		    BlockMirror		    on
+		    FontName		    "Arial"
+		    FontSize		    12
+		    Port		    "3"
+		    Side		    "Left"
+		    }
+		    Line {
+		    LineType		    "Connection"
+		    FontName		    "Arial"
+		    FontSize		    12
+		    Points		    [295, 70; 0, 45]
+		    DstBlock		    "Right\nRim "
+		    DstPort		    RConn1
+		    Branch {
+		    ConnectType		    "SRC_DEST"
+		    SrcBlock		    "Transform\nRight Wheel"
+		    SrcPort		    RConn1
+		    Points		    [15, 0]
+		    }
+		    Branch {
+		    ConnectType		    "SRC_SRC"
+		    DstBlock		    "R"
+		    DstPort		    RConn1
+		    }
+		    }
+		    Line {
+		    LineType		    "Connection"
+		    SrcBlock		    "M"
+		    SrcPort		    RConn1
+		    Points		    [0, 10]
+		    Branch {
+		    ConnectType		    "DEST_SRC"
+		    DstBlock		    "Axle"
+		    DstPort		    RConn1
+		    }
+		    Branch {
+		    ConnectType		    "DEST_DEST"
+		    SrcBlock		    "Transform\nRight Wheel"
+		    SrcPort		    LConn1
+		    Points		    [-25, 0]
+		    }
+		    Branch {
+		    ConnectType		    "DEST_SRC"
+		    DstBlock		    "Transform\nLeft Wheel"
+		    DstPort		    LConn1
+		    }
+		    }
+		    Line {
+		    LineType		    "Connection"
+		    FontName		    "Arial"
+		    FontSize		    12
+		    Points		    [75, 70; 15, 0]
+		    DstBlock		    "Transform\nLeft Wheel"
+		    DstPort		    RConn1
+		    Branch {
+		    ConnectType		    "SRC_DEST"
+		    SrcBlock		    "Left\nRim"
+		    SrcPort		    RConn1
+		    Points		    [0, -45]
+		    }
+		    Branch {
+		    ConnectType		    "SRC_SRC"
+		    DstBlock		    "L"
+		    DstPort		    RConn1
+		    }
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Axle-Tire A\nRevolute"
+		  SID			  "1915"
+		  Ports			  [0, 0, 0, 0, 0, 1, 1]
+		  Position		  [110, 150, 150, 190]
+		  BlockMirror		  on
+		  LibraryVersion	  "1.1"
+		  FontName		  "Arial"
+		  FontSize		  12
+		  SourceBlock		  "sm_lib/Joints/Revolute Joint"
+		  SourceType		  ""
+		  ClassName		  "RevoluteJoint"
+		  SenseConstraintForceX	  "off"
+		  SenseConstraintForceY	  "off"
+		  SenseConstraintForceZ	  "off"
+		  SenseConstraintTorqueX  "off"
+		  SenseConstraintTorqueY  "off"
+		  SenseConstraintTorqueZ  "off"
+		  ConstraintWrenchDir	  "FollowerOnBase"
+		  ConstraintWrenchFrame	  "BaseFrame"
+		  EquilibriumPosition	  "0"
+		  EquilibriumPositionUnits "rad"
+		  SpringStiffness	  "0"
+		  SpringStiffnessUnits	  "N*m/rad"
+		  DampingCoefficient	  "0"
+		  DampingCoefficientUnits "N*m/(rad/s)"
+		  ActuationMode		  "NoActuation"
+		  SensePosition		  "off"
+		  SenseVelocity		  "off"
+		  SenseAcceleration	  "off"
+		  SenseTorqueForce	  "off"
+		  PositionTargetValue	  "0"
+		  PositionTargetValueUnits "rad"
+		  PositionTargetSpecify	  "off"
+		  PositionTargetPriority  "High"
+		  VelocityTargetValue	  "0"
+		  VelocityTargetValueUnits "rad/s"
+		  VelocityTargetSpecify	  "off"
+		  VelocityTargetPriority  "High"
+		  BlockFunction		  "simmechanics.library.joints.revolute_joint"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Axle-Tire B\nRevolute"
+		  SID			  "1916"
+		  Ports			  [0, 0, 0, 0, 0, 1, 1]
+		  Position		  [265, 150, 305, 190]
+		  LibraryVersion	  "1.1"
+		  FontName		  "Arial"
+		  FontSize		  12
+		  SourceBlock		  "sm_lib/Joints/Revolute Joint"
+		  SourceType		  ""
+		  ClassName		  "RevoluteJoint"
+		  SenseConstraintForceX	  "off"
+		  SenseConstraintForceY	  "off"
+		  SenseConstraintForceZ	  "off"
+		  SenseConstraintTorqueX  "off"
+		  SenseConstraintTorqueY  "off"
+		  SenseConstraintTorqueZ  "off"
+		  ConstraintWrenchDir	  "FollowerOnBase"
+		  ConstraintWrenchFrame	  "BaseFrame"
+		  EquilibriumPosition	  "0"
+		  EquilibriumPositionUnits "rad"
+		  SpringStiffness	  "0"
+		  SpringStiffnessUnits	  "N*m/rad"
+		  DampingCoefficient	  "0"
+		  DampingCoefficientUnits "N*m/(rad/s)"
+		  ActuationMode		  "NoActuation"
+		  SensePosition		  "off"
+		  SenseVelocity		  "off"
+		  SenseAcceleration	  "off"
+		  SenseTorqueForce	  "off"
+		  PositionTargetValue	  "0"
+		  PositionTargetValueUnits "rad"
+		  PositionTargetSpecify	  "off"
+		  PositionTargetPriority  "High"
+		  VelocityTargetValue	  "0"
+		  VelocityTargetValueUnits "rad/s"
+		  VelocityTargetSpecify	  "off"
+		  VelocityTargetPriority  "High"
+		  BlockFunction		  "simmechanics.library.joints.revolute_joint"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Tire A"
+		  SID			  "1917"
+		  Ports			  [0, 0, 0, 0, 0, 1]
+		  Position		  [40, 147, 80, 193]
+		  BlockRotation		  180
+		  FontName		  "Arial"
+		  FontSize		  12
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  MaskType		  "Tire"
+		  MaskPromptString	  "Tire radius (cm)|Rim radius (cm)|Tire thickness (cm)|Density (kg/m^3)|Color"
+		  MaskStyleString	  "edit,edit,edit,edit,edit"
+		  MaskVariables		  "Rt=@1;Rr=@2;Tt=@3;rho=@4;clr=@5;"
+		  MaskTunableValueString  "on,on,on,on,on"
+		  MaskCallbackString	  "||||"
+		  MaskEnableString	  "on,on,on,on,on"
+		  MaskVisibilityString	  "on,on,on,on,on"
+		  MaskToolTipString	  "on,on,on,on,on"
+		  MaskInitialization	  "theta = [(0:1:359) 0]'*pi/180;\nunit_circle = [cos(theta), sin(theta)];\ntire_sec = [Rt * un"
+		  "it_circle; Rr * flipud(unit_circle)];\n"
+		  MaskDisplay		  "image(imread('sm_wlandgear_tire.png'));\nport_label('LConn',1,'C');"
+		  MaskIconFrame		  on
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "port"
+		  MaskPortRotate	  "physical"
+		  MaskIconUnits		  "autoscale"
+		  MaskValueString	  "Scissor_Lift_Param.Cart.Axle.Tire.Radius|Scissor_Lift_Param.Cart.Axle.Rim.Radius|Scissor_Lift_P"
+		  "aram.Cart.Axle.Tire.Thickness|Scissor_Lift_Param.Cart.Axle.Tire.Density|Scissor_Lift_Param.Cart.Axle.Tire.Color"
+		  MaskTabNameString	  "Dimensions,Dimensions,Dimensions,Material Properties,Material Properties"
+		  System {
+		    Name		    "Tire A"
+		    Location		    [174, 419, 407, 513]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Tire"
+		    SID			    "1918"
+		    Ports		    [0, 0, 0, 0, 0, 0, 1]
+		    Position		    [120, 30, 160, 70]
+		    BlockMirror		    on
+		    NamePlacement	    "alternate"
+		    LibraryVersion	    "1.1"
+		    FontName		    "Arial"
+		    FontSize		    12
+		    SourceBlock		    "sm_lib/Body Elements/Solid"
+		    SourceType		    ""
+		    ClassName		    "Solid"
+		    InertiaType		    "CalculateFromGeometry"
+		    Mass		    "1"
+		    MassUnits		    "kg"
+		    CenterOfMass	    "[0 0 0]"
+		    CenterOfMassUnits	    "m"
+		    MomentsOfInertia	    "[1 1 1]"
+		    MomentsOfInertiaUnits   "kg*m^2"
+		    ProductsOfInertia	    "[0 0 0]"
+		    ProductsOfInertiaUnits  "kg*m^2"
+		    DensityBased	    "on"
+		    Density		    "rho"
+		    DensityUnits	    "kg/(m^3)"
+		    GraphicType		    "FromGeometry"
+		    MarkerShape		    "Sphere"
+		    MarkerSize		    "10"
+		    MarkerSizeUnits	    "m"
+		    GraphicVisPropType	    "SimpleVisualProperties"
+		    GraphicDiffuseColor	    "clr"
+		    GraphicSpecularColor    "[0.5 0.5 0.5 1.0]"
+		    GraphicAmbientColor	    "[0.5 0.0 0.0 1.0]"
+		    GraphicEmissiveColor    "[0.0 0.0 0.0 1.0]"
+		    GraphicShininess	    "75"
+		    GraphicOpacity	    "1.0"
+		    GeometryShape	    "GeneralExtrusion"
+		    RectangleSize	    "[1 1]"
+		    RectangleSizeUnits	    "m"
+		    BrickDimensions	    "[1 1 1]"
+		    BrickDimensionUnits	    "m"
+		    CylinderRadius	    "1"
+		    CylinderRadiusUnits	    "m"
+		    CylinderLength	    "1"
+		    CylinderLengthUnits	    "m"
+		    SphereRadius	    "1"
+		    SphereRadiusUnits	    "m"
+		    EllipsoidRadii	    "[1 1 1]"
+		    EllipsoidRadiiUnits	    "m"
+		    ExtrusionCrossSection   "tire_sec"
+		    ExtrusionCrossSectionUnits "cm"
+		    ExtrusionLength	    "Tt"
+		    ExtrusionLengthUnits    "cm"
+		    PolygonNumSides	    "3"
+		    PolygonOuterRadius	    "1"
+		    PolygonOuterRadiusUnits "m"
+		    ExtGeomFileUnits	    "m"
+		    BlockFunction	    "simmechanics.library.body_elements.solid"
+		    }
+		    Block {
+		    BlockType		    PMIOPort
+		    Name		    "C"
+		    SID			    "1919"
+		    Position		    [65, 40, 85, 60]
+		    FontName		    "Arial"
+		    FontSize		    12
+		    Port		    "1"
+		    Side		    "Left"
+		    }
+		    Line {
+		    LineType		    "Connection"
+		    SrcBlock		    "Tire"
+		    SrcPort		    RConn1
+		    DstBlock		    "C"
+		    DstPort		    RConn1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Tire B"
+		  SID			  "1920"
+		  Ports			  [0, 0, 0, 0, 0, 1]
+		  Position		  [335, 147, 375, 193]
+		  FontName		  "Arial"
+		  FontSize		  12
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  MaskType		  "Tire"
+		  MaskPromptString	  "Tire radius (cm)|Rim radius (cm)|Tire thickness (cm)|Density (kg/m^3)|Color"
+		  MaskStyleString	  "edit,edit,edit,edit,edit"
+		  MaskVariables		  "Rt=@1;Rr=@2;Tt=@3;rho=@4;clr=@5;"
+		  MaskTunableValueString  "on,on,on,on,on"
+		  MaskCallbackString	  "||||"
+		  MaskEnableString	  "on,on,on,on,on"
+		  MaskVisibilityString	  "on,on,on,on,on"
+		  MaskToolTipString	  "on,on,on,on,on"
+		  MaskInitialization	  "theta = [(0:1:359) 0]'*pi/180;\nunit_circle = [cos(theta), sin(theta)];\ntire_sec = [Rt * un"
+		  "it_circle; Rr * flipud(unit_circle)];\n"
+		  MaskDisplay		  "image(imread('sm_wlandgear_tire.png'));\nport_label('LConn',1,'C');"
+		  MaskIconFrame		  on
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "port"
+		  MaskPortRotate	  "physical"
+		  MaskIconUnits		  "autoscale"
+		  MaskValueString	  "Scissor_Lift_Param.Cart.Axle.Tire.Radius|Scissor_Lift_Param.Cart.Axle.Rim.Radius|Scissor_Lift_P"
+		  "aram.Cart.Axle.Tire.Thickness|Scissor_Lift_Param.Cart.Axle.Tire.Density|Scissor_Lift_Param.Cart.Axle.Tire.Color"
+		  MaskTabNameString	  "Dimensions,Dimensions,Dimensions,Material Properties,Material Properties"
+		  System {
+		    Name		    "Tire B"
+		    Location		    [269, 389, 502, 474]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Tire"
+		    SID			    "1921"
+		    Ports		    [0, 0, 0, 0, 0, 0, 1]
+		    Position		    [120, 30, 160, 70]
+		    BlockMirror		    on
+		    NamePlacement	    "alternate"
+		    LibraryVersion	    "1.1"
+		    FontName		    "Arial"
+		    FontSize		    12
+		    SourceBlock		    "sm_lib/Body Elements/Solid"
+		    SourceType		    ""
+		    ClassName		    "Solid"
+		    InertiaType		    "CalculateFromGeometry"
+		    Mass		    "1"
+		    MassUnits		    "kg"
+		    CenterOfMass	    "[0 0 0]"
+		    CenterOfMassUnits	    "m"
+		    MomentsOfInertia	    "[1 1 1]"
+		    MomentsOfInertiaUnits   "kg*m^2"
+		    ProductsOfInertia	    "[0 0 0]"
+		    ProductsOfInertiaUnits  "kg*m^2"
+		    DensityBased	    "on"
+		    Density		    "rho"
+		    DensityUnits	    "kg/(m^3)"
+		    GraphicType		    "FromGeometry"
+		    MarkerShape		    "Sphere"
+		    MarkerSize		    "10"
+		    MarkerSizeUnits	    "m"
+		    GraphicVisPropType	    "SimpleVisualProperties"
+		    GraphicDiffuseColor	    "clr"
+		    GraphicSpecularColor    "[0.5 0.5 0.5 1.0]"
+		    GraphicAmbientColor	    "[0.5 0.0 0.0 1.0]"
+		    GraphicEmissiveColor    "[0.0 0.0 0.0 1.0]"
+		    GraphicShininess	    "75"
+		    GraphicOpacity	    "1.0"
+		    GeometryShape	    "GeneralExtrusion"
+		    RectangleSize	    "[1 1]"
+		    RectangleSizeUnits	    "m"
+		    BrickDimensions	    "[1 1 1]"
+		    BrickDimensionUnits	    "m"
+		    CylinderRadius	    "1"
+		    CylinderRadiusUnits	    "m"
+		    CylinderLength	    "1"
+		    CylinderLengthUnits	    "m"
+		    SphereRadius	    "1"
+		    SphereRadiusUnits	    "m"
+		    EllipsoidRadii	    "[1 1 1]"
+		    EllipsoidRadiiUnits	    "m"
+		    ExtrusionCrossSection   "tire_sec"
+		    ExtrusionCrossSectionUnits "cm"
+		    ExtrusionLength	    "Tt"
+		    ExtrusionLengthUnits    "cm"
+		    PolygonNumSides	    "3"
+		    PolygonOuterRadius	    "1"
+		    PolygonOuterRadiusUnits "m"
+		    ExtGeomFileUnits	    "m"
+		    BlockFunction	    "simmechanics.library.body_elements.solid"
+		    }
+		    Block {
+		    BlockType		    PMIOPort
+		    Name		    "C"
+		    SID			    "1922"
+		    Position		    [65, 40, 85, 60]
+		    FontName		    "Arial"
+		    FontSize		    12
+		    Port		    "1"
+		    Side		    "Left"
+		    }
+		    Line {
+		    LineType		    "Connection"
+		    SrcBlock		    "Tire"
+		    SrcPort		    RConn1
+		    DstBlock		    "C"
+		    DstPort		    RConn1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Transform\nAxle CG"
+		  SID			  "1923"
+		  Ports			  [0, 0, 0, 0, 0, 1, 1]
+		  Position		  [85, 25, 125, 65]
+		  ZOrder		  2
+		  LibraryVersion	  "1.1"
+		  FontName		  "Arial"
+		  FontSize		  12
+		  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+		  SourceType		  ""
+		  ClassName		  "RigidTransform"
+		  TranslationMethod	  "Cartesian"
+		  TranslationLengthUnit	  "cm"
+		  TranslationStandardAxis "+Z"
+		  TranslationStandardOffset "0"
+		  TranslationCartesianOffset "[Scissor_Lift_Param.Cart.Axle.Tire.Radius+Scissor_Lift_Param.Cart.Axle.Wheelbase -Scis"
+		  "sor_Lift_Param.Cart.Axle.Tire.Radius 0]"
+		  TranslationROffset	  "0"
+		  TranslationROffsetUnits "m"
+		  TranslationZOffset	  "0"
+		  TranslationZOffsetUnits "m"
+		  TranslationThetaOffset  "0"
+		  TranslationThetaOffsetUnits "deg"
+		  RotationMethod	  "None"
+		  RotationAngleUnits	  "deg"
+		  RotationStandardAxis	  "+X"
+		  RotationAngle		  "90"
+		  RotationArbitraryAxis	  "[0 0 1]"
+		  FollAlignAxisA	  "+X"
+		  BaseAlignAxisA	  "+Y"
+		  FollAlignAxisB	  "+Y"
+		  BaseAlignAxisB	  "+Z"
+		  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+		}
+		Block {
+		  BlockType		  PMIOPort
+		  Name			  "P"
+		  SID			  "1924"
+		  Position		  [25, 38, 55, 52]
+		  FontName		  "Arial"
+		  FontSize		  12
+		  Port			  "1"
+		  Side			  "Left"
+		}
+		Line {
+		  LineType		  "Connection"
+		  SrcBlock		  "Axle-Tire A\nRevolute"
+		  SrcPort		  LConn1
+		  Points		  [15, 0]
+		  DstBlock		  "Axle"
+		  DstPort		  RConn1
+		}
+		Line {
+		  LineType		  "Connection"
+		  SrcBlock		  "Axle-Tire A\nRevolute"
+		  SrcPort		  RConn1
+		  DstBlock		  "Tire A"
+		  DstPort		  LConn1
+		}
+		Line {
+		  LineType		  "Connection"
+		  SrcBlock		  "Axle-Tire B\nRevolute"
+		  SrcPort		  LConn1
+		  DstBlock		  "Axle"
+		  DstPort		  RConn2
+		}
+		Line {
+		  LineType		  "Connection"
+		  SrcBlock		  "Axle-Tire B\nRevolute"
+		  SrcPort		  RConn1
+		  DstBlock		  "Tire B"
+		  DstPort		  LConn1
+		}
+		Line {
+		  LineType		  "Connection"
+		  SrcBlock		  "Transform\nAxle CG"
+		  SrcPort		  RConn1
+		  Points		  [75, 0]
+		  DstBlock		  "Axle"
+		  DstPort		  LConn1
+		}
+		Line {
+		  LineType		  "Connection"
+		  SrcBlock		  "P"
+		  SrcPort		  RConn1
+		  DstBlock		  "Transform\nAxle CG"
+		  DstPort		  LConn1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Platform"
+	      SID		      "1925"
+	      Ports		      [0, 0, 0, 0, 0, 1, 1]
+	      Position		      [260, 119, 315, 161]
+	      BackgroundColor	      "yellow"
+	      LibraryVersion	      "1.187"
+	      FontName		      "Arial"
+	      FontSize		      12
+	      SourceBlock	      "Scissor_Parts_Lib/Block"
+	      SourceType	      "Block"
+	      L			      "Scissor_Lift_Param.Cart.Platform.Width"
+	      W			      "Scissor_Lift_Param.Cart.Platform.Length"
+	      H			      "Scissor_Lift_Param.Cart.Platform.Height"
+	      z_ori		      "Local +Z"
+	      rho		      "Scissor_Lift_Param.Base_Block.Density"
+	      clr		      "Scissor_Lift_Param.Base_Block.Color"
+	      opc		      "Scissor_Lift_Param.Base_Block.Opacity"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Rear Axle"
+	      SID		      "1926"
+	      Ports		      [0, 0, 0, 0, 0, 1]
+	      Position		      [165, 206, 215, 244]
+	      FontName		      "Arial"
+	      FontSize		      12
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Rear Axle"
+		Location		[86, 310, 503, 553]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Axle"
+		  SID			  "1927"
+		  Ports			  [0, 0, 0, 0, 0, 1, 2]
+		  Position		  [144, 75, 286, 125]
+		  BlockRotation		  270
+		  BlockMirror		  on
+		  FontName		  "Arial"
+		  FontSize		  12
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  MaskType		  "Axle"
+		  MaskPromptString	  "Axle radius (cm)|Wheel distance (cm)|Rim radius (cm)|Rim thickness (cm)|Density (kg/m^3)|Color"
+		  MaskStyleString	  "edit,edit,edit,edit,edit,edit"
+		  MaskVariables		  "Ra=@1;Wd=@2;Rr=@3;Tr=@4;rho=@5;clr=@6;"
+		  MaskTunableValueString  "on,on,on,on,on,on"
+		  MaskCallbackString	  "|||||"
+		  MaskEnableString	  "on,on,on,on,on,on"
+		  MaskVisibilityString	  "on,on,on,on,on,on"
+		  MaskToolTipString	  "on,on,on,on,on,on"
+		  MaskDisplay		  "image(imread('sm_wlandgear_axle.png'));\nport_label('LConn',1,'M');\nport_label('RConn',1,'L');\np"
+		  "ort_label('RConn',2,'R');"
+		  MaskIconFrame		  on
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "port"
+		  MaskPortRotate	  "physical"
+		  MaskIconUnits		  "autoscale"
+		  MaskValueString	  "Scissor_Lift_Param.Cart.Axle.Radius|Scissor_Lift_Param.Cart.Axle.Wheel_Distance|Scissor_Lift_Pa"
+		  "ram.Cart.Axle.Rim.Radius|Scissor_Lift_Param.Cart.Axle.Rim.Thickness|Scissor_Lift_Param.Cart.Axle.Rim.Density|Sciss"
+		  "or_Lift_Param.Cart.Axle.Rim.Color"
+		  MaskTabNameString	  "Dimensions,Dimensions,Dimensions,Dimensions,Material Properties,Material Properties"
+		  System {
+		    Name		    "Axle"
+		    Location		    [334, 309, 705, 492]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Axle"
+		    SID			    "1928"
+		    Ports		    [0, 0, 0, 0, 0, 0, 1]
+		    Position		    [165, 130, 205, 170]
+		    BlockRotation	    270
+		    LibraryVersion	    "1.1"
+		    FontName		    "Arial"
+		    FontSize		    12
+		    SourceBlock		    "sm_lib/Body Elements/Solid"
+		    SourceType		    ""
+		    ClassName		    "Solid"
+		    InertiaType		    "CalculateFromGeometry"
+		    Mass		    "1"
+		    MassUnits		    "kg"
+		    CenterOfMass	    "[0 0 0]"
+		    CenterOfMassUnits	    "m"
+		    MomentsOfInertia	    "[1 1 1]"
+		    MomentsOfInertiaUnits   "kg*m^2"
+		    ProductsOfInertia	    "[0 0 0]"
+		    ProductsOfInertiaUnits  "kg*m^2"
+		    DensityBased	    "on"
+		    Density		    "rho"
+		    DensityUnits	    "kg/(m^3)"
+		    GraphicType		    "FromGeometry"
+		    MarkerShape		    "Sphere"
+		    MarkerSize		    "10"
+		    MarkerSizeUnits	    "m"
+		    GraphicVisPropType	    "SimpleVisualProperties"
+		    GraphicDiffuseColor	    "clr"
+		    GraphicSpecularColor    "[0.5 0.5 0.5 1.0]"
+		    GraphicAmbientColor	    "[0.5 0.0 0.0 1.0]"
+		    GraphicEmissiveColor    "[0.0 0.0 0.0 1.0]"
+		    GraphicShininess	    "75"
+		    GraphicOpacity	    "1.0"
+		    GeometryShape	    "Cylinder"
+		    RectangleSize	    "[1 1]"
+		    RectangleSizeUnits	    "m"
+		    BrickDimensions	    "[1 1 1]"
+		    BrickDimensionUnits	    "m"
+		    CylinderRadius	    "Ra"
+		    CylinderRadiusUnits	    "cm"
+		    CylinderLength	    "Wd"
+		    CylinderLengthUnits	    "cm"
+		    SphereRadius	    "1"
+		    SphereRadiusUnits	    "m"
+		    EllipsoidRadii	    "[1 1 1]"
+		    EllipsoidRadiiUnits	    "m"
+		    ExtrusionCrossSection   "[1 1; -1 1; -1 -1; 1 -1]"
+		    ExtrusionCrossSectionUnits "m"
+		    ExtrusionLength	    "1"
+		    ExtrusionLengthUnits    "m"
+		    PolygonNumSides	    "3"
+		    PolygonOuterRadius	    "1"
+		    PolygonOuterRadiusUnits "m"
+		    ExtGeomFileUnits	    "m"
+		    BlockFunction	    "simmechanics.library.body_elements.solid"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Left\nRim"
+		    SID			    "1929"
+		    Ports		    [0, 0, 0, 0, 0, 0, 1]
+		    Position		    [55, 130, 95, 170]
+		    BlockRotation	    270
+		    LibraryVersion	    "1.1"
+		    FontName		    "Arial"
+		    FontSize		    12
+		    SourceBlock		    "sm_lib/Body Elements/Solid"
+		    SourceType		    ""
+		    ClassName		    "Solid"
+		    InertiaType		    "CalculateFromGeometry"
+		    Mass		    "1"
+		    MassUnits		    "kg"
+		    CenterOfMass	    "[0 0 0]"
+		    CenterOfMassUnits	    "m"
+		    MomentsOfInertia	    "[1 1 1]"
+		    MomentsOfInertiaUnits   "kg*m^2"
+		    ProductsOfInertia	    "[0 0 0]"
+		    ProductsOfInertiaUnits  "kg*m^2"
+		    DensityBased	    "on"
+		    Density		    "rho"
+		    DensityUnits	    "kg/(m^3)"
+		    GraphicType		    "FromGeometry"
+		    MarkerShape		    "Sphere"
+		    MarkerSize		    "10"
+		    MarkerSizeUnits	    "m"
+		    GraphicVisPropType	    "SimpleVisualProperties"
+		    GraphicDiffuseColor	    "clr"
+		    GraphicSpecularColor    "[0.5 0.5 0.5 1.0]"
+		    GraphicAmbientColor	    "[0.5 0.0 0.0 1.0]"
+		    GraphicEmissiveColor    "[0.0 0.0 0.0 1.0]"
+		    GraphicShininess	    "75"
+		    GraphicOpacity	    "1.0"
+		    GeometryShape	    "Cylinder"
+		    RectangleSize	    "[1 1]"
+		    RectangleSizeUnits	    "m"
+		    BrickDimensions	    "[1 1 1]"
+		    BrickDimensionUnits	    "m"
+		    CylinderRadius	    "Rr"
+		    CylinderRadiusUnits	    "cm"
+		    CylinderLength	    "Tr"
+		    CylinderLengthUnits	    "cm"
+		    SphereRadius	    "1"
+		    SphereRadiusUnits	    "m"
+		    EllipsoidRadii	    "[1 1 1]"
+		    EllipsoidRadiiUnits	    "m"
+		    ExtrusionCrossSection   "[1 1; -1 1; -1 -1; 1 -1]"
+		    ExtrusionCrossSectionUnits "m"
+		    ExtrusionLength	    "1"
+		    ExtrusionLengthUnits    "m"
+		    PolygonNumSides	    "3"
+		    PolygonOuterRadius	    "1"
+		    PolygonOuterRadiusUnits "m"
+		    ExtGeomFileUnits	    "m"
+		    BlockFunction	    "simmechanics.library.body_elements.solid"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Right\nRim "
+		    SID			    "1930"
+		    Ports		    [0, 0, 0, 0, 0, 0, 1]
+		    Position		    [275, 130, 315, 170]
+		    BlockRotation	    270
+		    LibraryVersion	    "1.1"
+		    FontName		    "Arial"
+		    FontSize		    12
+		    SourceBlock		    "sm_lib/Body Elements/Solid"
+		    SourceType		    ""
+		    ClassName		    "Solid"
+		    InertiaType		    "CalculateFromGeometry"
+		    Mass		    "1"
+		    MassUnits		    "kg"
+		    CenterOfMass	    "[0 0 0]"
+		    CenterOfMassUnits	    "m"
+		    MomentsOfInertia	    "[1 1 1]"
+		    MomentsOfInertiaUnits   "kg*m^2"
+		    ProductsOfInertia	    "[0 0 0]"
+		    ProductsOfInertiaUnits  "kg*m^2"
+		    DensityBased	    "on"
+		    Density		    "rho"
+		    DensityUnits	    "kg/(m^3)"
+		    GraphicType		    "FromGeometry"
+		    MarkerShape		    "Sphere"
+		    MarkerSize		    "10"
+		    MarkerSizeUnits	    "m"
+		    GraphicVisPropType	    "SimpleVisualProperties"
+		    GraphicDiffuseColor	    "clr"
+		    GraphicSpecularColor    "[0.5 0.5 0.5 1.0]"
+		    GraphicAmbientColor	    "[0.5 0.0 0.0 1.0]"
+		    GraphicEmissiveColor    "[0.0 0.0 0.0 1.0]"
+		    GraphicShininess	    "75"
+		    GraphicOpacity	    "1.0"
+		    GeometryShape	    "Cylinder"
+		    RectangleSize	    "[1 1]"
+		    RectangleSizeUnits	    "m"
+		    BrickDimensions	    "[1 1 1]"
+		    BrickDimensionUnits	    "m"
+		    CylinderRadius	    "Rr"
+		    CylinderRadiusUnits	    "cm"
+		    CylinderLength	    "Tr"
+		    CylinderLengthUnits	    "cm"
+		    SphereRadius	    "1"
+		    SphereRadiusUnits	    "m"
+		    EllipsoidRadii	    "[1 1 1]"
+		    EllipsoidRadiiUnits	    "m"
+		    ExtrusionCrossSection   "[1 1; -1 1; -1 -1; 1 -1]"
+		    ExtrusionCrossSectionUnits "m"
+		    ExtrusionLength	    "1"
+		    ExtrusionLengthUnits    "m"
+		    PolygonNumSides	    "3"
+		    PolygonOuterRadius	    "1"
+		    PolygonOuterRadiusUnits "m"
+		    ExtGeomFileUnits	    "m"
+		    BlockFunction	    "simmechanics.library.body_elements.solid"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Transform\nLeft Wheel"
+		    SID			    "1931"
+		    Ports		    [0, 0, 0, 0, 0, 1, 1]
+		    Position		    [105, 50, 145, 90]
+		    BlockMirror		    on
+		    LibraryVersion	    "1.1"
+		    FontName		    "Arial"
+		    FontSize		    12
+		    SourceBlock		    "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+		    SourceType		    ""
+		    ClassName		    "RigidTransform"
+		    TranslationMethod	    "StandardAxis"
+		    TranslationLengthUnit   "cm"
+		    TranslationStandardAxis "-Z"
+		    TranslationStandardOffset "Wd/2 + Tr/2"
+		    TranslationCartesianOffset "[0 0 0]"
+		    TranslationROffset	    "0"
+		    TranslationROffsetUnits "m"
+		    TranslationZOffset	    "0"
+		    TranslationZOffsetUnits "m"
+		    TranslationThetaOffset  "0"
+		    TranslationThetaOffsetUnits	"deg"
+		    RotationMethod	    "None"
+		    RotationAngleUnits	    "deg"
+		    RotationStandardAxis    "+Z"
+		    RotationAngle	    "0"
+		    RotationArbitraryAxis   "[0 0 1]"
+		    FollAlignAxisA	    "+X"
+		    BaseAlignAxisA	    "+Y"
+		    FollAlignAxisB	    "+Y"
+		    BaseAlignAxisB	    "+Z"
+		    BlockFunction	    "simmechanics.library.frames_transforms.rigid_transform"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Transform\nRight Wheel"
+		    SID			    "1932"
+		    Ports		    [0, 0, 0, 0, 0, 1, 1]
+		    Position		    [225, 50, 265, 90]
+		    LibraryVersion	    "1.1"
+		    FontName		    "Arial"
+		    FontSize		    12
+		    SourceBlock		    "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+		    SourceType		    ""
+		    ClassName		    "RigidTransform"
+		    TranslationMethod	    "StandardAxis"
+		    TranslationLengthUnit   "cm"
+		    TranslationStandardAxis "+Z"
+		    TranslationStandardOffset "Wd/2 + Tr/2"
+		    TranslationCartesianOffset "[0 0 0]"
+		    TranslationROffset	    "0"
+		    TranslationROffsetUnits "m"
+		    TranslationZOffset	    "0"
+		    TranslationZOffsetUnits "m"
+		    TranslationThetaOffset  "0"
+		    TranslationThetaOffsetUnits	"deg"
+		    RotationMethod	    "None"
+		    RotationAngleUnits	    "deg"
+		    RotationStandardAxis    "+Z"
+		    RotationAngle	    "0"
+		    RotationArbitraryAxis   "[0 0 1]"
+		    FollAlignAxisA	    "+X"
+		    BaseAlignAxisA	    "+Y"
+		    FollAlignAxisB	    "+Y"
+		    BaseAlignAxisB	    "+Z"
+		    BlockFunction	    "simmechanics.library.frames_transforms.rigid_transform"
+		    }
+		    Block {
+		    BlockType		    PMIOPort
+		    Name		    "L"
+		    SID			    "1933"
+		    Position		    [15, 63, 45, 77]
+		    FontName		    "Arial"
+		    FontSize		    12
+		    Port		    "1"
+		    Side		    "Right"
+		    }
+		    Block {
+		    BlockType		    PMIOPort
+		    Name		    "R"
+		    SID			    "1934"
+		    Position		    [330, 63, 360, 77]
+		    BlockMirror		    on
+		    FontName		    "Arial"
+		    FontSize		    12
+		    Port		    "2"
+		    Side		    "Right"
+		    }
+		    Block {
+		    BlockType		    PMIOPort
+		    Name		    "M"
+		    SID			    "1935"
+		    Position		    [178, 15, 192, 45]
+		    BlockRotation	    270
+		    BlockMirror		    on
+		    FontName		    "Arial"
+		    FontSize		    12
+		    Port		    "3"
+		    Side		    "Left"
+		    }
+		    Line {
+		    LineType		    "Connection"
+		    FontName		    "Arial"
+		    FontSize		    12
+		    Points		    [75, 70; -15, 0]
+		    DstBlock		    "L"
+		    DstPort		    RConn1
+		    Branch {
+		    ConnectType		    "SRC_DEST"
+		    SrcBlock		    "Left\nRim"
+		    SrcPort		    RConn1
+		    Points		    [0, -45]
+		    }
+		    Branch {
+		    ConnectType		    "SRC_SRC"
+		    DstBlock		    "Transform\nLeft Wheel"
+		    DstPort		    RConn1
+		    }
+		    }
+		    Line {
+		    LineType		    "Connection"
+		    FontName		    "Arial"
+		    FontSize		    12
+		    Points		    [185, 70; -25, 0]
+		    DstBlock		    "Transform\nLeft Wheel"
+		    DstPort		    LConn1
+		    Branch {
+		    ConnectType		    "SRC_DEST"
+		    SrcBlock		    "Transform\nRight Wheel"
+		    SrcPort		    LConn1
+		    Points		    [-25, 0]
+		    }
+		    Branch {
+		    ConnectType		    "SRC_SRC"
+		    DstBlock		    "Axle"
+		    DstPort		    RConn1
+		    }
+		    Branch {
+		    ConnectType		    "SRC_DEST"
+		    SrcBlock		    "M"
+		    SrcPort		    RConn1
+		    Points		    [0, 10]
+		    }
+		    }
+		    Line {
+		    LineType		    "Connection"
+		    FontName		    "Arial"
+		    FontSize		    12
+		    Points		    [295, 70; 20, 0]
+		    DstBlock		    "R"
+		    DstPort		    RConn1
+		    Branch {
+		    ConnectType		    "SRC_DEST"
+		    SrcBlock		    "Transform\nRight Wheel"
+		    SrcPort		    RConn1
+		    Points		    [15, 0]
+		    }
+		    Branch {
+		    ConnectType		    "SRC_SRC"
+		    DstBlock		    "Right\nRim "
+		    DstPort		    RConn1
+		    }
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Axle-Tire A\nRevolute"
+		  SID			  "1936"
+		  Ports			  [0, 0, 0, 0, 0, 1, 1]
+		  Position		  [110, 150, 150, 190]
+		  BlockMirror		  on
+		  LibraryVersion	  "1.1"
+		  FontName		  "Arial"
+		  FontSize		  12
+		  SourceBlock		  "sm_lib/Joints/Revolute Joint"
+		  SourceType		  ""
+		  ClassName		  "RevoluteJoint"
+		  SenseConstraintForceX	  "off"
+		  SenseConstraintForceY	  "off"
+		  SenseConstraintForceZ	  "off"
+		  SenseConstraintTorqueX  "off"
+		  SenseConstraintTorqueY  "off"
+		  SenseConstraintTorqueZ  "off"
+		  ConstraintWrenchDir	  "FollowerOnBase"
+		  ConstraintWrenchFrame	  "BaseFrame"
+		  EquilibriumPosition	  "0"
+		  EquilibriumPositionUnits "rad"
+		  SpringStiffness	  "0"
+		  SpringStiffnessUnits	  "N*m/rad"
+		  DampingCoefficient	  "0"
+		  DampingCoefficientUnits "N*m/(rad/s)"
+		  ActuationMode		  "NoActuation"
+		  SensePosition		  "off"
+		  SenseVelocity		  "off"
+		  SenseAcceleration	  "off"
+		  SenseTorqueForce	  "off"
+		  PositionTargetValue	  "0"
+		  PositionTargetValueUnits "rad"
+		  PositionTargetSpecify	  "off"
+		  PositionTargetPriority  "High"
+		  VelocityTargetValue	  "0"
+		  VelocityTargetValueUnits "rad/s"
+		  VelocityTargetSpecify	  "off"
+		  VelocityTargetPriority  "High"
+		  BlockFunction		  "simmechanics.library.joints.revolute_joint"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Axle-Tire B\nRevolute"
+		  SID			  "1937"
+		  Ports			  [0, 0, 0, 0, 0, 1, 1]
+		  Position		  [265, 150, 305, 190]
+		  LibraryVersion	  "1.1"
+		  FontName		  "Arial"
+		  FontSize		  12
+		  SourceBlock		  "sm_lib/Joints/Revolute Joint"
+		  SourceType		  ""
+		  ClassName		  "RevoluteJoint"
+		  SenseConstraintForceX	  "off"
+		  SenseConstraintForceY	  "off"
+		  SenseConstraintForceZ	  "off"
+		  SenseConstraintTorqueX  "off"
+		  SenseConstraintTorqueY  "off"
+		  SenseConstraintTorqueZ  "off"
+		  ConstraintWrenchDir	  "FollowerOnBase"
+		  ConstraintWrenchFrame	  "BaseFrame"
+		  EquilibriumPosition	  "0"
+		  EquilibriumPositionUnits "rad"
+		  SpringStiffness	  "0"
+		  SpringStiffnessUnits	  "N*m/rad"
+		  DampingCoefficient	  "0"
+		  DampingCoefficientUnits "N*m/(rad/s)"
+		  ActuationMode		  "NoActuation"
+		  SensePosition		  "off"
+		  SenseVelocity		  "off"
+		  SenseAcceleration	  "off"
+		  SenseTorqueForce	  "off"
+		  PositionTargetValue	  "0"
+		  PositionTargetValueUnits "rad"
+		  PositionTargetSpecify	  "off"
+		  PositionTargetPriority  "High"
+		  VelocityTargetValue	  "0"
+		  VelocityTargetValueUnits "rad/s"
+		  VelocityTargetSpecify	  "off"
+		  VelocityTargetPriority  "High"
+		  BlockFunction		  "simmechanics.library.joints.revolute_joint"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Tire A"
+		  SID			  "1938"
+		  Ports			  [0, 0, 0, 0, 0, 1]
+		  Position		  [40, 147, 80, 193]
+		  BlockRotation		  180
+		  FontName		  "Arial"
+		  FontSize		  12
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  MaskType		  "Tire"
+		  MaskPromptString	  "Tire radius (cm)|Rim radius (cm)|Tire thickness (cm)|Density (kg/m^3)|Color"
+		  MaskStyleString	  "edit,edit,edit,edit,edit"
+		  MaskVariables		  "Rt=@1;Rr=@2;Tt=@3;rho=@4;clr=@5;"
+		  MaskTunableValueString  "on,on,on,on,on"
+		  MaskCallbackString	  "||||"
+		  MaskEnableString	  "on,on,on,on,on"
+		  MaskVisibilityString	  "on,on,on,on,on"
+		  MaskToolTipString	  "on,on,on,on,on"
+		  MaskInitialization	  "theta = [(0:1:359) 0]'*pi/180;\nunit_circle = [cos(theta), sin(theta)];\ntire_sec = [Rt * un"
+		  "it_circle; Rr * flipud(unit_circle)];\n"
+		  MaskDisplay		  "image(imread('sm_wlandgear_tire.png'));\nport_label('LConn',1,'C');"
+		  MaskIconFrame		  on
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "port"
+		  MaskPortRotate	  "physical"
+		  MaskIconUnits		  "autoscale"
+		  MaskValueString	  "Scissor_Lift_Param.Cart.Axle.Tire.Radius|Scissor_Lift_Param.Cart.Axle.Rim.Radius|Scissor_Lift_P"
+		  "aram.Cart.Axle.Tire.Thickness|Scissor_Lift_Param.Cart.Axle.Tire.Density|Scissor_Lift_Param.Cart.Axle.Tire.Color"
+		  MaskTabNameString	  "Dimensions,Dimensions,Dimensions,Material Properties,Material Properties"
+		  System {
+		    Name		    "Tire A"
+		    Location		    [174, 419, 407, 513]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Tire"
+		    SID			    "1939"
+		    Ports		    [0, 0, 0, 0, 0, 0, 1]
+		    Position		    [120, 30, 160, 70]
+		    BlockMirror		    on
+		    NamePlacement	    "alternate"
+		    LibraryVersion	    "1.1"
+		    FontName		    "Arial"
+		    FontSize		    12
+		    SourceBlock		    "sm_lib/Body Elements/Solid"
+		    SourceType		    ""
+		    ClassName		    "Solid"
+		    InertiaType		    "CalculateFromGeometry"
+		    Mass		    "1"
+		    MassUnits		    "kg"
+		    CenterOfMass	    "[0 0 0]"
+		    CenterOfMassUnits	    "m"
+		    MomentsOfInertia	    "[1 1 1]"
+		    MomentsOfInertiaUnits   "kg*m^2"
+		    ProductsOfInertia	    "[0 0 0]"
+		    ProductsOfInertiaUnits  "kg*m^2"
+		    DensityBased	    "on"
+		    Density		    "rho"
+		    DensityUnits	    "kg/(m^3)"
+		    GraphicType		    "FromGeometry"
+		    MarkerShape		    "Sphere"
+		    MarkerSize		    "10"
+		    MarkerSizeUnits	    "m"
+		    GraphicVisPropType	    "SimpleVisualProperties"
+		    GraphicDiffuseColor	    "clr"
+		    GraphicSpecularColor    "[0.5 0.5 0.5 1.0]"
+		    GraphicAmbientColor	    "[0.5 0.0 0.0 1.0]"
+		    GraphicEmissiveColor    "[0.0 0.0 0.0 1.0]"
+		    GraphicShininess	    "75"
+		    GraphicOpacity	    "1.0"
+		    GeometryShape	    "GeneralExtrusion"
+		    RectangleSize	    "[1 1]"
+		    RectangleSizeUnits	    "m"
+		    BrickDimensions	    "[1 1 1]"
+		    BrickDimensionUnits	    "m"
+		    CylinderRadius	    "1"
+		    CylinderRadiusUnits	    "m"
+		    CylinderLength	    "1"
+		    CylinderLengthUnits	    "m"
+		    SphereRadius	    "1"
+		    SphereRadiusUnits	    "m"
+		    EllipsoidRadii	    "[1 1 1]"
+		    EllipsoidRadiiUnits	    "m"
+		    ExtrusionCrossSection   "tire_sec"
+		    ExtrusionCrossSectionUnits "cm"
+		    ExtrusionLength	    "Tt"
+		    ExtrusionLengthUnits    "cm"
+		    PolygonNumSides	    "3"
+		    PolygonOuterRadius	    "1"
+		    PolygonOuterRadiusUnits "m"
+		    ExtGeomFileUnits	    "m"
+		    BlockFunction	    "simmechanics.library.body_elements.solid"
+		    }
+		    Block {
+		    BlockType		    PMIOPort
+		    Name		    "C"
+		    SID			    "1940"
+		    Position		    [65, 40, 85, 60]
+		    FontName		    "Arial"
+		    FontSize		    12
+		    Port		    "1"
+		    Side		    "Left"
+		    }
+		    Line {
+		    LineType		    "Connection"
+		    SrcBlock		    "Tire"
+		    SrcPort		    RConn1
+		    DstBlock		    "C"
+		    DstPort		    RConn1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Tire B"
+		  SID			  "1941"
+		  Ports			  [0, 0, 0, 0, 0, 1]
+		  Position		  [335, 147, 375, 193]
+		  FontName		  "Arial"
+		  FontSize		  12
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  MaskType		  "Tire"
+		  MaskPromptString	  "Tire radius (cm)|Rim radius (cm)|Tire thickness (cm)|Density (kg/m^3)|Color"
+		  MaskStyleString	  "edit,edit,edit,edit,edit"
+		  MaskVariables		  "Rt=@1;Rr=@2;Tt=@3;rho=@4;clr=@5;"
+		  MaskTunableValueString  "on,on,on,on,on"
+		  MaskCallbackString	  "||||"
+		  MaskEnableString	  "on,on,on,on,on"
+		  MaskVisibilityString	  "on,on,on,on,on"
+		  MaskToolTipString	  "on,on,on,on,on"
+		  MaskInitialization	  "theta = [(0:1:359) 0]'*pi/180;\nunit_circle = [cos(theta), sin(theta)];\ntire_sec = [Rt * un"
+		  "it_circle; Rr * flipud(unit_circle)];\n"
+		  MaskDisplay		  "image(imread('sm_wlandgear_tire.png'));\nport_label('LConn',1,'C');"
+		  MaskIconFrame		  on
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "port"
+		  MaskPortRotate	  "physical"
+		  MaskIconUnits		  "autoscale"
+		  MaskValueString	  "Scissor_Lift_Param.Cart.Axle.Tire.Radius|Scissor_Lift_Param.Cart.Axle.Rim.Radius|Scissor_Lift_P"
+		  "aram.Cart.Axle.Tire.Thickness|Scissor_Lift_Param.Cart.Axle.Tire.Density|Scissor_Lift_Param.Cart.Axle.Tire.Color"
+		  MaskTabNameString	  "Dimensions,Dimensions,Dimensions,Material Properties,Material Properties"
+		  System {
+		    Name		    "Tire B"
+		    Location		    [269, 389, 502, 474]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Tire"
+		    SID			    "1942"
+		    Ports		    [0, 0, 0, 0, 0, 0, 1]
+		    Position		    [120, 30, 160, 70]
+		    BlockMirror		    on
+		    NamePlacement	    "alternate"
+		    LibraryVersion	    "1.1"
+		    FontName		    "Arial"
+		    FontSize		    12
+		    SourceBlock		    "sm_lib/Body Elements/Solid"
+		    SourceType		    ""
+		    ClassName		    "Solid"
+		    InertiaType		    "CalculateFromGeometry"
+		    Mass		    "1"
+		    MassUnits		    "kg"
+		    CenterOfMass	    "[0 0 0]"
+		    CenterOfMassUnits	    "m"
+		    MomentsOfInertia	    "[1 1 1]"
+		    MomentsOfInertiaUnits   "kg*m^2"
+		    ProductsOfInertia	    "[0 0 0]"
+		    ProductsOfInertiaUnits  "kg*m^2"
+		    DensityBased	    "on"
+		    Density		    "rho"
+		    DensityUnits	    "kg/(m^3)"
+		    GraphicType		    "FromGeometry"
+		    MarkerShape		    "Sphere"
+		    MarkerSize		    "10"
+		    MarkerSizeUnits	    "m"
+		    GraphicVisPropType	    "SimpleVisualProperties"
+		    GraphicDiffuseColor	    "clr"
+		    GraphicSpecularColor    "[0.5 0.5 0.5 1.0]"
+		    GraphicAmbientColor	    "[0.5 0.0 0.0 1.0]"
+		    GraphicEmissiveColor    "[0.0 0.0 0.0 1.0]"
+		    GraphicShininess	    "75"
+		    GraphicOpacity	    "1.0"
+		    GeometryShape	    "GeneralExtrusion"
+		    RectangleSize	    "[1 1]"
+		    RectangleSizeUnits	    "m"
+		    BrickDimensions	    "[1 1 1]"
+		    BrickDimensionUnits	    "m"
+		    CylinderRadius	    "1"
+		    CylinderRadiusUnits	    "m"
+		    CylinderLength	    "1"
+		    CylinderLengthUnits	    "m"
+		    SphereRadius	    "1"
+		    SphereRadiusUnits	    "m"
+		    EllipsoidRadii	    "[1 1 1]"
+		    EllipsoidRadiiUnits	    "m"
+		    ExtrusionCrossSection   "tire_sec"
+		    ExtrusionCrossSectionUnits "cm"
+		    ExtrusionLength	    "Tt"
+		    ExtrusionLengthUnits    "cm"
+		    PolygonNumSides	    "3"
+		    PolygonOuterRadius	    "1"
+		    PolygonOuterRadiusUnits "m"
+		    ExtGeomFileUnits	    "m"
+		    BlockFunction	    "simmechanics.library.body_elements.solid"
+		    }
+		    Block {
+		    BlockType		    PMIOPort
+		    Name		    "C"
+		    SID			    "1943"
+		    Position		    [65, 40, 85, 60]
+		    FontName		    "Arial"
+		    FontSize		    12
+		    Port		    "1"
+		    Side		    "Left"
+		    }
+		    Line {
+		    LineType		    "Connection"
+		    SrcBlock		    "Tire"
+		    SrcPort		    RConn1
+		    DstBlock		    "C"
+		    DstPort		    RConn1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Transform\nAxle CG"
+		  SID			  "1944"
+		  Ports			  [0, 0, 0, 0, 0, 1, 1]
+		  Position		  [80, 25, 120, 65]
+		  ZOrder		  2
+		  LibraryVersion	  "1.1"
+		  FontName		  "Arial"
+		  FontSize		  12
+		  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+		  SourceType		  ""
+		  ClassName		  "RigidTransform"
+		  TranslationMethod	  "Cartesian"
+		  TranslationLengthUnit	  "cm"
+		  TranslationStandardAxis "+Z"
+		  TranslationStandardOffset "0"
+		  TranslationCartesianOffset "[Scissor_Lift_Param.Cart.Axle.Tire.Radius -Scissor_Lift_Param.Cart.Axle.Tire.Radius 0]"
+		  TranslationROffset	  "0"
+		  TranslationROffsetUnits "m"
+		  TranslationZOffset	  "0"
+		  TranslationZOffsetUnits "m"
+		  TranslationThetaOffset  "0"
+		  TranslationThetaOffsetUnits "deg"
+		  RotationMethod	  "None"
+		  RotationAngleUnits	  "deg"
+		  RotationStandardAxis	  "+X"
+		  RotationAngle		  "90"
+		  RotationArbitraryAxis	  "[0 0 1]"
+		  FollAlignAxisA	  "+X"
+		  BaseAlignAxisA	  "+Y"
+		  FollAlignAxisB	  "+Y"
+		  BaseAlignAxisB	  "+Z"
+		  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+		}
+		Block {
+		  BlockType		  PMIOPort
+		  Name			  "P"
+		  SID			  "1945"
+		  Position		  [25, 38, 55, 52]
+		  FontName		  "Arial"
+		  FontSize		  12
+		  Port			  "1"
+		  Side			  "Left"
+		}
+		Line {
+		  LineType		  "Connection"
+		  SrcBlock		  "P"
+		  SrcPort		  RConn1
+		  DstBlock		  "Transform\nAxle CG"
+		  DstPort		  LConn1
+		}
+		Line {
+		  LineType		  "Connection"
+		  SrcBlock		  "Transform\nAxle CG"
+		  SrcPort		  RConn1
+		  Points		  [80, 0]
+		  DstBlock		  "Axle"
+		  DstPort		  LConn1
+		}
+		Line {
+		  LineType		  "Connection"
+		  SrcBlock		  "Axle-Tire A\nRevolute"
+		  SrcPort		  RConn1
+		  DstBlock		  "Tire A"
+		  DstPort		  LConn1
+		}
+		Line {
+		  LineType		  "Connection"
+		  SrcBlock		  "Axle-Tire B\nRevolute"
+		  SrcPort		  RConn1
+		  DstBlock		  "Tire B"
+		  DstPort		  LConn1
+		}
+		Line {
+		  LineType		  "Connection"
+		  SrcBlock		  "Axle-Tire B\nRevolute"
+		  SrcPort		  LConn1
+		  DstBlock		  "Axle"
+		  DstPort		  RConn2
+		}
+		Line {
+		  LineType		  "Connection"
+		  SrcBlock		  "Axle-Tire A\nRevolute"
+		  SrcPort		  LConn1
+		  Points		  [15, 0]
+		  DstBlock		  "Axle"
+		  DstPort		  RConn1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Transform\nPlatform\nSurface"
+	      SID		      "1946"
+	      Ports		      [0, 0, 0, 0, 0, 1, 1]
+	      Position		      [70, 70, 110, 110]
+	      ZOrder		      2
+	      BlockRotation	      270
+	      NamePlacement	      "alternate"
+	      LibraryVersion	      "1.1"
+	      FontName		      "Arial"
+	      FontSize		      12
+	      SourceBlock	      "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	      SourceType	      ""
+	      ClassName		      "RigidTransform"
+	      TranslationMethod	      "Cartesian"
+	      TranslationLengthUnit   "cm"
+	      TranslationStandardAxis "+Y"
+	      TranslationStandardOffset	"Scissor_Lift_Param.Cart.Platform.Height/2"
+	      TranslationCartesianOffset "[0 Scissor_Lift_Param.Cart.Platform.Height/2 0]"
+	      TranslationROffset      "0"
+	      TranslationROffsetUnits "m"
+	      TranslationZOffset      "0"
+	      TranslationZOffsetUnits "m"
+	      TranslationThetaOffset  "0"
+	      TranslationThetaOffsetUnits "deg"
+	      RotationMethod	      "None"
+	      RotationAngleUnits      "deg"
+	      RotationStandardAxis    "+X"
+	      RotationAngle	      "90"
+	      RotationArbitraryAxis   "[0 0 1]"
+	      FollAlignAxisA	      "+X"
+	      BaseAlignAxisA	      "+Y"
+	      FollAlignAxisB	      "+Y"
+	      BaseAlignAxisB	      "+Z"
+	      BlockFunction	      "simmechanics.library.frames_transforms.rigid_transform"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Transform\nPlatform\nThickness"
+	      SID		      "1947"
+	      Ports		      [0, 0, 0, 0, 0, 1, 1]
+	      Position		      [70, 185, 110, 225]
+	      ZOrder		      2
+	      BlockRotation	      270
+	      NamePlacement	      "alternate"
+	      LibraryVersion	      "1.1"
+	      FontName		      "Arial"
+	      FontSize		      12
+	      SourceBlock	      "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	      SourceType	      ""
+	      ClassName		      "RigidTransform"
+	      TranslationMethod	      "StandardAxis"
+	      TranslationLengthUnit   "cm"
+	      TranslationStandardAxis "+Z"
+	      TranslationStandardOffset	"Scissor_Lift_Param.Cart.Platform.Height/2"
+	      TranslationCartesianOffset "[0 0 0]"
+	      TranslationROffset      "0"
+	      TranslationROffsetUnits "m"
+	      TranslationZOffset      "0"
+	      TranslationZOffsetUnits "m"
+	      TranslationThetaOffset  "0"
+	      TranslationThetaOffsetUnits "deg"
+	      RotationMethod	      "StandardAxis"
+	      RotationAngleUnits      "deg"
+	      RotationStandardAxis    "+X"
+	      RotationAngle	      "90"
+	      RotationArbitraryAxis   "[0 0 1]"
+	      FollAlignAxisA	      "+X"
+	      BaseAlignAxisA	      "+Y"
+	      FollAlignAxisB	      "+Y"
+	      BaseAlignAxisB	      "+Z"
+	      BlockFunction	      "simmechanics.library.frames_transforms.rigid_transform"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Transform\nPlatform Edge"
+	      SID		      "1948"
+	      Ports		      [0, 0, 0, 0, 0, 1, 1]
+	      Position		      [180, 120, 220, 160]
+	      ZOrder		      2
+	      LibraryVersion	      "1.1"
+	      FontName		      "Arial"
+	      FontSize		      12
+	      SourceBlock	      "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	      SourceType	      ""
+	      ClassName		      "RigidTransform"
+	      TranslationMethod	      "Cartesian"
+	      TranslationLengthUnit   "cm"
+	      TranslationStandardAxis "+Z"
+	      TranslationStandardOffset	"0"
+	      TranslationCartesianOffset "[Scissor_Lift_Param.Cart.Platform.Length 0 -Scissor_Lift_Param.Cart.Platform.Width]"
+	      "/2"
+	      TranslationROffset      "0"
+	      TranslationROffsetUnits "m"
+	      TranslationZOffset      "0"
+	      TranslationZOffsetUnits "m"
+	      TranslationThetaOffset  "0"
+	      TranslationThetaOffsetUnits "deg"
+	      RotationMethod	      "None"
+	      RotationAngleUnits      "deg"
+	      RotationStandardAxis    "+X"
+	      RotationAngle	      "90"
+	      RotationArbitraryAxis   "[0 0 1]"
+	      FollAlignAxisA	      "+X"
+	      BaseAlignAxisA	      "+Y"
+	      FollAlignAxisB	      "+Y"
+	      BaseAlignAxisB	      "+Z"
+	      BlockFunction	      "simmechanics.library.frames_transforms.rigid_transform"
+	    }
+	    Block {
+	      BlockType		      PMIOPort
+	      Name		      " B"
+	      SID		      "1949"
+	      Position		      [75, 25, 105, 40]
+	      BlockRotation	      270
+	      BlockMirror	      on
+	      FontName		      "Arial"
+	      FontSize		      12
+	      Port		      "1"
+	      Side		      "Right"
+	    }
+	    Block {
+	      BlockType		      PMIOPort
+	      Name		      "Ref"
+	      SID		      "1950"
+	      Position		      [75, 250, 105, 265]
+	      BlockRotation	      270
+	      FontName		      "Arial"
+	      FontSize		      12
+	      Port		      "2"
+	      Side		      "Left"
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "Transform\nPlatform\nSurface"
+	      SrcPort		      RConn1
+	      DstBlock		      " B"
+	      DstPort		      RConn1
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "Transform\nPlatform\nThickness"
+	      SrcPort		      LConn1
+	      DstBlock		      "Ref"
+	      DstPort		      RConn1
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      SrcBlock		      "Platform"
+	      SrcPort		      LConn1
+	      DstBlock		      "Transform\nPlatform Edge"
+	      DstPort		      RConn1
+	    }
+	    Line {
+	      LineType		      "Connection"
+	      FontName		      "Arial"
+	      FontSize		      12
+	      Points		      [145, 140; 0, -85; 5, 0]
+	      DstBlock		      "Front Axle"
+	      DstPort		      LConn1
+	      Branch {
+		ConnectType		"SRC_SRC"
+		Points			[0, 85]
+		DstBlock		"Rear Axle"
+		DstPort			LConn1
+	      }
+	      Branch {
+		ConnectType		"SRC_SRC"
+		Points			[-55, 0]
+		Branch {
+		  ConnectType		  "DEST_SRC"
+		  DstBlock		  "Transform\nPlatform\nSurface"
+		  DstPort		  LConn1
+		}
+		Branch {
+		  ConnectType		  "DEST_DEST"
+		  SrcBlock		  "Transform\nPlatform\nThickness"
+		  SrcPort		  RConn1
+		  Points		  [0, -30]
+		}
+	      }
+	      Branch {
+		ConnectType		"SRC_DEST"
+		SrcBlock		"Transform\nPlatform Edge"
+		SrcPort			LConn1
+		Points			[-20, 0]
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "LO"
+	  SID			  "1951"
+	  Position		  [35, 25, 65, 40]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "1"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "LI"
+	  SID			  "1952"
+	  Position		  [130, 25, 160, 40]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "2"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "RI"
+	  SID			  "1953"
+	  Position		  [325, 25, 355, 40]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "3"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "RO"
+	  SID			  "1954"
+	  Position		  [440, 25, 470, 40]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "4"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "Ref"
+	  SID			  "1955"
+	  Position		  [230, 330, 260, 345]
+	  BlockRotation		  270
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "5"
+	  Side			  "Left"
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Pris\nRoller LO"
+	  SrcPort		  LConn1
+	  Points		  [0, 15]
+	  DstBlock		  "Transform\nLBlockTrack"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Pris\nRoller LO"
+	  SrcPort		  RConn1
+	  DstBlock		  "Roller\nLI"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Transform\nLBlockTrack"
+	  SrcPort		  LConn1
+	  Points		  [20, 0]
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "Base\nLI"
+	    SrcPort		    LConn1
+	    Points		    [0, 85]
+	  }
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "Transform\nLBlock"
+	    DstPort		    RConn1
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Transform\nRBlockTrack"
+	  SrcPort		  LConn1
+	  Points		  [-20, 0]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "Base\nRI"
+	    DstPort		    LConn1
+	  }
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "Transform\nRBlock"
+	    SrcPort		    RConn1
+	    Points		    [10, 0]
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Pris\nRoller RI"
+	  SrcPort		  LConn1
+	  Points		  [0, 15]
+	  DstBlock		  "Transform\nRBlockTrack"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Pris\nRoller RI"
+	  SrcPort		  RConn1
+	  DstBlock		  "Roller\nRI"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Ref"
+	  SrcPort		  RConn1
+	  DstBlock		  "Wheels"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "LO"
+	  SrcPort		  RConn1
+	  DstBlock		  "Roller\nLI"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "LI"
+	  SrcPort		  RConn1
+	  DstBlock		  "Base\nLI"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "RO"
+	  SrcPort		  RConn1
+	  DstBlock		  "Roller\nRI"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "RI"
+	  SrcPort		  RConn1
+	  DstBlock		  "Base\nRI"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Points		  [245, 220; -15, 0]
+	  DstBlock		  "Transform\nLBlock"
+	  DstPort		  LConn1
+	  Branch {
+	    ConnectType		    "SRC_SRC"
+	    DstBlock		    "Wheels"
+	    DstPort		    RConn1
+	  }
+	  Branch {
+	    ConnectType		    "SRC_DEST"
+	    SrcBlock		    "Transform\nRBlock"
+	    SrcPort		    LConn1
+	    Points		    [-15, 0]
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux"
+      SID		      "1721"
+      Ports		      [1, 2]
+      Position		      [80, 16, 85, 54]
+      ZOrder		      -7
+      ShowName		      off
+      FontName		      "Arial"
+      FontSize		      12
+      Outputs		      "2"
+      DisplayOption	      "bar"
+      Port {
+	PortNumber		1
+	Name			"Position"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		2
+	Name			"Velocity"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Mechanism \nConfiguration"
+      SID		      "1831"
+      Ports		      [0, 0, 0, 0, 0, 0, 1]
+      Position		      [120, 440, 160, 480]
+      ZOrder		      1
+      LibraryVersion	      "1.1"
+      FontName		      "Arial"
+      FontSize		      12
+      SourceBlock	      "sm_lib/Utilities/Mechanism \nConfiguration"
+      SourceType	      ""
+      ClassName		      "MechanismConfiguration"
+      GravityVector	      "[0 0 -9.81]"
+      GravityUnits	      "m/s^2"
+      AllowGravitySignal      "off"
+      LinearizationDelta      "0.001"
+      BlockFunction	      "simmechanics.library.utilities.mechanism_configuration"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Solver\nConfiguration"
+      SID		      "1832"
+      Ports		      [0, 0, 0, 0, 0, 0, 1]
+      Position		      [65, 419, 110, 451]
+      ZOrder		      3
+      NamePlacement	      "alternate"
+      LibraryVersion	      "1.1"
+      FontName		      "Arial"
+      FontSize		      12
+      SourceBlock	      "nesl_utility/Solver\nConfiguration"
+      SourceType	      "Solver\nConfiguration"
+      PhysicalDomain	      "network_engine_domain"
+      LeftPortType	      "input"
+      RightPortType	      "generic"
+      SubClassName	      "solver"
+      UseCustomDae	      off
+      DoDC		      off
+      ResidualTolerance	      "1e-9"
+      UseLocalSolver	      off
+      LocalSolverChoice	      "NE_BACKWARD_EULER_ADVANCER"
+      LocalSolverSampleTime   ".001"
+      DoFixedCost	      off
+      MaxNonlinIter	      "3"
+      MaxModeIter	      "2"
+      LinearAlgebra	      "Sparse"
+      Accelerate	      off
+      Profile		      off
+      UseLocalSampling	      off
+      DelaysMemoryBudget      "1024"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Stage 1"
+      SID		      "1833"
+      Ports		      [0, 0, 0, 0, 0, 5, 5]
+      Position		      [84, 275, 296, 325]
+      BlockRotation	      270
+      BlockMirror	      on
+      FontName		      "Arial"
+      FontSize		      12
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Stage 1"
+	Location		[76, 210, 517, 636]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Bracket"
+	  SID			  "1834"
+	  Ports			  [0, 0, 0, 0, 0, 1, 2]
+	  Position		  [192, 270, 243, 310]
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Bracket"
+	  SourceType		  "Actuation Bracket"
+	  fl_w			  "Scissor_Lift_Param.Actuator.Bracket.Flange.Width"
+	  fl_h			  "Scissor_Lift_Param.Actuator.Bracket.Flange.Height"
+	  T			  "Scissor_Lift_Param.Actuator.Bracket.Flange.Thickness"
+	  W			  "Scissor_Lift_Param.Actuator.Bracket.Flange.Offset"
+	  flupdown		  "Down"
+	  flfrontrear		  "Rear"
+	  fl_density		  "Scissor_Lift_Param.Actuator.Bracket.Flange.Density"
+	  fl_clr		  "Scissor_Lift_Param.Actuator.Bracket.Flange.Color"
+	  fl_opc		  "Scissor_Lift_Param.Actuator.Bracket.Flange.Opacity"
+	  shaft_length		  "Scissor_Lift_Param.Link_Separation.Outer_Outer-Scissor_Lift_Param.Link_Separation.Outer_Inner*2"
+	  shaft_radius		  "Scissor_Lift_Param.Actuator.Bracket.Shaft.Radius"
+	  shaft_density		  "Scissor_Lift_Param.Actuator.Bracket.Shaft.Density"
+	  shaft_color		  "Scissor_Lift_Param.Actuator.Bracket.Shaft.Color"
+	  shaft_opacity		  "Scissor_Lift_Param.Actuator.Bracket.Shaft.Opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "FShaft"
+	  SID			  "1835"
+	  Ports			  [0, 0, 0, 0, 0, 2, 2]
+	  Position		  [175, 65, 250, 105]
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/FShaft"
+	  SourceType		  "Transverse Shaft"
+	  sep_outer_outer	  "Scissor_Lift_Param.Link_Separation.Outer_Outer"
+	  sep_outer_inner	  "Scissor_Lift_Param.Link_Separation.Outer_Inner"
+	  shaft_radius		  "Scissor_Lift_Param.Trans_Shaft.Radius"
+	  shaft_density		  "Scissor_Lift_Param.Trans_Shaft.Density"
+	  shaft_color		  "Scissor_Lift_Param.Trans_Shaft.Color"
+	  shaft_opacity		  "Scissor_Lift_Param.Trans_Shaft.Opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "LX"
+	  SID			  "1836"
+	  Ports			  [0, 0, 0, 0, 0, 2, 2]
+	  Position		  [30, 210, 165, 275]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/RX"
+	  SourceType		  "Scissor Lift Crossbar"
+	  link_length		  "Scissor_Lift_Param.Link.Length"
+	  link_width		  "Scissor_Lift_Param.Link.Width"
+	  link_thickness	  "Scissor_Lift_Param.Link.Thickness"
+	  link_hole_radius	  "Scissor_Lift_Param.Link.Hole_Radius"
+	  link_density		  "Scissor_Lift_Param.Link.Density"
+	  link_color		  "Scissor_Lift_Param.Link.Color"
+	  link_opacity		  "Scissor_Lift_Param.Link.Opacity"
+	  shaft_length		  "Scissor_Lift_Param.Link_Separation.Outer_Inner"
+	  shaft_radius		  "Scissor_Lift_Param.Link_Pin.Radius"
+	  shaft_density		  "Scissor_Lift_Param.Link_Pin.Density"
+	  shaft_color		  "Scissor_Lift_Param.Link_Pin.Color"
+	  shaft_opacity		  "Scissor_Lift_Param.Link_Pin.Opacity"
+	  leftright		  "Left"
+	  imgfile		  "Crossbar_RX_IMAGE.jpg"
+	  L1Port		  "OU"
+	  L2Port		  "IU"
+	  R1Port		  "OL"
+	  R2Port		  "IL"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "RShaft"
+	  SID			  "1837"
+	  Ports			  [0, 0, 0, 0, 0, 2, 2]
+	  Position		  [175, 130, 250, 170]
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/FShaft"
+	  SourceType		  "Transverse Shaft"
+	  sep_outer_outer	  "Scissor_Lift_Param.Link_Separation.Outer_Outer"
+	  sep_outer_inner	  "Scissor_Lift_Param.Link_Separation.Outer_Inner"
+	  shaft_radius		  "Scissor_Lift_Param.Trans_Shaft.Radius"
+	  shaft_density		  "Scissor_Lift_Param.Trans_Shaft.Density"
+	  shaft_color		  "Scissor_Lift_Param.Trans_Shaft.Color"
+	  shaft_opacity		  "Scissor_Lift_Param.Trans_Shaft.Opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "RX"
+	  SID			  "1838"
+	  Ports			  [0, 0, 0, 0, 0, 2, 2]
+	  Position		  [260, 210, 395, 275]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/RX"
+	  SourceType		  "Scissor Lift Crossbar"
+	  link_length		  "Scissor_Lift_Param.Link.Length"
+	  link_width		  "Scissor_Lift_Param.Link.Width"
+	  link_thickness	  "Scissor_Lift_Param.Link.Thickness"
+	  link_hole_radius	  "Scissor_Lift_Param.Link.Hole_Radius"
+	  link_density		  "Scissor_Lift_Param.Link.Density"
+	  link_color		  "Scissor_Lift_Param.Link.Color"
+	  link_opacity		  "Scissor_Lift_Param.Link.Opacity"
+	  shaft_length		  "Scissor_Lift_Param.Link_Separation.Outer_Inner"
+	  shaft_radius		  "Scissor_Lift_Param.Link_Pin.Radius"
+	  shaft_density		  "Scissor_Lift_Param.Link_Pin.Density"
+	  shaft_color		  "Scissor_Lift_Param.Link_Pin.Color"
+	  shaft_opacity		  "Scissor_Lift_Param.Link_Pin.Opacity"
+	  leftright		  "Right"
+	  imgfile		  "Crossbar_RX_IMAGE.jpg"
+	  L1Port		  "OU"
+	  L2Port		  "IU"
+	  R1Port		  "OL"
+	  R2Port		  "IL"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Rev\nLfIn"
+	  SID			  "1839"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [110, 305, 150, 345]
+	  ZOrder		  9
+	  BlockRotation		  270
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Joints/Revolute Joint"
+	  SourceType		  ""
+	  ClassName		  "RevoluteJoint"
+	  SenseConstraintForceX	  "off"
+	  SenseConstraintForceY	  "off"
+	  SenseConstraintForceZ	  "off"
+	  SenseConstraintTorqueX  "off"
+	  SenseConstraintTorqueY  "off"
+	  SenseConstraintTorqueZ  "off"
+	  ConstraintWrenchDir	  "FollowerOnBase"
+	  ConstraintWrenchFrame	  "BaseFrame"
+	  EquilibriumPosition	  "0"
+	  EquilibriumPositionUnits "rad"
+	  SpringStiffness	  "0"
+	  SpringStiffnessUnits	  "N*m/rad"
+	  DampingCoefficient	  "0"
+	  DampingCoefficientUnits "N*m/(rad/s)"
+	  ActuationMode		  "NoActuation"
+	  SensePosition		  "off"
+	  SenseVelocity		  "off"
+	  SenseAcceleration	  "off"
+	  SenseTorqueForce	  "off"
+	  PositionTargetValue	  "0"
+	  PositionTargetValueUnits "deg"
+	  PositionTargetSpecify	  "off"
+	  PositionTargetPriority  "Low"
+	  VelocityTargetValue	  "0"
+	  VelocityTargetValueUnits "rad/s"
+	  VelocityTargetSpecify	  "off"
+	  VelocityTargetPriority  "High"
+	  BlockFunction		  "simmechanics.library.joints.revolute_joint"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Rev\nLfOut"
+	  SID			  "1840"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [45, 305, 85, 345]
+	  ZOrder		  9
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Joints/Revolute Joint"
+	  SourceType		  ""
+	  ClassName		  "RevoluteJoint"
+	  SenseConstraintForceX	  "off"
+	  SenseConstraintForceY	  "off"
+	  SenseConstraintForceZ	  "off"
+	  SenseConstraintTorqueX  "off"
+	  SenseConstraintTorqueY  "off"
+	  SenseConstraintTorqueZ  "off"
+	  ConstraintWrenchDir	  "FollowerOnBase"
+	  ConstraintWrenchFrame	  "BaseFrame"
+	  EquilibriumPosition	  "0"
+	  EquilibriumPositionUnits "rad"
+	  SpringStiffness	  "0"
+	  SpringStiffnessUnits	  "N*m/rad"
+	  DampingCoefficient	  "0"
+	  DampingCoefficientUnits "N*m/(rad/s)"
+	  ActuationMode		  "NoActuation"
+	  SensePosition		  "off"
+	  SenseVelocity		  "off"
+	  SenseAcceleration	  "off"
+	  SenseTorqueForce	  "off"
+	  PositionTargetValue	  "Scissor_Lift_Param.Crossbar.Init_Angle_Target"
+	  PositionTargetValueUnits "deg"
+	  PositionTargetSpecify	  "on"
+	  PositionTargetPriority  "Low"
+	  VelocityTargetValue	  "0"
+	  VelocityTargetValueUnits "rad/s"
+	  VelocityTargetSpecify	  "off"
+	  VelocityTargetPriority  "High"
+	  BlockFunction		  "simmechanics.library.joints.revolute_joint"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Rev\nRtIn"
+	  SID			  "1841"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [275, 305, 315, 345]
+	  ZOrder		  9
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Joints/Revolute Joint"
+	  SourceType		  ""
+	  ClassName		  "RevoluteJoint"
+	  SenseConstraintForceX	  "off"
+	  SenseConstraintForceY	  "off"
+	  SenseConstraintForceZ	  "off"
+	  SenseConstraintTorqueX  "off"
+	  SenseConstraintTorqueY  "off"
+	  SenseConstraintTorqueZ  "off"
+	  ConstraintWrenchDir	  "FollowerOnBase"
+	  ConstraintWrenchFrame	  "BaseFrame"
+	  EquilibriumPosition	  "0"
+	  EquilibriumPositionUnits "rad"
+	  SpringStiffness	  "0"
+	  SpringStiffnessUnits	  "N*m/rad"
+	  DampingCoefficient	  "0"
+	  DampingCoefficientUnits "N*m/(rad/s)"
+	  ActuationMode		  "NoActuation"
+	  SensePosition		  "off"
+	  SenseVelocity		  "off"
+	  SenseAcceleration	  "off"
+	  SenseTorqueForce	  "off"
+	  PositionTargetValue	  "0"
+	  PositionTargetValueUnits "deg"
+	  PositionTargetSpecify	  "off"
+	  PositionTargetPriority  "Low"
+	  VelocityTargetValue	  "0"
+	  VelocityTargetValueUnits "rad/s"
+	  VelocityTargetSpecify	  "off"
+	  VelocityTargetPriority  "High"
+	  BlockFunction		  "simmechanics.library.joints.revolute_joint"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Rev\nRtOut"
+	  SID			  "1842"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [340, 305, 380, 345]
+	  ZOrder		  9
+	  BlockRotation		  270
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Joints/Revolute Joint"
+	  SourceType		  ""
+	  ClassName		  "RevoluteJoint"
+	  SenseConstraintForceX	  "off"
+	  SenseConstraintForceY	  "off"
+	  SenseConstraintForceZ	  "off"
+	  SenseConstraintTorqueX  "off"
+	  SenseConstraintTorqueY  "off"
+	  SenseConstraintTorqueZ  "off"
+	  ConstraintWrenchDir	  "FollowerOnBase"
+	  ConstraintWrenchFrame	  "BaseFrame"
+	  EquilibriumPosition	  "0"
+	  EquilibriumPositionUnits "rad"
+	  SpringStiffness	  "0"
+	  SpringStiffnessUnits	  "N*m/rad"
+	  DampingCoefficient	  "0"
+	  DampingCoefficientUnits "N*m/(rad/s)"
+	  ActuationMode		  "NoActuation"
+	  SensePosition		  "off"
+	  SenseVelocity		  "off"
+	  SenseAcceleration	  "off"
+	  SenseTorqueForce	  "off"
+	  PositionTargetValue	  "0"
+	  PositionTargetValueUnits "deg"
+	  PositionTargetSpecify	  "off"
+	  PositionTargetPriority  "Low"
+	  VelocityTargetValue	  "0"
+	  VelocityTargetValueUnits "rad/s"
+	  VelocityTargetSpecify	  "off"
+	  VelocityTargetPriority  "High"
+	  BlockFunction		  "simmechanics.library.joints.revolute_joint"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "A"
+	  SID			  "1843"
+	  Position		  [213, 365, 227, 395]
+	  BlockRotation		  270
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "1"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "RLO"
+	  SID			  "1844"
+	  Position		  [73, 20, 87, 50]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "2"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "FLI"
+	  SID			  "1845"
+	  Position		  [113, 20, 127, 50]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "3"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "FRI"
+	  SID			  "1846"
+	  Position		  [298, 15, 312, 45]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "4"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "RRO"
+	  SID			  "1847"
+	  Position		  [338, 15, 352, 45]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "5"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "X"
+	  SID			  "1848"
+	  Position		  [193, 365, 207, 395]
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "6"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "LO"
+	  SID			  "1849"
+	  Position		  [50, 380, 80, 395]
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "7"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "LI"
+	  SID			  "1850"
+	  Position		  [115, 380, 145, 395]
+	  BlockRotation		  270
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "8"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "RI"
+	  SID			  "1851"
+	  Position		  [280, 380, 310, 395]
+	  BlockRotation		  270
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "9"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "RO"
+	  SID			  "1852"
+	  Position		  [345, 380, 375, 395]
+	  BlockRotation		  270
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "10"
+	  Side			  "Right"
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "A"
+	  SrcPort		  RConn1
+	  Points		  [0, -10]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    Points		    [-20, 0]
+	    DstBlock		    "X"
+	    DstPort		    RConn1
+	  }
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "Bracket"
+	    DstPort		    LConn1
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "RO"
+	  SrcPort		  RConn1
+	  DstBlock		  "Rev\nRtOut"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "RI"
+	  SrcPort		  RConn1
+	  DstBlock		  "Rev\nRtIn"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "LO"
+	  SrcPort		  RConn1
+	  DstBlock		  "Rev\nLfOut"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "LI"
+	  SrcPort		  RConn1
+	  DstBlock		  "Rev\nLfIn"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Rev\nRtOut"
+	  SrcPort		  RConn1
+	  DstBlock		  "RX"
+	  DstPort		  RConn2
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Rev\nRtIn"
+	  SrcPort		  RConn1
+	  DstBlock		  "RX"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Bracket"
+	  SrcPort		  RConn2
+	  Points		  [0, -70; 65, 0]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    Points		    [0, -25]
+	    DstBlock		    "RShaft"
+	    DstPort		    RConn2
+	  }
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "RX"
+	    SrcPort		    LConn1
+	    Points		    [0, -10]
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "RShaft"
+	  SrcPort		  RConn1
+	  Points		  [80, 0]
+	  DstBlock		  "RRO"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "RShaft"
+	  SrcPort		  LConn1
+	  Points		  [-80, 0]
+	  DstBlock		  "RLO"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Rev\nLfIn"
+	  SrcPort		  RConn1
+	  DstBlock		  "LX"
+	  DstPort		  RConn2
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Rev\nLfOut"
+	  SrcPort		  RConn1
+	  DstBlock		  "LX"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Bracket"
+	  SrcPort		  RConn1
+	  Points		  [0, -70; -75, 0]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    Points		    [0, -25]
+	    DstBlock		    "RShaft"
+	    DstPort		    LConn2
+	  }
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "LX"
+	    SrcPort		    LConn2
+	    Points		    [0, -10]
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "FShaft"
+	  SrcPort		  RConn2
+	  Points		  [40, 0]
+	  DstBlock		  "FRI"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "FShaft"
+	  SrcPort		  RConn1
+	  Points		  [95, 0]
+	  DstBlock		  "RX"
+	  DstPort		  LConn2
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "FShaft"
+	  SrcPort		  LConn2
+	  Points		  [-40, 0]
+	  DstBlock		  "FLI"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "FShaft"
+	  SrcPort		  LConn1
+	  Points		  [-95, 0]
+	  DstBlock		  "LX"
+	  DstPort		  LConn1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Stage 2"
+      SID		      "1853"
+      Ports		      [0, 0, 0, 0, 0, 4, 4]
+      Position		      [128, 185, 292, 235]
+      BlockRotation	      270
+      BlockMirror	      on
+      FontName		      "Arial"
+      FontSize		      12
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Stage 2"
+	Location		[42, 198, 483, 624]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "FShaft"
+	  SID			  "1854"
+	  Ports			  [0, 0, 0, 0, 0, 2, 2]
+	  Position		  [175, 75, 250, 115]
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/FShaft"
+	  SourceType		  "Transverse Shaft"
+	  sep_outer_outer	  "Scissor_Lift_Param.Link_Separation.Outer_Outer"
+	  sep_outer_inner	  "Scissor_Lift_Param.Link_Separation.Outer_Inner"
+	  shaft_radius		  "Scissor_Lift_Param.Trans_Shaft.Radius"
+	  shaft_density		  "Scissor_Lift_Param.Trans_Shaft.Density"
+	  shaft_color		  "Scissor_Lift_Param.Trans_Shaft.Color"
+	  shaft_opacity		  "Scissor_Lift_Param.Trans_Shaft.Opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "LX"
+	  SID			  "1855"
+	  Ports			  [0, 0, 0, 0, 0, 2, 2]
+	  Position		  [30, 200, 165, 265]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/RX"
+	  SourceType		  "Scissor Lift Crossbar"
+	  link_length		  "Scissor_Lift_Param.Link.Length"
+	  link_width		  "Scissor_Lift_Param.Link.Width"
+	  link_thickness	  "Scissor_Lift_Param.Link.Thickness"
+	  link_hole_radius	  "Scissor_Lift_Param.Link.Hole_Radius"
+	  link_density		  "Scissor_Lift_Param.Link.Density"
+	  link_color		  "Scissor_Lift_Param.Link.Color"
+	  link_opacity		  "Scissor_Lift_Param.Link.Opacity"
+	  shaft_length		  "Scissor_Lift_Param.Link_Separation.Outer_Inner"
+	  shaft_radius		  "Scissor_Lift_Param.Link_Pin.Radius"
+	  shaft_density		  "Scissor_Lift_Param.Link_Pin.Density"
+	  shaft_color		  "Scissor_Lift_Param.Link_Pin.Color"
+	  shaft_opacity		  "Scissor_Lift_Param.Link_Pin.Opacity"
+	  leftright		  "Left"
+	  imgfile		  "Crossbar_RX_IMAGE.jpg"
+	  L1Port		  "OU"
+	  L2Port		  "IU"
+	  R1Port		  "OL"
+	  R2Port		  "IL"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "RShaft"
+	  SID			  "1856"
+	  Ports			  [0, 0, 0, 0, 0, 2, 2]
+	  Position		  [175, 140, 250, 180]
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/FShaft"
+	  SourceType		  "Transverse Shaft"
+	  sep_outer_outer	  "Scissor_Lift_Param.Link_Separation.Outer_Outer"
+	  sep_outer_inner	  "Scissor_Lift_Param.Link_Separation.Outer_Inner"
+	  shaft_radius		  "Scissor_Lift_Param.Trans_Shaft.Radius"
+	  shaft_density		  "Scissor_Lift_Param.Trans_Shaft.Density"
+	  shaft_color		  "Scissor_Lift_Param.Trans_Shaft.Color"
+	  shaft_opacity		  "Scissor_Lift_Param.Trans_Shaft.Opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "RX"
+	  SID			  "1857"
+	  Ports			  [0, 0, 0, 0, 0, 2, 2]
+	  Position		  [260, 200, 395, 265]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/RX"
+	  SourceType		  "Scissor Lift Crossbar"
+	  link_length		  "Scissor_Lift_Param.Link.Length"
+	  link_width		  "Scissor_Lift_Param.Link.Width"
+	  link_thickness	  "Scissor_Lift_Param.Link.Thickness"
+	  link_hole_radius	  "Scissor_Lift_Param.Link.Hole_Radius"
+	  link_density		  "Scissor_Lift_Param.Link.Density"
+	  link_color		  "Scissor_Lift_Param.Link.Color"
+	  link_opacity		  "Scissor_Lift_Param.Link.Opacity"
+	  shaft_length		  "Scissor_Lift_Param.Link_Separation.Outer_Inner"
+	  shaft_radius		  "Scissor_Lift_Param.Link_Pin.Radius"
+	  shaft_density		  "Scissor_Lift_Param.Link_Pin.Density"
+	  shaft_color		  "Scissor_Lift_Param.Link_Pin.Color"
+	  shaft_opacity		  "Scissor_Lift_Param.Link_Pin.Opacity"
+	  leftright		  "Right"
+	  imgfile		  "Crossbar_RX_IMAGE.jpg"
+	  L1Port		  "OU"
+	  L2Port		  "IU"
+	  R1Port		  "OL"
+	  R2Port		  "IL"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Rev\nLfIn"
+	  SID			  "1858"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [110, 295, 150, 335]
+	  ZOrder		  9
+	  BlockRotation		  270
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Joints/Revolute Joint"
+	  SourceType		  ""
+	  ClassName		  "RevoluteJoint"
+	  SenseConstraintForceX	  "off"
+	  SenseConstraintForceY	  "off"
+	  SenseConstraintForceZ	  "off"
+	  SenseConstraintTorqueX  "off"
+	  SenseConstraintTorqueY  "off"
+	  SenseConstraintTorqueZ  "off"
+	  ConstraintWrenchDir	  "FollowerOnBase"
+	  ConstraintWrenchFrame	  "BaseFrame"
+	  EquilibriumPosition	  "0"
+	  EquilibriumPositionUnits "rad"
+	  SpringStiffness	  "0"
+	  SpringStiffnessUnits	  "N*m/rad"
+	  DampingCoefficient	  "0"
+	  DampingCoefficientUnits "N*m/(rad/s)"
+	  ActuationMode		  "NoActuation"
+	  SensePosition		  "off"
+	  SenseVelocity		  "off"
+	  SenseAcceleration	  "off"
+	  SenseTorqueForce	  "off"
+	  PositionTargetValue	  "0"
+	  PositionTargetValueUnits "deg"
+	  PositionTargetSpecify	  "off"
+	  PositionTargetPriority  "Low"
+	  VelocityTargetValue	  "0"
+	  VelocityTargetValueUnits "rad/s"
+	  VelocityTargetSpecify	  "off"
+	  VelocityTargetPriority  "High"
+	  BlockFunction		  "simmechanics.library.joints.revolute_joint"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Rev\nLfOut"
+	  SID			  "1859"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [45, 295, 85, 335]
+	  ZOrder		  9
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Joints/Revolute Joint"
+	  SourceType		  ""
+	  ClassName		  "RevoluteJoint"
+	  SenseConstraintForceX	  "off"
+	  SenseConstraintForceY	  "off"
+	  SenseConstraintForceZ	  "off"
+	  SenseConstraintTorqueX  "off"
+	  SenseConstraintTorqueY  "off"
+	  SenseConstraintTorqueZ  "off"
+	  ConstraintWrenchDir	  "FollowerOnBase"
+	  ConstraintWrenchFrame	  "BaseFrame"
+	  EquilibriumPosition	  "0"
+	  EquilibriumPositionUnits "rad"
+	  SpringStiffness	  "0"
+	  SpringStiffnessUnits	  "N*m/rad"
+	  DampingCoefficient	  "0"
+	  DampingCoefficientUnits "N*m/(rad/s)"
+	  ActuationMode		  "NoActuation"
+	  SensePosition		  "off"
+	  SenseVelocity		  "off"
+	  SenseAcceleration	  "off"
+	  SenseTorqueForce	  "off"
+	  PositionTargetValue	  "2*Scissor_Lift_Param.Crossbar.Init_Angle_Target"
+	  PositionTargetValueUnits "deg"
+	  PositionTargetSpecify	  "on"
+	  PositionTargetPriority  "Low"
+	  VelocityTargetValue	  "0"
+	  VelocityTargetValueUnits "rad/s"
+	  VelocityTargetSpecify	  "off"
+	  VelocityTargetPriority  "High"
+	  BlockFunction		  "simmechanics.library.joints.revolute_joint"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Rev\nRtIn"
+	  SID			  "1860"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [275, 295, 315, 335]
+	  ZOrder		  9
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Joints/Revolute Joint"
+	  SourceType		  ""
+	  ClassName		  "RevoluteJoint"
+	  SenseConstraintForceX	  "off"
+	  SenseConstraintForceY	  "off"
+	  SenseConstraintForceZ	  "off"
+	  SenseConstraintTorqueX  "off"
+	  SenseConstraintTorqueY  "off"
+	  SenseConstraintTorqueZ  "off"
+	  ConstraintWrenchDir	  "FollowerOnBase"
+	  ConstraintWrenchFrame	  "BaseFrame"
+	  EquilibriumPosition	  "0"
+	  EquilibriumPositionUnits "rad"
+	  SpringStiffness	  "0"
+	  SpringStiffnessUnits	  "N*m/rad"
+	  DampingCoefficient	  "0"
+	  DampingCoefficientUnits "N*m/(rad/s)"
+	  ActuationMode		  "NoActuation"
+	  SensePosition		  "off"
+	  SenseVelocity		  "off"
+	  SenseAcceleration	  "off"
+	  SenseTorqueForce	  "off"
+	  PositionTargetValue	  "0"
+	  PositionTargetValueUnits "deg"
+	  PositionTargetSpecify	  "off"
+	  PositionTargetPriority  "Low"
+	  VelocityTargetValue	  "0"
+	  VelocityTargetValueUnits "rad/s"
+	  VelocityTargetSpecify	  "off"
+	  VelocityTargetPriority  "High"
+	  BlockFunction		  "simmechanics.library.joints.revolute_joint"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Rev\nRtOut"
+	  SID			  "1861"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [340, 295, 380, 335]
+	  ZOrder		  9
+	  BlockRotation		  270
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Joints/Revolute Joint"
+	  SourceType		  ""
+	  ClassName		  "RevoluteJoint"
+	  SenseConstraintForceX	  "off"
+	  SenseConstraintForceY	  "off"
+	  SenseConstraintForceZ	  "off"
+	  SenseConstraintTorqueX  "off"
+	  SenseConstraintTorqueY  "off"
+	  SenseConstraintTorqueZ  "off"
+	  ConstraintWrenchDir	  "FollowerOnBase"
+	  ConstraintWrenchFrame	  "BaseFrame"
+	  EquilibriumPosition	  "0"
+	  EquilibriumPositionUnits "rad"
+	  SpringStiffness	  "0"
+	  SpringStiffnessUnits	  "N*m/rad"
+	  DampingCoefficient	  "0"
+	  DampingCoefficientUnits "N*m/(rad/s)"
+	  ActuationMode		  "NoActuation"
+	  SensePosition		  "off"
+	  SenseVelocity		  "off"
+	  SenseAcceleration	  "off"
+	  SenseTorqueForce	  "off"
+	  PositionTargetValue	  "0"
+	  PositionTargetValueUnits "deg"
+	  PositionTargetSpecify	  "off"
+	  PositionTargetPriority  "Low"
+	  VelocityTargetValue	  "0"
+	  VelocityTargetValueUnits "rad/s"
+	  VelocityTargetSpecify	  "off"
+	  VelocityTargetPriority  "High"
+	  BlockFunction		  "simmechanics.library.joints.revolute_joint"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "RLO"
+	  SID			  "1862"
+	  Position		  [73, 30, 87, 60]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "1"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "FLI"
+	  SID			  "1863"
+	  Position		  [113, 30, 127, 60]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "2"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "FRI"
+	  SID			  "1864"
+	  Position		  [298, 25, 312, 55]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "3"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "RRO"
+	  SID			  "1865"
+	  Position		  [338, 25, 352, 55]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "4"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "LO"
+	  SID			  "1866"
+	  Position		  [50, 370, 80, 385]
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "5"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "LI"
+	  SID			  "1867"
+	  Position		  [115, 370, 145, 385]
+	  BlockRotation		  270
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "6"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "RI"
+	  SID			  "1868"
+	  Position		  [280, 370, 310, 385]
+	  BlockRotation		  270
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "7"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "RO"
+	  SID			  "1869"
+	  Position		  [345, 370, 375, 385]
+	  BlockRotation		  270
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "8"
+	  Side			  "Right"
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "FShaft"
+	  SrcPort		  LConn1
+	  Points		  [-95, 0]
+	  DstBlock		  "LX"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "FShaft"
+	  SrcPort		  LConn2
+	  Points		  [-40, 0]
+	  DstBlock		  "FLI"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "FShaft"
+	  SrcPort		  RConn1
+	  Points		  [95, 0]
+	  DstBlock		  "RX"
+	  DstPort		  LConn2
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "FShaft"
+	  SrcPort		  RConn2
+	  Points		  [40, 0]
+	  DstBlock		  "FRI"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "RShaft"
+	  SrcPort		  LConn2
+	  Points		  [-30, 0]
+	  DstBlock		  "LX"
+	  DstPort		  LConn2
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Rev\nLfOut"
+	  SrcPort		  RConn1
+	  DstBlock		  "LX"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Rev\nLfIn"
+	  SrcPort		  RConn1
+	  DstBlock		  "LX"
+	  DstPort		  RConn2
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "RShaft"
+	  SrcPort		  LConn1
+	  Points		  [-80, 0]
+	  DstBlock		  "RLO"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "RShaft"
+	  SrcPort		  RConn1
+	  Points		  [80, 0]
+	  DstBlock		  "RRO"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "RShaft"
+	  SrcPort		  RConn2
+	  Points		  [30, 0]
+	  DstBlock		  "RX"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Rev\nRtIn"
+	  SrcPort		  RConn1
+	  DstBlock		  "RX"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Rev\nRtOut"
+	  SrcPort		  RConn1
+	  DstBlock		  "RX"
+	  DstPort		  RConn2
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "LI"
+	  SrcPort		  RConn1
+	  DstBlock		  "Rev\nLfIn"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "LO"
+	  SrcPort		  RConn1
+	  DstBlock		  "Rev\nLfOut"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "RI"
+	  SrcPort		  RConn1
+	  DstBlock		  "Rev\nRtIn"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "RO"
+	  SrcPort		  RConn1
+	  DstBlock		  "Rev\nRtOut"
+	  DstPort		  LConn1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Stage 3"
+      SID		      "1870"
+      Ports		      [0, 0, 0, 0, 0, 5, 5]
+      Position		      [84, 95, 296, 145]
+      BlockRotation	      270
+      BlockMirror	      on
+      FontName		      "Arial"
+      FontSize		      12
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Stage 3"
+	Location		[112, 189, 553, 615]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Bracket"
+	  SID			  "1871"
+	  Ports			  [0, 0, 0, 0, 0, 1, 2]
+	  Position		  [192, 290, 243, 330]
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Bracket"
+	  SourceType		  "Actuation Bracket"
+	  fl_w			  "Scissor_Lift_Param.Actuator.Bracket.Flange.Width"
+	  fl_h			  "Scissor_Lift_Param.Actuator.Bracket.Flange.Height"
+	  T			  "Scissor_Lift_Param.Actuator.Bracket.Flange.Thickness"
+	  W			  "Scissor_Lift_Param.Actuator.Bracket.Flange.Offset"
+	  flupdown		  "Up"
+	  flfrontrear		  "Front"
+	  fl_density		  "Scissor_Lift_Param.Actuator.Bracket.Flange.Density"
+	  fl_clr		  "Scissor_Lift_Param.Actuator.Bracket.Flange.Color"
+	  fl_opc		  "Scissor_Lift_Param.Actuator.Bracket.Flange.Opacity"
+	  shaft_length		  "Scissor_Lift_Param.Link_Separation.Outer_Outer-Scissor_Lift_Param.Link_Separation.Outer_Inner*2"
+	  shaft_radius		  "Scissor_Lift_Param.Actuator.Bracket.Shaft.Radius"
+	  shaft_density		  "Scissor_Lift_Param.Actuator.Bracket.Shaft.Density"
+	  shaft_color		  "Scissor_Lift_Param.Actuator.Bracket.Shaft.Color"
+	  shaft_opacity		  "Scissor_Lift_Param.Actuator.Bracket.Shaft.Opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "FShaft"
+	  SID			  "1872"
+	  Ports			  [0, 0, 0, 0, 0, 2, 2]
+	  Position		  [175, 65, 250, 105]
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/FShaft"
+	  SourceType		  "Transverse Shaft"
+	  sep_outer_outer	  "Scissor_Lift_Param.Link_Separation.Outer_Outer"
+	  sep_outer_inner	  "Scissor_Lift_Param.Link_Separation.Outer_Inner"
+	  shaft_radius		  "Scissor_Lift_Param.Trans_Shaft.Radius"
+	  shaft_density		  "Scissor_Lift_Param.Trans_Shaft.Density"
+	  shaft_color		  "Scissor_Lift_Param.Trans_Shaft.Color"
+	  shaft_opacity		  "Scissor_Lift_Param.Trans_Shaft.Opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "LX"
+	  SID			  "1873"
+	  Ports			  [0, 0, 0, 0, 0, 2, 2]
+	  Position		  [30, 180, 165, 245]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/RX"
+	  SourceType		  "Scissor Lift Crossbar"
+	  link_length		  "Scissor_Lift_Param.Link.Length"
+	  link_width		  "Scissor_Lift_Param.Link.Width"
+	  link_thickness	  "Scissor_Lift_Param.Link.Thickness"
+	  link_hole_radius	  "Scissor_Lift_Param.Link.Hole_Radius"
+	  link_density		  "Scissor_Lift_Param.Link.Density"
+	  link_color		  "Scissor_Lift_Param.Link.Color"
+	  link_opacity		  "Scissor_Lift_Param.Link.Opacity"
+	  shaft_length		  "Scissor_Lift_Param.Link_Separation.Outer_Inner"
+	  shaft_radius		  "Scissor_Lift_Param.Link_Pin.Radius"
+	  shaft_density		  "Scissor_Lift_Param.Link_Pin.Density"
+	  shaft_color		  "Scissor_Lift_Param.Link_Pin.Color"
+	  shaft_opacity		  "Scissor_Lift_Param.Link_Pin.Opacity"
+	  leftright		  "Left"
+	  imgfile		  "Crossbar_RX_IMAGE.jpg"
+	  L1Port		  "OU"
+	  L2Port		  "IU"
+	  R1Port		  "OL"
+	  R2Port		  "IL"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "RShaft"
+	  SID			  "1874"
+	  Ports			  [0, 0, 0, 0, 0, 2, 2]
+	  Position		  [175, 130, 250, 170]
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/FShaft"
+	  SourceType		  "Transverse Shaft"
+	  sep_outer_outer	  "Scissor_Lift_Param.Link_Separation.Outer_Outer"
+	  sep_outer_inner	  "Scissor_Lift_Param.Link_Separation.Outer_Inner"
+	  shaft_radius		  "Scissor_Lift_Param.Trans_Shaft.Radius"
+	  shaft_density		  "Scissor_Lift_Param.Trans_Shaft.Density"
+	  shaft_color		  "Scissor_Lift_Param.Trans_Shaft.Color"
+	  shaft_opacity		  "Scissor_Lift_Param.Trans_Shaft.Opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "RX"
+	  SID			  "1875"
+	  Ports			  [0, 0, 0, 0, 0, 2, 2]
+	  Position		  [260, 180, 395, 245]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/RX"
+	  SourceType		  "Scissor Lift Crossbar"
+	  link_length		  "Scissor_Lift_Param.Link.Length"
+	  link_width		  "Scissor_Lift_Param.Link.Width"
+	  link_thickness	  "Scissor_Lift_Param.Link.Thickness"
+	  link_hole_radius	  "Scissor_Lift_Param.Link.Hole_Radius"
+	  link_density		  "Scissor_Lift_Param.Link.Density"
+	  link_color		  "Scissor_Lift_Param.Link.Color"
+	  link_opacity		  "Scissor_Lift_Param.Link.Opacity"
+	  shaft_length		  "Scissor_Lift_Param.Link_Separation.Outer_Inner"
+	  shaft_radius		  "Scissor_Lift_Param.Link_Pin.Radius"
+	  shaft_density		  "Scissor_Lift_Param.Link_Pin.Density"
+	  shaft_color		  "Scissor_Lift_Param.Link_Pin.Color"
+	  shaft_opacity		  "Scissor_Lift_Param.Link_Pin.Opacity"
+	  leftright		  "Right"
+	  imgfile		  "Crossbar_RX_IMAGE.jpg"
+	  L1Port		  "OU"
+	  L2Port		  "IU"
+	  R1Port		  "OL"
+	  R2Port		  "IL"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Rev\nLfIn"
+	  SID			  "1876"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [110, 320, 150, 360]
+	  ZOrder		  9
+	  BlockRotation		  270
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Joints/Revolute Joint"
+	  SourceType		  ""
+	  ClassName		  "RevoluteJoint"
+	  SenseConstraintForceX	  "off"
+	  SenseConstraintForceY	  "off"
+	  SenseConstraintForceZ	  "off"
+	  SenseConstraintTorqueX  "off"
+	  SenseConstraintTorqueY  "off"
+	  SenseConstraintTorqueZ  "off"
+	  ConstraintWrenchDir	  "FollowerOnBase"
+	  ConstraintWrenchFrame	  "BaseFrame"
+	  EquilibriumPosition	  "0"
+	  EquilibriumPositionUnits "rad"
+	  SpringStiffness	  "0"
+	  SpringStiffnessUnits	  "N*m/rad"
+	  DampingCoefficient	  "0"
+	  DampingCoefficientUnits "N*m/(rad/s)"
+	  ActuationMode		  "NoActuation"
+	  SensePosition		  "off"
+	  SenseVelocity		  "off"
+	  SenseAcceleration	  "off"
+	  SenseTorqueForce	  "off"
+	  PositionTargetValue	  "0"
+	  PositionTargetValueUnits "deg"
+	  PositionTargetSpecify	  "off"
+	  PositionTargetPriority  "Low"
+	  VelocityTargetValue	  "0"
+	  VelocityTargetValueUnits "rad/s"
+	  VelocityTargetSpecify	  "off"
+	  VelocityTargetPriority  "High"
+	  BlockFunction		  "simmechanics.library.joints.revolute_joint"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Rev\nLfOut"
+	  SID			  "1877"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [45, 320, 85, 360]
+	  ZOrder		  9
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Joints/Revolute Joint"
+	  SourceType		  ""
+	  ClassName		  "RevoluteJoint"
+	  SenseConstraintForceX	  "off"
+	  SenseConstraintForceY	  "off"
+	  SenseConstraintForceZ	  "off"
+	  SenseConstraintTorqueX  "off"
+	  SenseConstraintTorqueY  "off"
+	  SenseConstraintTorqueZ  "off"
+	  ConstraintWrenchDir	  "FollowerOnBase"
+	  ConstraintWrenchFrame	  "BaseFrame"
+	  EquilibriumPosition	  "0"
+	  EquilibriumPositionUnits "rad"
+	  SpringStiffness	  "0"
+	  SpringStiffnessUnits	  "N*m/rad"
+	  DampingCoefficient	  "0"
+	  DampingCoefficientUnits "N*m/(rad/s)"
+	  ActuationMode		  "NoActuation"
+	  SensePosition		  "off"
+	  SenseVelocity		  "off"
+	  SenseAcceleration	  "off"
+	  SenseTorqueForce	  "off"
+	  PositionTargetValue	  "2*Scissor_Lift_Param.Crossbar.Init_Angle_Target"
+	  PositionTargetValueUnits "deg"
+	  PositionTargetSpecify	  "on"
+	  PositionTargetPriority  "Low"
+	  VelocityTargetValue	  "0"
+	  VelocityTargetValueUnits "rad/s"
+	  VelocityTargetSpecify	  "off"
+	  VelocityTargetPriority  "High"
+	  BlockFunction		  "simmechanics.library.joints.revolute_joint"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Rev\nRtIn"
+	  SID			  "1878"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [275, 320, 315, 360]
+	  ZOrder		  9
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Joints/Revolute Joint"
+	  SourceType		  ""
+	  ClassName		  "RevoluteJoint"
+	  SenseConstraintForceX	  "off"
+	  SenseConstraintForceY	  "off"
+	  SenseConstraintForceZ	  "off"
+	  SenseConstraintTorqueX  "off"
+	  SenseConstraintTorqueY  "off"
+	  SenseConstraintTorqueZ  "off"
+	  ConstraintWrenchDir	  "FollowerOnBase"
+	  ConstraintWrenchFrame	  "BaseFrame"
+	  EquilibriumPosition	  "0"
+	  EquilibriumPositionUnits "rad"
+	  SpringStiffness	  "0"
+	  SpringStiffnessUnits	  "N*m/rad"
+	  DampingCoefficient	  "0"
+	  DampingCoefficientUnits "N*m/(rad/s)"
+	  ActuationMode		  "NoActuation"
+	  SensePosition		  "off"
+	  SenseVelocity		  "off"
+	  SenseAcceleration	  "off"
+	  SenseTorqueForce	  "off"
+	  PositionTargetValue	  "0"
+	  PositionTargetValueUnits "deg"
+	  PositionTargetSpecify	  "off"
+	  PositionTargetPriority  "Low"
+	  VelocityTargetValue	  "0"
+	  VelocityTargetValueUnits "rad/s"
+	  VelocityTargetSpecify	  "off"
+	  VelocityTargetPriority  "High"
+	  BlockFunction		  "simmechanics.library.joints.revolute_joint"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Rev\nRtOut"
+	  SID			  "1879"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [340, 320, 380, 360]
+	  ZOrder		  9
+	  BlockRotation		  270
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Joints/Revolute Joint"
+	  SourceType		  ""
+	  ClassName		  "RevoluteJoint"
+	  SenseConstraintForceX	  "off"
+	  SenseConstraintForceY	  "off"
+	  SenseConstraintForceZ	  "off"
+	  SenseConstraintTorqueX  "off"
+	  SenseConstraintTorqueY  "off"
+	  SenseConstraintTorqueZ  "off"
+	  ConstraintWrenchDir	  "FollowerOnBase"
+	  ConstraintWrenchFrame	  "BaseFrame"
+	  EquilibriumPosition	  "0"
+	  EquilibriumPositionUnits "rad"
+	  SpringStiffness	  "0"
+	  SpringStiffnessUnits	  "N*m/rad"
+	  DampingCoefficient	  "0"
+	  DampingCoefficientUnits "N*m/(rad/s)"
+	  ActuationMode		  "NoActuation"
+	  SensePosition		  "off"
+	  SenseVelocity		  "off"
+	  SenseAcceleration	  "off"
+	  SenseTorqueForce	  "off"
+	  PositionTargetValue	  "0"
+	  PositionTargetValueUnits "deg"
+	  PositionTargetSpecify	  "off"
+	  PositionTargetPriority  "Low"
+	  VelocityTargetValue	  "0"
+	  VelocityTargetValueUnits "rad/s"
+	  VelocityTargetSpecify	  "off"
+	  VelocityTargetPriority  "High"
+	  BlockFunction		  "simmechanics.library.joints.revolute_joint"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "X"
+	  SID			  "1880"
+	  Position		  [193, 385, 207, 415]
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "1"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "A"
+	  SID			  "1881"
+	  Position		  [213, 385, 227, 415]
+	  BlockRotation		  270
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "2"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "RLO"
+	  SID			  "1882"
+	  Position		  [73, 20, 87, 50]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "3"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "FLI"
+	  SID			  "1883"
+	  Position		  [113, 20, 127, 50]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "4"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "FRI"
+	  SID			  "1884"
+	  Position		  [298, 15, 312, 45]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "5"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "RRO"
+	  SID			  "1885"
+	  Position		  [338, 15, 352, 45]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "6"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "LO"
+	  SID			  "1886"
+	  Position		  [50, 395, 80, 410]
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "7"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "LI"
+	  SID			  "1887"
+	  Position		  [115, 395, 145, 410]
+	  BlockRotation		  270
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "8"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "RI"
+	  SID			  "1888"
+	  Position		  [280, 395, 310, 410]
+	  BlockRotation		  270
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "9"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "RO"
+	  SID			  "1889"
+	  Position		  [345, 395, 375, 410]
+	  BlockRotation		  270
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "10"
+	  Side			  "Right"
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "FShaft"
+	  SrcPort		  LConn1
+	  Points		  [-95, 0]
+	  DstBlock		  "LX"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "FShaft"
+	  SrcPort		  LConn2
+	  Points		  [-40, 0]
+	  DstBlock		  "FLI"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "FShaft"
+	  SrcPort		  RConn1
+	  Points		  [95, 0]
+	  DstBlock		  "RX"
+	  DstPort		  LConn2
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "FShaft"
+	  SrcPort		  RConn2
+	  Points		  [40, 0]
+	  DstBlock		  "FRI"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "LX"
+	  SrcPort		  LConn2
+	  Points		  [0, -5]
+	  DstBlock		  "RShaft"
+	  DstPort		  LConn2
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Rev\nLfOut"
+	  SrcPort		  RConn1
+	  DstBlock		  "LX"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Bracket"
+	  SrcPort		  RConn1
+	  Points		  [-75, 0]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "LX"
+	    DstPort		    RConn2
+	  }
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "Rev\nLfIn"
+	    SrcPort		    RConn1
+	    Points		    [0, -30]
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "RShaft"
+	  SrcPort		  LConn1
+	  Points		  [-80, 0]
+	  DstBlock		  "RLO"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "RShaft"
+	  SrcPort		  RConn1
+	  Points		  [80, 0]
+	  DstBlock		  "RRO"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "RX"
+	  SrcPort		  LConn1
+	  Points		  [0, -5]
+	  DstBlock		  "RShaft"
+	  DstPort		  RConn2
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Bracket"
+	  SrcPort		  RConn2
+	  Points		  [65, 0]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "RX"
+	    DstPort		    RConn1
+	  }
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "Rev\nRtIn"
+	    SrcPort		    RConn1
+	    Points		    [0, -30]
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Rev\nRtOut"
+	  SrcPort		  RConn1
+	  DstBlock		  "RX"
+	  DstPort		  RConn2
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "LI"
+	  SrcPort		  RConn1
+	  DstBlock		  "Rev\nLfIn"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "LO"
+	  SrcPort		  RConn1
+	  DstBlock		  "Rev\nLfOut"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "RI"
+	  SrcPort		  RConn1
+	  DstBlock		  "Rev\nRtIn"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "RO"
+	  SrcPort		  RConn1
+	  DstBlock		  "Rev\nRtOut"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "A"
+	  SrcPort		  RConn1
+	  Points		  [0, -10]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "Bracket"
+	    DstPort		    LConn1
+	  }
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    Points		    [-20, 0]
+	    DstBlock		    "X"
+	    DstPort		    RConn1
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "World Frame"
+      SID		      "1890"
+      Ports		      [0, 0, 0, 0, 0, 0, 1]
+      Position		      [190, 475, 230, 515]
+      ZOrder		      4
+      BlockRotation	      270
+      LibraryVersion	      "1.1"
+      FontName		      "Arial"
+      FontSize		      12
+      SourceBlock	      "sm_lib/Frames and\n Transforms/World Frame"
+      SourceType	      ""
+      ClassName		      "WorldFrame"
+      BlockFunction	      "simmechanics.library.frames_transforms.world_frame"
+    }
+    Line {
+      Name		      "Position"
+      FontName		      "Arial"
+      FontSize		      12
+      Labels		      [0, 0]
+      SrcBlock		      "Demux"
+      SrcPort		      1
+      DstBlock		      "Actuation"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Velocity"
+      FontName		      "Arial"
+      FontSize		      12
+      Labels		      [0, 0]
+      SrcBlock		      "Demux"
+      SrcPort		      2
+      DstBlock		      "Actuation"
+      DstPort		      2
+    }
+    Line {
+      LineType		      "Connection"
+      FontName		      "Arial"
+      FontSize		      12
+      Points		      [210, 460; 0, -35]
+      DstBlock		      "Cart"
+      DstPort		      LConn1
+      Branch {
+	ConnectType		"SRC_SRC"
+	DstBlock		"World Frame"
+	DstPort			RConn1
+      }
+      Branch {
+	ConnectType		"SRC_DEST"
+	Points			[180, 460; 30, 0]
+	Branch {
+	  ConnectType		  "SRC_DEST"
+	  SrcBlock		  "Solver\nConfiguration"
+	  SrcPort		  RConn1
+	  Points		  [55, 0; 0, 25]
+	}
+	Branch {
+	  ConnectType		  "SRC_DEST"
+	  SrcBlock		  "Mechanism \nConfiguration"
+	  SrcPort		  RConn1
+	  Points		  [5, 0]
+	}
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Stage 2"
+      SrcPort		      RConn1
+      DstBlock		      "Stage 1"
+      DstPort		      LConn2
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Stage 2"
+      SrcPort		      RConn4
+      DstBlock		      "Stage 1"
+      DstPort		      LConn5
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Stage 3"
+      SrcPort		      RConn2
+      DstBlock		      "Stage 2"
+      DstPort		      LConn1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Stage 2"
+      SrcPort		      RConn3
+      DstBlock		      "Stage 1"
+      DstPort		      LConn4
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Stage 3"
+      SrcPort		      RConn4
+      DstBlock		      "Stage 2"
+      DstPort		      LConn3
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Stage 3"
+      SrcPort		      RConn5
+      DstBlock		      "Stage 2"
+      DstPort		      LConn4
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Stage 3"
+      SrcPort		      RConn3
+      DstBlock		      "Stage 2"
+      DstPort		      LConn2
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Stage 1"
+      SrcPort		      RConn4
+      DstBlock		      "Cart"
+      DstPort		      RConn3
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Stage 1"
+      SrcPort		      RConn3
+      DstBlock		      "Cart"
+      DstPort		      RConn2
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Actuator"
+      SrcPort		      RConn1
+      DstBlock		      "Stage 3"
+      DstPort		      RConn1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Actuator"
+      SrcPort		      LConn1
+      Points		      [5, 0]
+      DstBlock		      "Stage 1"
+      DstPort		      LConn1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Stage 1"
+      SrcPort		      RConn2
+      DstBlock		      "Cart"
+      DstPort		      RConn1
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Stage 2"
+      SrcPort		      RConn2
+      DstBlock		      "Stage 1"
+      DstPort		      LConn3
+    }
+    Line {
+      LineType		      "Connection"
+      SrcBlock		      "Stage 1"
+      SrcPort		      RConn5
+      DstBlock		      "Cart"
+      DstPort		      RConn4
+    }
+    Line {
+      SrcBlock		      "Actuator"
+      SrcPort		      1
+      Points		      [0, -15; -50, 0; 0, -130]
+      DstBlock		      "Demux"
+      DstPort		      1
+    }
+  }
+}

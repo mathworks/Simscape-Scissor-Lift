@@ -1,0 +1,3569 @@
+Library {
+  Name			  "Scissor_Parts_Lib"
+  Version		  7.9
+  MdlSubVersion		  0
+  Description		  " \nCopyright 2012 The MathWorks, Inc."
+  SavedCharacterEncoding  "windows-1252"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  Created		  "Mon Jan 23 21:09:57 2012"
+  Creator		  "smiller"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "smiller"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri May 04 21:43:12 2012"
+  RTWModifiedTimeStamp	  252494614
+  ModelVersionFormat	  "1.%<AutoIncrement:187>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  RecordCoverage	  off
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.12.0"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.12.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.12.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.12.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.12.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Enable All"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.12.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.12.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.12.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.12.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    9
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.12.0"
+	      Array {
+		Type			"Cell"
+		Dimension		21
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.12.0"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      CodeExecutionProfiling  off
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 400, 210, 1280, 840 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      PMIOPort
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+  }
+  System {
+    Name		    "Scissor_Parts_Lib"
+    Location		    [61, 115, 370, 462]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "1893"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Base\nBlocks"
+      SID		      "804"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [59, 100, 101, 155]
+      BlockRotation	      270
+      FontName		      "Arial"
+      FontSize		      12
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskType		      "Base Blocks"
+      MaskDescription	      "Parameterized base with two blocks and a shaft."
+      MaskPromptString	      "Length (cm)|Width (cm)|Height (cm)|Radius (cm)|Length (cm)|Density (kg/m^3)|Color|Opacity"
+      MaskStyleString	      "edit,edit,edit,edit,edit,edit,edit,edit"
+      MaskVariables	      "block_length=@1;block_width=@2;block_height=@3;shaft_radius=@4;shaft_length=@5;material_den"
+      "sity=@6;material_color=@7;material_opacity=@8;"
+      MaskTunableValueString  "on,on,on,on,on,on,on,on"
+      MaskCallbackString      "|||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on"
+      MaskDisplay	      "image(imread('Base_Blocks_IMAGE.jpg'));\nport_label('RConn',1,'S');\nport_label('LConn',1,'B'"
+      ");\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "port"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "Scissor_Lift_Param.Base_Block.Length|Scissor_Lift_Param.Base_Block.Width|Scissor_Lift_Par"
+      "am.Base_Block.Height|Scissor_Lift_Param.Roller.Shaft_Radius|Scissor_Lift_Param.Roller.Shaft_Length|Scissor_Lift_"
+      "Param.Base_Block.Density|Scissor_Lift_Param.Base_Block.Color|Scissor_Lift_Param.Base_Block.Opacity"
+      MaskTabNameString	      "Block,Block,Block,Shaft,Shaft,Material,Material,Material"
+      System {
+	Name			"Base\nBlocks"
+	Location		[36, 228, 408, 459]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Block L"
+	  SID			  "904"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [20, 59, 75, 101]
+	  BlockMirror		  on
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "1.174"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Block"
+	  SourceType		  "Block"
+	  L			  "block_length"
+	  W			  "block_width"
+	  H			  "block_height"
+	  z_ori			  "Local -Z"
+	  rho			  "material_density"
+	  clr			  "material_color"
+	  opc			  "material_opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Block R"
+	  SID			  "905"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [300, 59, 355, 101]
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "1.174"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Block"
+	  SourceType		  "Block"
+	  L			  "block_length"
+	  W			  "block_width"
+	  H			  "block_height"
+	  z_ori			  "Local +Z"
+	  rho			  "material_density"
+	  clr			  "material_color"
+	  opc			  "material_opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Shaft L"
+	  SID			  "816"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [100, 59, 155, 101]
+	  BlockMirror		  on
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Shaft"
+	  SourceType		  "Cylindrical Shaft"
+	  L			  "shaft_length/2"
+	  r			  "shaft_radius"
+	  theta			  "0"
+	  z_ori			  "Local -Z"
+	  Ro			  "material_density"
+	  clr			  "material_color"
+	  opc			  "material_opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Shaft R"
+	  SID			  "817"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [215, 59, 270, 101]
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Shaft"
+	  SourceType		  "Cylindrical Shaft"
+	  L			  "shaft_length/2"
+	  r			  "shaft_radius"
+	  theta			  "0"
+	  z_ori			  "Local +Z"
+	  Ro			  "material_density"
+	  clr			  "material_color"
+	  opc			  "material_opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transform\nPlatform"
+	  SID			  "818"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [165, 120, 205, 160]
+	  ZOrder		  2
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	  SourceType		  ""
+	  ClassName		  "RigidTransform"
+	  TranslationMethod	  "Cartesian"
+	  TranslationLengthUnit	  "cm"
+	  TranslationStandardAxis "-Y"
+	  TranslationStandardOffset "Scissor_Lift_Param.Roller.Roller_Radius"
+	  TranslationCartesianOffset "[0 -block_height/2 0]"
+	  TranslationROffset	  "0"
+	  TranslationROffsetUnits "m"
+	  TranslationZOffset	  "0"
+	  TranslationZOffsetUnits "m"
+	  TranslationThetaOffset  "0"
+	  TranslationThetaOffsetUnits "deg"
+	  RotationMethod	  "None"
+	  RotationAngleUnits	  "deg"
+	  RotationStandardAxis	  "+Y"
+	  RotationAngle		  "0"
+	  RotationArbitraryAxis	  "[0 0 1]"
+	  FollAlignAxisA	  "+X"
+	  BaseAlignAxisA	  "+Y"
+	  FollAlignAxisB	  "+Y"
+	  BaseAlignAxisB	  "+Z"
+	  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "S"
+	  SID			  "819"
+	  Position		  [178, 15, 192, 45]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "1"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "B"
+	  SID			  "820"
+	  Position		  [178, 190, 192, 220]
+	  BlockRotation		  270
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "2"
+	  Side			  "Left"
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Shaft L"
+	  SrcPort		  RConn1
+	  DstBlock		  "Block L"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Block R"
+	  SrcPort		  LConn1
+	  DstBlock		  "Shaft R"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "B"
+	  SrcPort		  RConn1
+	  DstBlock		  "Transform\nPlatform"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Shaft L"
+	  SrcPort		  LConn1
+	  Points		  [15, 0]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "Shaft R"
+	    DstPort		    LConn1
+	  }
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "Transform\nPlatform"
+	    SrcPort		    LConn1
+	    Points		    [0, -25]
+	  }
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "S"
+	    SrcPort		    RConn1
+	    Points		    [0, 20]
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Base\nRoller"
+      SID		      "805"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [158, 100, 202, 155]
+      BlockRotation	      270
+      FontName		      "Arial"
+      FontSize		      12
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskType		      "Base Roller"
+      MaskDescription	      "Parameterized roller with two wheels connected by a shaft."
+      MaskPromptString	      "Length (cm)|Radius (cm)|Length (cm)|Radius (cm)|Density (kg/m^3)|Color|Opacity"
+      MaskStyleString	      "edit,edit,edit,edit,edit,edit,edit"
+      MaskVariables	      "roller_length=@1;roller_radius=@2;shaft_length=@3;shaft_radius=@4;material_density=@5;mater"
+      "ial_color=@6;material_opacity=@7;"
+      MaskTunableValueString  "on,on,on,on,on,on,on"
+      MaskCallbackString      "||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on"
+      MaskDisplay	      "image(imread('Base_Roller_IMAGE.jpg'));\nport_label('RConn',1,'S');\nport_label('LConn',1,'B'"
+      ");\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "port"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "Scissor_Lift_Param.Roller.Roller_Length|Scissor_Lift_Param.Roller.Roller_Radius|Scissor_L"
+      "ift_Param.Roller.Shaft_Length|Scissor_Lift_Param.Roller.Shaft_Radius|Scissor_Lift_Param.Roller.Density|Scissor_L"
+      "ift_Param.Roller.Color|Scissor_Lift_Param.Roller.Opacity"
+      MaskTabNameString	      "Roller,Roller,Shaft,Shaft,Material,Material,Material"
+      System {
+	Name			"Base\nRoller"
+	Location		[91, 224, 472, 458]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Roller L"
+	  SID			  "807"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [20, 59, 75, 101]
+	  BlockMirror		  on
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "1.182"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Shaft"
+	  SourceType		  "Cylindrical Shaft"
+	  L			  "roller_length"
+	  r			  "roller_radius"
+	  theta			  "0"
+	  z_ori			  "Local -Z"
+	  Ro			  "material_density"
+	  clr			  "material_color"
+	  opc			  "material_opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Roller R"
+	  SID			  "808"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [305, 59, 360, 101]
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "1.182"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Shaft"
+	  SourceType		  "Cylindrical Shaft"
+	  L			  "roller_length"
+	  r			  "roller_radius"
+	  theta			  "0"
+	  z_ori			  "Local +Z"
+	  Ro			  "material_density"
+	  clr			  "material_color"
+	  opc			  "material_opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Shaft L"
+	  SID			  "809"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [105, 59, 160, 101]
+	  BlockMirror		  on
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Shaft"
+	  SourceType		  "Cylindrical Shaft"
+	  L			  "shaft_length/2"
+	  r			  "shaft_radius"
+	  theta			  "0"
+	  z_ori			  "Local -Z"
+	  Ro			  "material_density"
+	  clr			  "material_color"
+	  opc			  "material_opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Shaft R"
+	  SID			  "810"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [220, 59, 275, 101]
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Shaft"
+	  SourceType		  "Cylindrical Shaft"
+	  L			  "shaft_length/2"
+	  r			  "shaft_radius"
+	  theta			  "0"
+	  z_ori			  "Local +Z"
+	  Ro			  "material_density"
+	  clr			  "material_color"
+	  opc			  "material_opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transform\nPlatform"
+	  SID			  "811"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [170, 120, 210, 160]
+	  ZOrder		  2
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	  SourceType		  ""
+	  ClassName		  "RigidTransform"
+	  TranslationMethod	  "StandardAxis"
+	  TranslationLengthUnit	  "cm"
+	  TranslationStandardAxis "-Y"
+	  TranslationStandardOffset "roller_radius"
+	  TranslationCartesianOffset "[0 0 0]"
+	  TranslationROffset	  "0"
+	  TranslationROffsetUnits "m"
+	  TranslationZOffset	  "0"
+	  TranslationZOffsetUnits "m"
+	  TranslationThetaOffset  "0"
+	  TranslationThetaOffsetUnits "deg"
+	  RotationMethod	  "StandardAxis"
+	  RotationAngleUnits	  "deg"
+	  RotationStandardAxis	  "+Y"
+	  RotationAngle		  "90"
+	  RotationArbitraryAxis	  "[0 0 1]"
+	  FollAlignAxisA	  "+X"
+	  BaseAlignAxisA	  "+Y"
+	  FollAlignAxisB	  "+Y"
+	  BaseAlignAxisB	  "+Z"
+	  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "S"
+	  SID			  "812"
+	  Position		  [183, 15, 197, 45]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "1"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "B"
+	  SID			  "813"
+	  Position		  [183, 190, 197, 220]
+	  BlockRotation		  270
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "2"
+	  Side			  "Left"
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Shaft L"
+	  SrcPort		  RConn1
+	  DstBlock		  "Roller L"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Roller R"
+	  SrcPort		  LConn1
+	  DstBlock		  "Shaft R"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "S"
+	  SrcPort		  RConn1
+	  Points		  [0, 20]
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "Shaft L"
+	    SrcPort		    LConn1
+	    Points		    [15, 0]
+	  }
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "Transform\nPlatform"
+	    SrcPort		    LConn1
+	    Points		    [0, -25]
+	  }
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "Shaft R"
+	    DstPort		    LConn1
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "B"
+	  SrcPort		  RConn1
+	  DstBlock		  "Transform\nPlatform"
+	  DstPort		  RConn1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Block"
+      SID		      "806"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [230, 29, 285, 71]
+      BackgroundColor	      "yellow"
+      FontName		      "Arial"
+      FontSize		      12
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskType		      "Block"
+      MaskDescription	      "Rectangular block. Ports are at the center of the faces normal to the local z-axis.  Can "
+      "be configured to have positive Z from B to F or from F to B."
+      MaskPromptString	      "Length (cm):|Width (cm):|Height (cm):|Shaft orientation:|Shaft density (kg/m^3):|Link co"
+      "lor:|Opacity:"
+      MaskStyleString	      "edit,edit,edit,popup(Local +Z|Local -Z),edit,edit,edit"
+      MaskVariables	      "L=@1;W=@2;H=@3;z_ori=@4;rho=@5;clr=@6;opc=@7;"
+      MaskTunableValueString  "on,on,on,on,on,on,on"
+      MaskCallbackString      "||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on"
+      MaskInitialization      "if(z_ori == 2)\n    z_ori = -1;\nend\n"
+      MaskDisplay	      "image(imread('Block_IMAGE.jpg'));\nport_label('LConn',1,'B');\nport_label('RConn',1,'F');"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "port"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "Scissor_Lift_Param.Base_Block.Length|Scissor_Lift_Param.Base_Block.Width|Scissor_Lift_Par"
+      "am.Base_Block.Height|Local +Z|Scissor_Lift_Param.Base_Block.Density|Scissor_Lift_Param.Base_Block.Color|Scissor_"
+      "Lift_Param.Base_Block.Opacity"
+      MaskTabNameString	      "Dimensions,Dimensions,Dimensions,Dimensions,Material,Material,Material"
+      System {
+	Name			"Block"
+	Location		[97, 222, 352, 380]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Shaft"
+	  SID			  "821"
+	  Ports			  [0, 0, 0, 0, 0, 0, 1]
+	  Position		  [110, 15, 150, 55]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Body Elements/Solid"
+	  SourceType		  "Unknown"
+	  ClassName		  "Solid"
+	  InertiaType		  "CalculateFromGeometry"
+	  Mass			  "1"
+	  MassUnits		  "kg"
+	  CenterOfMass		  "[0 0 0]"
+	  CenterOfMassUnits	  "m"
+	  MomentsOfInertia	  "[1 1 1]"
+	  MomentsOfInertiaUnits	  "kg*m^2"
+	  ProductsOfInertia	  "[0 0 0]"
+	  ProductsOfInertiaUnits  "kg*m^2"
+	  DensityBased		  "on"
+	  Density		  "rho"
+	  DensityUnits		  "kg/m^3"
+	  GraphicType		  "FromGeometry"
+	  MarkerShape		  "Sphere"
+	  MarkerSize		  "1"
+	  MarkerSizeUnits	  "m"
+	  GraphicVisPropType	  "SimpleVisualProperties"
+	  GraphicDiffuseColor	  "clr"
+	  GraphicSpecularColor	  "[0.2 0.2 0.2]"
+	  GraphicAmbientColor	  "[0.5 0.5 0.5]"
+	  GraphicEmissiveColor	  "[0.1 0.1 0.1]"
+	  GraphicShininess	  "24.0"
+	  GraphicOpacity	  "opc"
+	  GeometryShape		  "Brick"
+	  RectangleSize		  "[1 1]"
+	  RectangleSizeUnits	  "m"
+	  BrickDimensions	  "[W H L]"
+	  BrickDimensionUnits	  "cm"
+	  CylinderRadius	  "1"
+	  CylinderRadiusUnits	  "cm"
+	  CylinderLength	  "1"
+	  CylinderLengthUnits	  "cm"
+	  SphereRadius		  "1"
+	  SphereRadiusUnits	  "m"
+	  EllipsoidRadii	  "[1 1 1]"
+	  EllipsoidRadiiUnits	  "m"
+	  ExtrusionCrossSection	  "[1 1; -1 1; -1 -1; 1 -1]"
+	  ExtrusionCrossSectionUnits "m"
+	  ExtrusionLength	  "1"
+	  ExtrusionLengthUnits	  "m"
+	  PolygonNumSides	  "1"
+	  PolygonOuterRadius	  "1"
+	  PolygonOuterRadiusUnits "m"
+	  ExtGeomFileUnits	  "m"
+	  BlockFunction		  "simmechanics.library.body_elements.solid"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transform\nShaftCtr"
+	  SID			  "822"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [65, 70, 105, 110]
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	  SourceType		  ""
+	  ClassName		  "RigidTransform"
+	  TranslationMethod	  "Cartesian"
+	  TranslationLengthUnit	  "cm"
+	  TranslationStandardAxis "+Z"
+	  TranslationStandardOffset "0"
+	  TranslationCartesianOffset "[0 0 L/2]*z_ori"
+	  TranslationROffset	  "0"
+	  TranslationROffsetUnits "m"
+	  TranslationZOffset	  "0"
+	  TranslationZOffsetUnits "m"
+	  TranslationThetaOffset  "0"
+	  TranslationThetaOffsetUnits "deg"
+	  RotationMethod	  "None"
+	  RotationAngleUnits	  "deg"
+	  RotationStandardAxis	  "+Z"
+	  RotationAngle		  "0"
+	  RotationArbitraryAxis	  "[0 0 1]"
+	  FollAlignAxisA	  "+X"
+	  BaseAlignAxisA	  "+Y"
+	  FollAlignAxisB	  "+Y"
+	  BaseAlignAxisB	  "+Z"
+	  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transform\nShaftF"
+	  SID			  "823"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [155, 70, 195, 110]
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	  SourceType		  ""
+	  ClassName		  "RigidTransform"
+	  TranslationMethod	  "Cartesian"
+	  TranslationLengthUnit	  "cm"
+	  TranslationStandardAxis "+Z"
+	  TranslationStandardOffset "0"
+	  TranslationCartesianOffset "[0 0 L/2]*z_ori"
+	  TranslationROffset	  "0"
+	  TranslationROffsetUnits "m"
+	  TranslationZOffset	  "0"
+	  TranslationZOffsetUnits "m"
+	  TranslationThetaOffset  "0"
+	  TranslationThetaOffsetUnits "deg"
+	  RotationMethod	  "None"
+	  RotationAngleUnits	  "deg"
+	  RotationStandardAxis	  "+Z"
+	  RotationAngle		  "0"
+	  RotationArbitraryAxis	  "[0 0 1]"
+	  FollAlignAxisA	  "+X"
+	  BaseAlignAxisA	  "+Y"
+	  FollAlignAxisB	  "+Y"
+	  BaseAlignAxisB	  "+Z"
+	  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "B"
+	  SID			  "824"
+	  Position		  [15, 80, 35, 100]
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "1"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "F"
+	  SID			  "825"
+	  Position		  [225, 80, 245, 100]
+	  BlockMirror		  on
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "2"
+	  Side			  "Right"
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Transform\nShaftCtr"
+	  SrcPort		  LConn1
+	  DstBlock		  "B"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "F"
+	  SrcPort		  RConn1
+	  DstBlock		  "Transform\nShaftF"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Shaft"
+	  SrcPort		  RConn1
+	  Points		  [0, 20]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "Transform\nShaftF"
+	    DstPort		    LConn1
+	  }
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "Transform\nShaftCtr"
+	    SrcPort		    RConn1
+	    Points		    [10, 0]
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Bracket"
+      SID		      "554"
+      Ports		      [0, 0, 0, 0, 0, 1, 2]
+      Position		      [63, 270, 112, 310]
+      BlockRotation	      270
+      NamePlacement	      "alternate"
+      LibraryVersion	      "*1.162"
+      FontName		      "Arial"
+      FontSize		      12
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskType		      "Actuation Bracket"
+      MaskDescription	      "Actuation bracket for scissor lift mechanism.  Contains flanges that attach to links and "
+      "connection shaft. Configurable orientation and surface attachment."
+      MaskPromptString	      "Width (cm)|Height (cm)|Thickness (cm)|Offset (cm)|Orientation|Position|Density|Color|Opa"
+      "city|Length (cm)|Radius (cm)|Density (kg/m^3)|Color|Opacity"
+      MaskStyleString	      "edit,edit,edit,edit,popup(Up|Down),popup(Front|Rear),edit,edit,edit,edit,edit,edit,edit,e"
+      "dit"
+      MaskVariables	      "fl_w=@1;fl_h=@2;T=@3;W=@4;flupdown=@5;flfrontrear=@6;fl_density=@7;fl_clr=@8;fl_opc=@9;shaf"
+      "t_length=@10;shaft_radius=@11;shaft_density=@12;shaft_color=@13;shaft_opacity=@14;"
+      MaskTunableValueString  "on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskCallbackString      "|||||||||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskInitialization      "if(flupdown == 2)\n    flupdown = -1;\nend\nif(flfrontrear == 2)\n    flfrontrear = -1;"
+      "\nend"
+      MaskDisplay	      "image(imread('Bracket_IMAGE.jpg'));\nport_label('RConn',1,'F');\nport_label('RConn',2,'B');\n"
+      "port_label('LConn',1,'C');\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "Scissor_Lift_Param.Actuator.Bracket.Flange.Width|Scissor_Lift_Param.Actuator.Bracket.Flan"
+      "ge.Height|Scissor_Lift_Param.Actuator.Bracket.Flange.Thickness|Scissor_Lift_Param.Actuator.Bracket.Flange.Offset"
+      "|Down|Rear|Scissor_Lift_Param.Actuator.Bracket.Flange.Density|Scissor_Lift_Param.Actuator.Bracket.Flange.Color|S"
+      "cissor_Lift_Param.Actuator.Bracket.Flange.Opacity|Scissor_Lift_Param.Link_Separation.Outer_Outer-Scissor_Lift_Pa"
+      "ram.Link_Separation.Outer_Inner*2|Scissor_Lift_Param.Actuator.Bracket.Shaft.Radius|Scissor_Lift_Param.Actuator.B"
+      "racket.Shaft.Density|Scissor_Lift_Param.Actuator.Bracket.Shaft.Color|Scissor_Lift_Param.Actuator.Bracket.Shaft.O"
+      "pacity"
+      MaskTabNameString	      "Flange Dims.,Flange Dims.,Flange Dims.,Flange Dims.,Flange Dims.,Flange Dims.,Flange Ma"
+      "tl.,Flange Matl.,Flange Matl.,Shaft,Shaft,Shaft,Shaft,Shaft"
+      System {
+	Name			"Bracket"
+	Location		[38, 209, 447, 400]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "FlangeL"
+	  SID			  "555"
+	  Ports			  [0, 0, 0, 0, 0, 0, 1]
+	  Position		  [90, 30, 130, 70]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Body Elements/Solid"
+	  SourceType		  "Unknown"
+	  ClassName		  "Solid"
+	  InertiaType		  "CalculateFromGeometry"
+	  Mass			  "1"
+	  MassUnits		  "kg"
+	  CenterOfMass		  "[0 0 0]"
+	  CenterOfMassUnits	  "m"
+	  MomentsOfInertia	  "[1 1 1]"
+	  MomentsOfInertiaUnits	  "kg*m^2"
+	  ProductsOfInertia	  "[0 0 0]"
+	  ProductsOfInertiaUnits  "kg*m^2"
+	  DensityBased		  "on"
+	  Density		  "fl_density"
+	  DensityUnits		  "kg/m^3"
+	  GraphicType		  "FromGeometry"
+	  MarkerShape		  "Sphere"
+	  MarkerSize		  "1"
+	  MarkerSizeUnits	  "m"
+	  GraphicVisPropType	  "SimpleVisualProperties"
+	  GraphicDiffuseColor	  "fl_clr"
+	  GraphicSpecularColor	  "[0.2 0.2 0.2]"
+	  GraphicAmbientColor	  "[0.5 0.5 0.5]"
+	  GraphicEmissiveColor	  "[0.1 0.1 0.1]"
+	  GraphicShininess	  "24.0"
+	  GraphicOpacity	  "fl_opc"
+	  GeometryShape		  "GeneralExtrusion"
+	  RectangleSize		  "[1 1]"
+	  RectangleSizeUnits	  "m"
+	  BrickDimensions	  "[1 1 1]"
+	  BrickDimensionUnits	  "m"
+	  CylinderRadius	  "1"
+	  CylinderRadiusUnits	  "m"
+	  CylinderLength	  "1"
+	  CylinderLengthUnits	  "m"
+	  SphereRadius		  "1"
+	  SphereRadiusUnits	  "m"
+	  EllipsoidRadii	  "[1 1 1]"
+	  EllipsoidRadiiUnits	  "m"
+	  ExtrusionCrossSection	  "[0 fl_h;-fl_w -fl_h;fl_w -fl_h]*0.5*flupdown"
+	  ExtrusionCrossSectionUnits "cm"
+	  ExtrusionLength	  "T"
+	  ExtrusionLengthUnits	  "cm"
+	  PolygonNumSides	  "1"
+	  PolygonOuterRadius	  "1"
+	  PolygonOuterRadiusUnits "m"
+	  ExtGeomFileUnits	  "m"
+	  BlockFunction		  "simmechanics.library.body_elements.solid"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "FlangeR"
+	  SID			  "556"
+	  Ports			  [0, 0, 0, 0, 0, 0, 1]
+	  Position		  [285, 30, 325, 70]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Body Elements/Solid"
+	  SourceType		  "Unknown"
+	  ClassName		  "Solid"
+	  InertiaType		  "CalculateFromGeometry"
+	  Mass			  "1"
+	  MassUnits		  "kg"
+	  CenterOfMass		  "[0 0 0]"
+	  CenterOfMassUnits	  "m"
+	  MomentsOfInertia	  "[1 1 1]"
+	  MomentsOfInertiaUnits	  "kg*m^2"
+	  ProductsOfInertia	  "[0 0 0]"
+	  ProductsOfInertiaUnits  "kg*m^2"
+	  DensityBased		  "on"
+	  Density		  "fl_density"
+	  DensityUnits		  "kg/m^3"
+	  GraphicType		  "FromGeometry"
+	  MarkerShape		  "Sphere"
+	  MarkerSize		  "1"
+	  MarkerSizeUnits	  "m"
+	  GraphicVisPropType	  "SimpleVisualProperties"
+	  GraphicDiffuseColor	  "fl_clr"
+	  GraphicSpecularColor	  "[0.2 0.2 0.2]"
+	  GraphicAmbientColor	  "[0.5 0.5 0.5]"
+	  GraphicEmissiveColor	  "[0.1 0.1 0.1]"
+	  GraphicShininess	  "24.0"
+	  GraphicOpacity	  "fl_opc"
+	  GeometryShape		  "GeneralExtrusion"
+	  RectangleSize		  "[1 1]"
+	  RectangleSizeUnits	  "m"
+	  BrickDimensions	  "[1 1 1]"
+	  BrickDimensionUnits	  "m"
+	  CylinderRadius	  "1"
+	  CylinderRadiusUnits	  "m"
+	  CylinderLength	  "1"
+	  CylinderLengthUnits	  "m"
+	  SphereRadius		  "1"
+	  SphereRadiusUnits	  "m"
+	  EllipsoidRadii	  "[1 1 1]"
+	  EllipsoidRadiiUnits	  "m"
+	  ExtrusionCrossSection	  "[0 fl_h;-fl_w -fl_h;fl_w -fl_h]*0.5*flupdown"
+	  ExtrusionCrossSectionUnits "cm"
+	  ExtrusionLength	  "T"
+	  ExtrusionLengthUnits	  "cm"
+	  PolygonNumSides	  "1"
+	  PolygonOuterRadius	  "1"
+	  PolygonOuterRadiusUnits "m"
+	  ExtGeomFileUnits	  "m"
+	  BlockFunction		  "simmechanics.library.body_elements.solid"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Shaft L"
+	  SID			  "557"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [130, 79, 185, 121]
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Shaft"
+	  SourceType		  "Cylindrical Shaft"
+	  L			  "shaft_length/2"
+	  r			  "shaft_radius"
+	  theta			  "0"
+	  z_ori			  "Local -Z"
+	  Ro			  "shaft_density"
+	  clr			  "shaft_color"
+	  opc			  "shaft_opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Shaft R"
+	  SID			  "558"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [225, 79, 280, 121]
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Shaft"
+	  SourceType		  "Cylindrical Shaft"
+	  L			  "shaft_length/2"
+	  r			  "shaft_radius"
+	  theta			  "0"
+	  z_ori			  "Local -Z"
+	  Ro			  "shaft_density"
+	  clr			  "shaft_color"
+	  opc			  "shaft_opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transform\nFlangeL"
+	  SID			  "559"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [45, 80, 85, 120]
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	  SourceType		  ""
+	  ClassName		  "RigidTransform"
+	  TranslationMethod	  "Cartesian"
+	  TranslationLengthUnit	  "cm"
+	  TranslationStandardAxis "-X"
+	  TranslationStandardOffset "1"
+	  TranslationCartesianOffset "[(fl_w/2)*flfrontrear (fl_h/2+W/2)*flupdown 0]"
+	  TranslationROffset	  "0"
+	  TranslationROffsetUnits "m"
+	  TranslationZOffset	  "0"
+	  TranslationZOffsetUnits "m"
+	  TranslationThetaOffset  "0"
+	  TranslationThetaOffsetUnits "deg"
+	  RotationMethod	  "None"
+	  RotationAngleUnits	  "deg"
+	  RotationStandardAxis	  "+Z"
+	  RotationAngle		  "0"
+	  RotationArbitraryAxis	  "[0 0 1]"
+	  FollAlignAxisA	  "+X"
+	  BaseAlignAxisA	  "+Y"
+	  FollAlignAxisB	  "+Y"
+	  BaseAlignAxisB	  "+Z"
+	  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transform\nFlangeR"
+	  SID			  "560"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [330, 80, 370, 120]
+	  BlockMirror		  on
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	  SourceType		  ""
+	  ClassName		  "RigidTransform"
+	  TranslationMethod	  "Cartesian"
+	  TranslationLengthUnit	  "cm"
+	  TranslationStandardAxis "-X"
+	  TranslationStandardOffset "1"
+	  TranslationCartesianOffset "[(fl_w/2)*flfrontrear (fl_h/2+W/2)*flupdown 0]"
+	  TranslationROffset	  "0"
+	  TranslationROffsetUnits "m"
+	  TranslationZOffset	  "0"
+	  TranslationZOffsetUnits "m"
+	  TranslationThetaOffset  "0"
+	  TranslationThetaOffsetUnits "deg"
+	  RotationMethod	  "None"
+	  RotationAngleUnits	  "deg"
+	  RotationStandardAxis	  "+Z"
+	  RotationAngle		  "0"
+	  RotationArbitraryAxis	  "[0 0 1]"
+	  FollAlignAxisA	  "+X"
+	  BaseAlignAxisA	  "+Y"
+	  FollAlignAxisB	  "+Y"
+	  BaseAlignAxisB	  "+Z"
+	  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "F"
+	  SID			  "562"
+	  Position		  [18, 15, 32, 45]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "1"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "B"
+	  SID			  "561"
+	  Position		  [388, 15, 402, 45]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "2"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "C"
+	  SID			  "563"
+	  Position		  [198, 150, 212, 180]
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "3"
+	  Side			  "Left"
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Transform\nFlangeL"
+	  SrcPort		  LConn1
+	  Points		  [-5, 0]
+	  DstBlock		  "F"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Transform\nFlangeR"
+	  SrcPort		  LConn1
+	  Points		  [10, 0]
+	  DstBlock		  "B"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "FlangeR"
+	  SrcPort		  RConn1
+	  Points		  [0, 15]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "Shaft R"
+	    DstPort		    RConn1
+	  }
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "Transform\nFlangeR"
+	    SrcPort		    RConn1
+	    Points		    [-10, 0]
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "FlangeL"
+	  SrcPort		  RConn1
+	  Points		  [0, 15]
+	  DstBlock		  "Shaft L"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Points		  [205, 100; 0, 35]
+	  DstBlock		  "C"
+	  DstPort		  RConn1
+	  Branch {
+	    ConnectType		    "SRC_DEST"
+	    SrcBlock		    "Shaft L"
+	    SrcPort		    RConn1
+	    Points		    [5, 0]
+	  }
+	  Branch {
+	    ConnectType		    "SRC_SRC"
+	    DstBlock		    "Shaft R"
+	    DstPort		    LConn1
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Collar"
+      SID		      "1255"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [140, 269, 195, 311]
+      LibraryVersion	      "*1.166"
+      FontName		      "Arial"
+      FontSize		      12
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskPromptString	      "Length (cm):|Radius (cm):|Length (cm):|Radius (cm):|Orientation (B to C):|Density (kg/m^"
+      "3):|Color:|Opacity:"
+      MaskStyleString	      "edit,edit,edit,edit,popup(Local +Z|Local -Z),edit,edit,edit"
+      MaskVariables	      "collar_length=@1;collar_radius=@2;cylinder_length=@3;cylinder_radius=@4;cylinder_ori=@5;mat"
+      "erial_density=@6;material_color=@7;material_opacity=@8;"
+      MaskTunableValueString  "on,on,on,on,on,on,on,on"
+      MaskCallbackString      "|||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on"
+      MaskInitialization      "if(cylinder_ori == 2)\n    cylinder_ori = -1;\nend"
+      MaskDisplay	      "image(imread('Actuator_Collar_IMAGE.jpg'));\nport_label('LConn',1,'B');\nport_label('RConn',1"
+      ",'C');\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "Scissor_Lift_Param.Actuator.Collar.Length|Scissor_Lift_Param.Actuator.Collar.Radius|Sciss"
+      "or_Lift_Param.Actuator.Piston_Seat.Length|Scissor_Lift_Param.Actuator.Piston_Seat.Radius|Local +Z|Scissor_Lift_P"
+      "aram.Actuator.Collar.Density|Scissor_Lift_Param.Actuator.Collar.Color|Scissor_Lift_Param.Actuator.Collar.Opacity"
+      MaskTabNameString	      "Collar,Collar,Cylinder,Cylinder,Cylinder,Material,Material,Material"
+      System {
+	Name			"Collar"
+	Location		[29, 207, 300, 433]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Collar"
+	  SID			  "1256"
+	  Ports			  [0, 0, 0, 0, 0, 0, 1]
+	  Position		  [60, 100, 100, 140]
+	  ZOrder		  3
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Body Elements/Solid"
+	  SourceType		  ""
+	  ClassName		  "Solid"
+	  InertiaType		  "CalculateFromGeometry"
+	  Mass			  "1"
+	  MassUnits		  "kg"
+	  CenterOfMass		  "[0 0 0]"
+	  CenterOfMassUnits	  "m"
+	  MomentsOfInertia	  "[1 1 1]"
+	  MomentsOfInertiaUnits	  "kg*m^2"
+	  ProductsOfInertia	  "[0 0 0]"
+	  ProductsOfInertiaUnits  "kg*m^2"
+	  DensityBased		  "on"
+	  Density		  "material_density"
+	  DensityUnits		  "kg/(m^3)"
+	  GraphicType		  "FromGeometry"
+	  MarkerShape		  "Sphere"
+	  MarkerSize		  "10"
+	  MarkerSizeUnits	  "m"
+	  GraphicVisPropType	  "SimpleVisualProperties"
+	  GraphicDiffuseColor	  "material_color"
+	  GraphicSpecularColor	  "[0.5 0.5 0.5 1.0]"
+	  GraphicAmbientColor	  "[0.15 0.15 0.15 1.0]"
+	  GraphicEmissiveColor	  "[0.0 0.0 0.0 1.0]"
+	  GraphicShininess	  "75"
+	  GraphicOpacity	  "material_opacity"
+	  GeometryShape		  "GeneralExtrusion"
+	  RectangleSize		  "[1 1]"
+	  RectangleSizeUnits	  "m"
+	  BrickDimensions	  "[10 10 100]"
+	  BrickDimensionUnits	  "cm"
+	  CylinderRadius	  "Scissor_Lift_Param.Trans_Shaft.Radius*1.3"
+	  CylinderRadiusUnits	  "cm"
+	  CylinderLength	  "1"
+	  CylinderLengthUnits	  "cm"
+	  SphereRadius		  "1"
+	  SphereRadiusUnits	  "m"
+	  EllipsoidRadii	  "[1 1 1]"
+	  EllipsoidRadiiUnits	  "m"
+	  ExtrusionCrossSection	  "Extr_Data_Ring(collar_radius,collar_radius*0.9,0,360)"
+	  ExtrusionCrossSectionUnits "cm"
+	  ExtrusionLength	  "collar_length"
+	  ExtrusionLengthUnits	  "cm"
+	  PolygonNumSides	  "3"
+	  PolygonOuterRadius	  "1"
+	  PolygonOuterRadiusUnits "m"
+	  ExtGeomFileUnits	  "m"
+	  BlockFunction		  "simmechanics.library.body_elements.solid"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Cylinder"
+	  SID			  "1257"
+	  Ports			  [0, 0, 0, 0, 0, 0, 1]
+	  Position		  [180, 15, 220, 55]
+	  ZOrder		  3
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Body Elements/Solid"
+	  SourceType		  "Unknown"
+	  ClassName		  "Solid"
+	  InertiaType		  "CalculateFromGeometry"
+	  Mass			  "1"
+	  MassUnits		  "kg"
+	  CenterOfMass		  "[0 0 0]"
+	  CenterOfMassUnits	  "m"
+	  MomentsOfInertia	  "[1 1 1]"
+	  MomentsOfInertiaUnits	  "kg*m^2"
+	  ProductsOfInertia	  "[0 0 0]"
+	  ProductsOfInertiaUnits  "kg*m^2"
+	  DensityBased		  "on"
+	  Density		  "material_density"
+	  DensityUnits		  "kg/(m^3)"
+	  GraphicType		  "FromGeometry"
+	  MarkerShape		  "Sphere"
+	  MarkerSize		  "10"
+	  MarkerSizeUnits	  "m"
+	  GraphicVisPropType	  "SimpleVisualProperties"
+	  GraphicDiffuseColor	  "material_color"
+	  GraphicSpecularColor	  "[0.5 0.5 0.5 1.0]"
+	  GraphicAmbientColor	  "[0.15 0.15 0.15 1.0]"
+	  GraphicEmissiveColor	  "[0.0 0.0 0.0 1.0]"
+	  GraphicShininess	  "75"
+	  GraphicOpacity	  "material_opacity"
+	  GeometryShape		  "GeneralExtrusion"
+	  RectangleSize		  "[1 1]"
+	  RectangleSizeUnits	  "m"
+	  BrickDimensions	  "[10 10 100]"
+	  BrickDimensionUnits	  "cm"
+	  CylinderRadius	  "Scissor_Lift_Param.Trans_Shaft.Radius*1.3"
+	  CylinderRadiusUnits	  "cm"
+	  CylinderLength	  "1"
+	  CylinderLengthUnits	  "cm"
+	  SphereRadius		  "1"
+	  SphereRadiusUnits	  "m"
+	  EllipsoidRadii	  "[1 1 1]"
+	  EllipsoidRadiiUnits	  "m"
+	  ExtrusionCrossSection	  "Extr_Data_Ring(cylinder_radius,cylinder_radius*0.9,0,360)"
+	  ExtrusionCrossSectionUnits "cm"
+	  ExtrusionLength	  "cylinder_length"
+	  ExtrusionLengthUnits	  "cm"
+	  PolygonNumSides	  "3"
+	  PolygonOuterRadius	  "1"
+	  PolygonOuterRadiusUnits "m"
+	  ExtGeomFileUnits	  "m"
+	  BlockFunction		  "simmechanics.library.body_elements.solid"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transform\nCylinder"
+	  SID			  "1258"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [180, 90, 220, 130]
+	  ZOrder		  2
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	  SourceType		  ""
+	  ClassName		  "RigidTransform"
+	  TranslationMethod	  "StandardAxis"
+	  TranslationLengthUnit	  "cm"
+	  TranslationStandardAxis "+Z"
+	  TranslationStandardOffset "cylinder_length/2*cylinder_ori"
+	  TranslationCartesianOffset "[0 0 0]"
+	  TranslationROffset	  "0"
+	  TranslationROffsetUnits "m"
+	  TranslationZOffset	  "0"
+	  TranslationZOffsetUnits "m"
+	  TranslationThetaOffset  "0"
+	  TranslationThetaOffsetUnits "deg"
+	  RotationMethod	  "None"
+	  RotationAngleUnits	  "deg"
+	  RotationStandardAxis	  "+Y"
+	  RotationAngle		  "0"
+	  RotationArbitraryAxis	  "[0 0 1]"
+	  FollAlignAxisA	  "+X"
+	  BaseAlignAxisA	  "+Y"
+	  FollAlignAxisB	  "+Y"
+	  BaseAlignAxisB	  "+Z"
+	  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transform\nCylinder Base"
+	  SID			  "1259"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [120, 140, 160, 180]
+	  ZOrder		  2
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	  SourceType		  ""
+	  ClassName		  "RigidTransform"
+	  TranslationMethod	  "None"
+	  TranslationLengthUnit	  "m"
+	  TranslationStandardAxis "+Z"
+	  TranslationStandardOffset "0"
+	  TranslationCartesianOffset "[0 0 0]"
+	  TranslationROffset	  "0"
+	  TranslationROffsetUnits "m"
+	  TranslationZOffset	  "0"
+	  TranslationZOffsetUnits "m"
+	  TranslationThetaOffset  "0"
+	  TranslationThetaOffsetUnits "deg"
+	  RotationMethod	  "StandardAxis"
+	  RotationAngleUnits	  "deg"
+	  RotationStandardAxis	  "-Y"
+	  RotationAngle		  "90"
+	  RotationArbitraryAxis	  "[0 0 1]"
+	  FollAlignAxisA	  "+X"
+	  BaseAlignAxisA	  "+Y"
+	  FollAlignAxisB	  "+Y"
+	  BaseAlignAxisB	  "+Z"
+	  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "C"
+	  SID			  "1260"
+	  Position		  [225, 153, 255, 167]
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "1"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "B"
+	  SID			  "1261"
+	  Position		  [20, 153, 50, 167]
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "2"
+	  Side			  "Left"
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Transform\nCylinder Base"
+	  SrcPort		  LConn1
+	  Points		  [-25, 0]
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "Collar"
+	    SrcPort		    RConn1
+	    Points		    [0, 5]
+	  }
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "B"
+	    DstPort		    RConn1
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Cylinder"
+	  SrcPort		  RConn1
+	  DstBlock		  "Transform\nCylinder"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Points		  [200, 160; 10, 0]
+	  DstBlock		  "C"
+	  DstPort		  RConn1
+	  Branch {
+	    ConnectType		    "SRC_DEST"
+	    SrcBlock		    "Transform\nCylinder Base"
+	    SrcPort		    RConn1
+	    Points		    [25, 0]
+	  }
+	  Branch {
+	    ConnectType		    "SRC_SRC"
+	    DstBlock		    "Transform\nCylinder"
+	    DstPort		    LConn1
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "FShaft"
+      SID		      "545"
+      Ports		      [0, 0, 0, 0, 0, 2, 2]
+      Position		      [210, 190, 285, 230]
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      FontSize		      12
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskType		      "Transverse Shaft"
+      MaskDescription	      "Transverse shaft with four connections.  Frames are located at shaft center, with Z-axis "
+      "along center."
+      MaskPromptString	      "Outer connection separation (cm)|Outer to inner separation (cm)|Radius (cm)|Density (kg/"
+      "m^3)|Color|Opacity"
+      MaskStyleString	      "edit,edit,edit,edit,edit,edit"
+      MaskVariables	      "sep_outer_outer=@1;sep_outer_inner=@2;shaft_radius=@3;shaft_density=@4;shaft_color=@5;shaft"
+      "_opacity=@6;"
+      MaskTunableValueString  "on,on,on,on,on,on"
+      MaskCallbackString      "|||||"
+      MaskEnableString	      "on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on"
+      MaskDisplay	      "image(imread('Shaft_IMAGE.jpg'));\nport_label('LConn',1,'LO');\nport_label('LConn',2,'LI');\n"
+      "port_label('RConn',1,'RO');\nport_label('RConn',2,'RI');"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "Scissor_Lift_Param.Link_Separation.Outer_Outer|Scissor_Lift_Param.Link_Separation.Outer_I"
+      "nner|Scissor_Lift_Param.Trans_Shaft.Radius|Scissor_Lift_Param.Trans_Shaft.Density|Scissor_Lift_Param.Trans_Shaft"
+      ".Color|Scissor_Lift_Param.Trans_Shaft.Opacity"
+      MaskTabNameString	      "Connections,Connections,Shaft,Shaft,Shaft,Shaft"
+      System {
+	Name			"FShaft"
+	Location		[36, 181, 441, 305]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Shaft InIn"
+	  SID			  "546"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [175, 54, 230, 96]
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Shaft"
+	  SourceType		  "Cylindrical Shaft"
+	  L			  "sep_outer_outer-2*sep_outer_inner"
+	  r			  "shaft_radius"
+	  theta			  "0"
+	  z_ori			  "Local -Z"
+	  Ro			  "shaft_density"
+	  clr			  "shaft_color"
+	  opc			  "shaft_opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Shaft LOutIn"
+	  SID			  "547"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [80, 54, 135, 96]
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Shaft"
+	  SourceType		  "Cylindrical Shaft"
+	  L			  "sep_outer_inner"
+	  r			  "shaft_radius"
+	  theta			  "0"
+	  z_ori			  "Local -Z"
+	  Ro			  "shaft_density"
+	  clr			  "shaft_color"
+	  opc			  "shaft_opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Shaft RInOut"
+	  SID			  "553"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [270, 54, 325, 96]
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Shaft"
+	  SourceType		  "Cylindrical Shaft"
+	  L			  "sep_outer_inner"
+	  r			  "shaft_radius"
+	  theta			  "0"
+	  z_ori			  "Local -Z"
+	  Ro			  "shaft_density"
+	  clr			  "shaft_color"
+	  opc			  "shaft_opacity"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "LO"
+	  SID			  "549"
+	  Position		  [25, 68, 55, 82]
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "1"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "LI"
+	  SID			  "550"
+	  Position		  [140, 20, 170, 35]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "2"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "RO"
+	  SID			  "551"
+	  Position		  [350, 68, 380, 82]
+	  BlockMirror		  on
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "3"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "RI"
+	  SID			  "552"
+	  Position		  [230, 20, 260, 35]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "4"
+	  Side			  "Right"
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Shaft LOutIn"
+	  SrcPort		  RConn1
+	  Points		  [5, 0]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "LI"
+	    DstPort		    RConn1
+	  }
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "Shaft InIn"
+	    DstPort		    LConn1
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Shaft RInOut"
+	  SrcPort		  LConn1
+	  Points		  [-10, 0]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "Shaft InIn"
+	    DstPort		    RConn1
+	  }
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "RI"
+	    DstPort		    RConn1
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "LO"
+	  SrcPort		  RConn1
+	  DstBlock		  "Shaft LOutIn"
+	  DstPort		  LConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "RO"
+	  SrcPort		  RConn1
+	  DstBlock		  "Shaft RInOut"
+	  DstPort		  RConn1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Link\n3 Holes"
+      SID		      "272"
+      Ports		      [0, 0, 0, 0, 0, 0, 3]
+      Position		      [55, 30, 115, 70]
+      BlockRotation	      270
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      LibraryVersion	      "1.165"
+      FontName		      "Arial"
+      FontSize		      12
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskType		      "Connector Link, 2 Holes"
+      MaskDescription	      "Connector link with two holes.  Ports are located at centers of holes, oriented such that"
+      " Z is out of the hole, positive X is from L hole to R hole."
+      MaskPromptString	      "Link length (cm):|Link width (cm):|Link thickness (cm):|Hole radius (cm):|Link density ("
+      "kg/m^3):|Link color:|Opacity:"
+      MaskStyleString	      "edit,edit,edit,edit,edit,popup(Yellow|Red),edit"
+      MaskVariables	      "L=@1;W=@2;T=@3;r=@4;rho=@5;clr_string=&6;opc=@7;"
+      MaskTunableValueString  "on,on,on,on,on,on,on"
+      MaskCallbackString      "||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on"
+      MaskInitialization      "imgfile='Link_3_Hole_Yellow_IMAGE.jpg';\nif(strcmp(clr_string,'Yellow'))\n    clr = [0."
+      "6 0.6 0.0];\nelse\n    clr = [0.8 0.2 0.0];\n    imgfile='Link_3_Hole_Red_IMAGE.jpg';\nend"
+      MaskDisplay	      "image(imread(imgfile));\nport_label('RConn',1,'F');\nport_label('RConn',2,'C');\nport_label('"
+      "RConn',3,'R');\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "port"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "240|15|4|5|1000|Yellow|1"
+      MaskTabNameString	      "Dimensions,Dimensions,Dimensions,Dimensions,Material,Material,Material"
+      System {
+	Name			"Link\n3 Holes"
+	Location		[33, 199, 587, 374]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Left\nEnd Cap"
+	  SID			  "273"
+	  Ports			  [0, 0, 0, 0, 0, 0, 1]
+	  Position		  [45, 15, 85, 55]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Body Elements/Solid"
+	  SourceType		  ""
+	  ClassName		  "Solid"
+	  InertiaType		  "CalculateFromGeometry"
+	  Mass			  "1"
+	  MassUnits		  "kg"
+	  CenterOfMass		  "[0 0 0]"
+	  CenterOfMassUnits	  "m"
+	  MomentsOfInertia	  "[1 1 1]"
+	  MomentsOfInertiaUnits	  "kg*m^2"
+	  ProductsOfInertia	  "[0 0 0]"
+	  ProductsOfInertiaUnits  "kg*m^2"
+	  DensityBased		  "on"
+	  Density		  "rho"
+	  DensityUnits		  "kg/m^3"
+	  GraphicType		  "FromGeometry"
+	  MarkerShape		  "Sphere"
+	  MarkerSize		  "1"
+	  MarkerSizeUnits	  "m"
+	  GraphicVisPropType	  "SimpleVisualProperties"
+	  GraphicDiffuseColor	  "clr"
+	  GraphicSpecularColor	  "[0.2 0.2 0.2]"
+	  GraphicAmbientColor	  "[0.5 0.5 0.5]"
+	  GraphicEmissiveColor	  "[0.1 0.1 0.1]"
+	  GraphicShininess	  "24.0"
+	  GraphicOpacity	  "opc"
+	  GeometryShape		  "GeneralExtrusion"
+	  RectangleSize		  "[1 1]"
+	  RectangleSizeUnits	  "m"
+	  BrickDimensions	  "[1 1 1]"
+	  BrickDimensionUnits	  "m"
+	  CylinderRadius	  "1"
+	  CylinderRadiusUnits	  "m"
+	  CylinderLength	  "1"
+	  CylinderLengthUnits	  "m"
+	  SphereRadius		  "1"
+	  SphereRadiusUnits	  "m"
+	  EllipsoidRadii	  "[1 1 1]"
+	  EllipsoidRadiiUnits	  "m"
+	  ExtrusionCrossSection	  "Extr_Data_Ring(W/2,r,90,270)"
+	  ExtrusionCrossSectionUnits "cm"
+	  ExtrusionLength	  "T"
+	  ExtrusionLengthUnits	  "cm"
+	  PolygonNumSides	  "1"
+	  PolygonOuterRadius	  "1"
+	  PolygonOuterRadiusUnits "m"
+	  ExtGeomFileUnits	  "m"
+	  BlockFunction		  "simmechanics.library.body_elements.solid"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Left\nLink"
+	  SID			  "274"
+	  Ports			  [0, 0, 0, 0, 0, 0, 1]
+	  Position		  [155, 15, 195, 55]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Body Elements/Solid"
+	  SourceType		  "Unknown"
+	  ClassName		  "Solid"
+	  InertiaType		  "CalculateFromGeometry"
+	  Mass			  "1"
+	  MassUnits		  "kg"
+	  CenterOfMass		  "[0 0 0]"
+	  CenterOfMassUnits	  "m"
+	  MomentsOfInertia	  "[1 1 1]"
+	  MomentsOfInertiaUnits	  "kg*m^2"
+	  ProductsOfInertia	  "[0 0 0]"
+	  ProductsOfInertiaUnits  "kg*m^2"
+	  DensityBased		  "on"
+	  Density		  "rho"
+	  DensityUnits		  "kg/m^3"
+	  GraphicType		  "FromGeometry"
+	  MarkerShape		  "Sphere"
+	  MarkerSize		  "1"
+	  MarkerSizeUnits	  "m"
+	  GraphicVisPropType	  "SimpleVisualProperties"
+	  GraphicDiffuseColor	  "clr"
+	  GraphicSpecularColor	  "[0.2 0.2 0.2]"
+	  GraphicAmbientColor	  "[0.5 0.5 0.5]"
+	  GraphicEmissiveColor	  "[0.1 0.1 0.1]"
+	  GraphicShininess	  "24.0"
+	  GraphicOpacity	  "opc"
+	  GeometryShape		  "GeneralExtrusion"
+	  RectangleSize		  "[1 1]"
+	  RectangleSizeUnits	  "m"
+	  BrickDimensions	  "[1 1 1]"
+	  BrickDimensionUnits	  "m"
+	  CylinderRadius	  "1"
+	  CylinderRadiusUnits	  "m"
+	  CylinderLength	  "1"
+	  CylinderLengthUnits	  "m"
+	  SphereRadius		  "1"
+	  SphereRadiusUnits	  "m"
+	  EllipsoidRadii	  "[1 1 1]"
+	  EllipsoidRadiiUnits	  "m"
+	  ExtrusionCrossSection	  "Extr_Data_Link2Hole(L/2,W,r)"
+	  ExtrusionCrossSectionUnits "cm"
+	  ExtrusionLength	  "T"
+	  ExtrusionLengthUnits	  "cm"
+	  PolygonNumSides	  "1"
+	  PolygonOuterRadius	  "1"
+	  PolygonOuterRadiusUnits "m"
+	  ExtGeomFileUnits	  "m"
+	  BlockFunction		  "simmechanics.library.body_elements.solid"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Right\nEnd Cap"
+	  SID			  "275"
+	  Ports			  [0, 0, 0, 0, 0, 0, 1]
+	  Position		  [460, 15, 500, 55]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Body Elements/Solid"
+	  SourceType		  ""
+	  ClassName		  "Solid"
+	  InertiaType		  "CalculateFromGeometry"
+	  Mass			  "1"
+	  MassUnits		  "kg"
+	  CenterOfMass		  "[0 0 0]"
+	  CenterOfMassUnits	  "m"
+	  MomentsOfInertia	  "[1 1 1]"
+	  MomentsOfInertiaUnits	  "kg*m^2"
+	  ProductsOfInertia	  "[0 0 0]"
+	  ProductsOfInertiaUnits  "kg*m^2"
+	  DensityBased		  "on"
+	  Density		  "rho"
+	  DensityUnits		  "kg/m^3"
+	  GraphicType		  "FromGeometry"
+	  MarkerShape		  "Sphere"
+	  MarkerSize		  "1"
+	  MarkerSizeUnits	  "m"
+	  GraphicVisPropType	  "SimpleVisualProperties"
+	  GraphicDiffuseColor	  "clr"
+	  GraphicSpecularColor	  "[0.2 0.2 0.2]"
+	  GraphicAmbientColor	  "[0.5 0.5 0.5]"
+	  GraphicEmissiveColor	  "[0.1 0.1 0.1]"
+	  GraphicShininess	  "24.0"
+	  GraphicOpacity	  "opc"
+	  GeometryShape		  "GeneralExtrusion"
+	  RectangleSize		  "[1 1]"
+	  RectangleSizeUnits	  "m"
+	  BrickDimensions	  "[1 1 1]"
+	  BrickDimensionUnits	  "m"
+	  CylinderRadius	  "1"
+	  CylinderRadiusUnits	  "m"
+	  CylinderLength	  "1"
+	  CylinderLengthUnits	  "m"
+	  SphereRadius		  "1"
+	  SphereRadiusUnits	  "m"
+	  EllipsoidRadii	  "[1 1 1]"
+	  EllipsoidRadiiUnits	  "m"
+	  ExtrusionCrossSection	  "Extr_Data_Ring(W/2,r,-90,90)"
+	  ExtrusionCrossSectionUnits "cm"
+	  ExtrusionLength	  "T"
+	  ExtrusionLengthUnits	  "cm"
+	  PolygonNumSides	  "1"
+	  PolygonOuterRadius	  "1"
+	  PolygonOuterRadiusUnits "m"
+	  ExtGeomFileUnits	  "m"
+	  BlockFunction		  "simmechanics.library.body_elements.solid"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Right\nLink"
+	  SID			  "282"
+	  Ports			  [0, 0, 0, 0, 0, 0, 1]
+	  Position		  [360, 15, 400, 55]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Body Elements/Solid"
+	  SourceType		  "Unknown"
+	  ClassName		  "Solid"
+	  InertiaType		  "CalculateFromGeometry"
+	  Mass			  "1"
+	  MassUnits		  "kg"
+	  CenterOfMass		  "[0 0 0]"
+	  CenterOfMassUnits	  "m"
+	  MomentsOfInertia	  "[1 1 1]"
+	  MomentsOfInertiaUnits	  "kg*m^2"
+	  ProductsOfInertia	  "[0 0 0]"
+	  ProductsOfInertiaUnits  "kg*m^2"
+	  DensityBased		  "on"
+	  Density		  "rho"
+	  DensityUnits		  "kg/m^3"
+	  GraphicType		  "FromGeometry"
+	  MarkerShape		  "Sphere"
+	  MarkerSize		  "1"
+	  MarkerSizeUnits	  "m"
+	  GraphicVisPropType	  "SimpleVisualProperties"
+	  GraphicDiffuseColor	  "clr"
+	  GraphicSpecularColor	  "[0.2 0.2 0.2]"
+	  GraphicAmbientColor	  "[0.5 0.5 0.5]"
+	  GraphicEmissiveColor	  "[0.1 0.1 0.1]"
+	  GraphicShininess	  "24.0"
+	  GraphicOpacity	  "opc"
+	  GeometryShape		  "GeneralExtrusion"
+	  RectangleSize		  "[1 1]"
+	  RectangleSizeUnits	  "m"
+	  BrickDimensions	  "[1 1 1]"
+	  BrickDimensionUnits	  "m"
+	  CylinderRadius	  "1"
+	  CylinderRadiusUnits	  "m"
+	  CylinderLength	  "1"
+	  CylinderLengthUnits	  "m"
+	  SphereRadius		  "1"
+	  SphereRadiusUnits	  "m"
+	  EllipsoidRadii	  "[1 1 1]"
+	  EllipsoidRadiiUnits	  "m"
+	  ExtrusionCrossSection	  "Extr_Data_Link2Hole(L/2,W,r)"
+	  ExtrusionCrossSectionUnits "cm"
+	  ExtrusionLength	  "T"
+	  ExtrusionLengthUnits	  "cm"
+	  PolygonNumSides	  "1"
+	  PolygonOuterRadius	  "1"
+	  PolygonOuterRadiusUnits "m"
+	  ExtGeomFileUnits	  "m"
+	  BlockFunction		  "simmechanics.library.body_elements.solid"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transform\nLeft Cap"
+	  SID			  "276"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [100, 65, 140, 105]
+	  BlockMirror		  on
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	  SourceType		  ""
+	  ClassName		  "RigidTransform"
+	  TranslationMethod	  "StandardAxis"
+	  TranslationLengthUnit	  "cm"
+	  TranslationStandardAxis "-X"
+	  TranslationStandardOffset "L/4"
+	  TranslationCartesianOffset "[0 0 0]"
+	  TranslationROffset	  "0"
+	  TranslationROffsetUnits "m"
+	  TranslationZOffset	  "0"
+	  TranslationZOffsetUnits "m"
+	  TranslationThetaOffset  "0"
+	  TranslationThetaOffsetUnits "deg"
+	  RotationMethod	  "None"
+	  RotationAngleUnits	  "deg"
+	  RotationStandardAxis	  "+Z"
+	  RotationAngle		  "0"
+	  RotationArbitraryAxis	  "[0 0 1]"
+	  FollAlignAxisA	  "+X"
+	  BaseAlignAxisA	  "+Y"
+	  FollAlignAxisB	  "+Y"
+	  BaseAlignAxisB	  "+Z"
+	  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transform\nLeft Link"
+	  SID			  "280"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [195, 65, 235, 105]
+	  BlockMirror		  on
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	  SourceType		  ""
+	  ClassName		  "RigidTransform"
+	  TranslationMethod	  "StandardAxis"
+	  TranslationLengthUnit	  "cm"
+	  TranslationStandardAxis "-X"
+	  TranslationStandardOffset "L/4"
+	  TranslationCartesianOffset "[0 0 0]"
+	  TranslationROffset	  "0"
+	  TranslationROffsetUnits "m"
+	  TranslationZOffset	  "0"
+	  TranslationZOffsetUnits "m"
+	  TranslationThetaOffset  "0"
+	  TranslationThetaOffsetUnits "deg"
+	  RotationMethod	  "None"
+	  RotationAngleUnits	  "deg"
+	  RotationStandardAxis	  "+Z"
+	  RotationAngle		  "0"
+	  RotationArbitraryAxis	  "[0 0 1]"
+	  FollAlignAxisA	  "+X"
+	  BaseAlignAxisA	  "+Y"
+	  FollAlignAxisB	  "+Y"
+	  BaseAlignAxisB	  "+Z"
+	  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transform\nRight Cap"
+	  SID			  "277"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [410, 65, 450, 105]
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	  SourceType		  ""
+	  ClassName		  "RigidTransform"
+	  TranslationMethod	  "StandardAxis"
+	  TranslationLengthUnit	  "cm"
+	  TranslationStandardAxis "+X"
+	  TranslationStandardOffset "L/4"
+	  TranslationCartesianOffset "[0 0 0]"
+	  TranslationROffset	  "0"
+	  TranslationROffsetUnits "m"
+	  TranslationZOffset	  "0"
+	  TranslationZOffsetUnits "m"
+	  TranslationThetaOffset  "0"
+	  TranslationThetaOffsetUnits "deg"
+	  RotationMethod	  "None"
+	  RotationAngleUnits	  "deg"
+	  RotationStandardAxis	  "+Z"
+	  RotationAngle		  "0"
+	  RotationArbitraryAxis	  "[0 0 1]"
+	  FollAlignAxisA	  "+X"
+	  BaseAlignAxisA	  "+Y"
+	  FollAlignAxisB	  "+Y"
+	  BaseAlignAxisB	  "+Z"
+	  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transform\nRight Link"
+	  SID			  "281"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [310, 65, 350, 105]
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	  SourceType		  ""
+	  ClassName		  "RigidTransform"
+	  TranslationMethod	  "StandardAxis"
+	  TranslationLengthUnit	  "cm"
+	  TranslationStandardAxis "+X"
+	  TranslationStandardOffset "L/4"
+	  TranslationCartesianOffset "[0 0 0]"
+	  TranslationROffset	  "0"
+	  TranslationROffsetUnits "m"
+	  TranslationZOffset	  "0"
+	  TranslationZOffsetUnits "m"
+	  TranslationThetaOffset  "0"
+	  TranslationThetaOffsetUnits "deg"
+	  RotationMethod	  "None"
+	  RotationAngleUnits	  "deg"
+	  RotationStandardAxis	  "+Z"
+	  RotationAngle		  "0"
+	  RotationArbitraryAxis	  "[0 0 1]"
+	  FollAlignAxisA	  "+X"
+	  BaseAlignAxisA	  "+Y"
+	  FollAlignAxisB	  "+Y"
+	  BaseAlignAxisB	  "+Z"
+	  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "F"
+	  SID			  "278"
+	  Position		  [15, 130, 35, 150]
+	  BlockRotation		  270
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "1"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "C"
+	  SID			  "283"
+	  Position		  [265, 130, 285, 150]
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "2"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "R"
+	  SID			  "279"
+	  Position		  [520, 130, 540, 150]
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "3"
+	  Side			  "Right"
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Right\nEnd Cap"
+	  SrcPort		  RConn1
+	  Points		  [0, 15]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "Transform\nRight Cap"
+	    DstPort		    RConn1
+	  }
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "R"
+	    SrcPort		    RConn1
+	    Points		    [0, -30; -50, 0]
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Points		  [65, 85; 0, -15]
+	  DstBlock		  "Left\nEnd Cap"
+	  DstPort		  RConn1
+	  Branch {
+	    ConnectType		    "SRC_DEST"
+	    SrcBlock		    "Transform\nLeft Cap"
+	    SrcPort		    RConn1
+	    Points		    [-20, 0]
+	  }
+	  Branch {
+	    ConnectType		    "SRC_DEST"
+	    SrcBlock		    "F"
+	    SrcPort		    RConn1
+	    Points		    [0, -30; 40, 0]
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Transform\nLeft Link"
+	  SrcPort		  RConn1
+	  Points		  [-5, 0]
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "Left\nLink"
+	    SrcPort		    RConn1
+	    Points		    [0, 15]
+	  }
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "Transform\nLeft Cap"
+	    SrcPort		    LConn1
+	    Points		    [20, 0]
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Points		  [275, 85; 0, 30]
+	  DstBlock		  "C"
+	  DstPort		  RConn1
+	  Branch {
+	    ConnectType		    "SRC_DEST"
+	    SrcBlock		    "Transform\nRight Link"
+	    SrcPort		    LConn1
+	    Points		    [-20, 0]
+	  }
+	  Branch {
+	    ConnectType		    "SRC_SRC"
+	    DstBlock		    "Transform\nLeft Link"
+	    DstPort		    LConn1
+	  }
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Right\nLink"
+	  SrcPort		  RConn1
+	  Points		  [0, 15]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "Transform\nRight Link"
+	    DstPort		    RConn1
+	  }
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "Transform\nRight Cap"
+	    DstPort		    LConn1
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Piston"
+      SID		      "1354"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [230, 269, 280, 311]
+      BlockMirror	      on
+      FontName		      "Arial"
+      FontSize		      12
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskDisplay	      "image(imread('Piston_Shaft_IMAGE.jpg'));\nport_label('RConn',1,'P');\nport_label('LConn',1,'R"
+      "');\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Piston"
+	Location		[112, 247, 315, 437]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Piston"
+	  SID			  "1355"
+	  Ports			  [0, 0, 0, 0, 0, 0, 1]
+	  Position		  [90, 15, 130, 55]
+	  ZOrder		  3
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Body Elements/Solid"
+	  SourceType		  "Unknown"
+	  ClassName		  "Solid"
+	  InertiaType		  "CalculateFromGeometry"
+	  Mass			  "1"
+	  MassUnits		  "kg"
+	  CenterOfMass		  "[0 0 0]"
+	  CenterOfMassUnits	  "m"
+	  MomentsOfInertia	  "[1 1 1]"
+	  MomentsOfInertiaUnits	  "kg*m^2"
+	  ProductsOfInertia	  "[0 0 0]"
+	  ProductsOfInertiaUnits  "kg*m^2"
+	  DensityBased		  "on"
+	  Density		  "1000"
+	  DensityUnits		  "kg/(m^3)"
+	  GraphicType		  "FromGeometry"
+	  MarkerShape		  "Sphere"
+	  MarkerSize		  "10"
+	  MarkerSizeUnits	  "m"
+	  GraphicVisPropType	  "SimpleVisualProperties"
+	  GraphicDiffuseColor	  "[0.8 0.8 0.8]"
+	  GraphicSpecularColor	  "[0.5 0.5 0.5 1.0]"
+	  GraphicAmbientColor	  "[0.15 0.15 0.15 1.0]"
+	  GraphicEmissiveColor	  "[0.0 0.0 0.0 1.0]"
+	  GraphicShininess	  "75"
+	  GraphicOpacity	  "1.0"
+	  GeometryShape		  "Cylinder"
+	  RectangleSize		  "[1 1]"
+	  RectangleSizeUnits	  "m"
+	  BrickDimensions	  "[10 10 100]"
+	  BrickDimensionUnits	  "cm"
+	  CylinderRadius	  "Scissor_Lift_Param.Actuator.Piston_Radius"
+	  CylinderRadiusUnits	  "cm"
+	  CylinderLength	  "Scissor_Lift_Param.Actuator.Piston_Length"
+	  CylinderLengthUnits	  "cm"
+	  SphereRadius		  "1"
+	  SphereRadiusUnits	  "m"
+	  EllipsoidRadii	  "[1 1 1]"
+	  EllipsoidRadiiUnits	  "m"
+	  ExtrusionCrossSection	  "[1 1;1 -1;-1 -1;-1 1]"
+	  ExtrusionCrossSectionUnits "cm"
+	  ExtrusionLength	  "1"
+	  ExtrusionLengthUnits	  "cm"
+	  PolygonNumSides	  "3"
+	  PolygonOuterRadius	  "1"
+	  PolygonOuterRadiusUnits "m"
+	  ExtGeomFileUnits	  "m"
+	  BlockFunction		  "simmechanics.library.body_elements.solid"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transform\nPiston CG"
+	  SID			  "1356"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [90, 80, 130, 120]
+	  ZOrder		  2
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	  SourceType		  ""
+	  ClassName		  "RigidTransform"
+	  TranslationMethod	  "StandardAxis"
+	  TranslationLengthUnit	  "cm"
+	  TranslationStandardAxis "-Z"
+	  TranslationStandardOffset "Scissor_Lift_Param.Actuator.Piston_Length/2"
+	  TranslationCartesianOffset "[0 0 0]"
+	  TranslationROffset	  "0"
+	  TranslationROffsetUnits "m"
+	  TranslationZOffset	  "0"
+	  TranslationZOffsetUnits "m"
+	  TranslationThetaOffset  "0"
+	  TranslationThetaOffsetUnits "deg"
+	  RotationMethod	  "None"
+	  RotationAngleUnits	  "deg"
+	  RotationStandardAxis	  "+Y"
+	  RotationAngle		  "0"
+	  RotationArbitraryAxis	  "[0 0 1]"
+	  FollAlignAxisA	  "+X"
+	  BaseAlignAxisA	  "+Y"
+	  FollAlignAxisB	  "+Y"
+	  BaseAlignAxisB	  "+Z"
+	  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "C"
+	  SID			  "1357"
+	  Position		  [160, 140, 185, 160]
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "1"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "P"
+	  SID			  "1358"
+	  Position		  [35, 140, 60, 160]
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "2"
+	  Side			  "Right"
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Piston"
+	  SrcPort		  RConn1
+	  DstBlock		  "Transform\nPiston CG"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "C"
+	  SrcPort		  RConn1
+	  Points		  [-35, 0]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "Transform\nPiston CG"
+	    DstPort		    LConn1
+	  }
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "P"
+	    SrcPort		    RConn1
+	    Points		    [35, 0]
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "RX"
+      SID		      "544"
+      Ports		      [0, 0, 0, 0, 0, 2, 2]
+      Position		      [45, 180, 180, 245]
+      BlockRotation	      270
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      LibraryVersion	      "*1.160"
+      FontName		      "Arial"
+      FontSize		      12
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskType		      "Scissor Lift Crossbar"
+      MaskDescription	      "Parameterized crossbar.  The two links are connected by a revolute joint. Configurable fo"
+      "r left or right side."
+      MaskPromptString	      "Length (cm)|Width (cm)|Thickness (cm)|Hole Radius (cm)|Density (kg/m^3)|Color|Opacity|Le"
+      "ngth (cm)|Radius (cm)|Density (kg/m^3)|Color|Opacity|Side|Image File|L1 Port Name|L2 Port Name|R1 Port Name|R2 P"
+      "ort Name"
+      MaskStyleString	      "edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,popup(Left|Right),edit,edit,e"
+      "dit,edit,edit"
+      MaskVariables	      "link_length=@1;link_width=@2;link_thickness=@3;link_hole_radius=@4;link_density=@5;link_col"
+      "or=@6;link_opacity=@7;shaft_length=@8;shaft_radius=@9;shaft_density=@10;shaft_color=@11;shaft_opacity=@12;leftri"
+      "ght=@13;imgfile=&14;L1Port=&15;L2Port=&16;R1Port=&17;R2Port=&18;"
+      MaskTunableValueString  "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskCallbackString      "|||||||||||||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on,on,on,on,on,on,on,off,off,off,off,off"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskInitialization      "pinbpth = find_system(gcb,'LookUnderMasks','on','FollowLinks','on','Regexp','on','Block"
+      "DialogParams','^Local');\n%get_param(pinbpth,'z_ori')\n%leftright\n%if(1==2)\nif (leftright == 1)\n    %disp('Se"
+      "tting to 0, LEFT');\n    set_param(char(pinbpth),'z_ori',1);\n    set_param([gcb '/OL'],'Port','1','Side','Right"
+      "');\n    set_param([gcb '/IL'],'Port','2','Side','Right');\n    set_param([gcb '/OU'],'Port','3','Side','Left');"
+      "\n    set_param([gcb '/IU'],'Port','4','Side','Left');\n    set_param(gcb,'Name','LX');\n    L1Port='OU';\n    L"
+      "2Port='IU';\n    R1Port='OL';\n    R2Port='IL';\n    imgfile = 'Crossbar_LX_IMAGE.jpg';\nelse\n    %disp('Settin"
+      "g to 1, RIGHT');\n    set_param(char(pinbpth),'z_ori',0);\n    set_param([gcb '/IL'],'Port','1','Side','Right');"
+      "\n    set_param([gcb '/OL'],'Port','2','Side','Right');\n    set_param([gcb '/IU'],'Port','3','Side','Left');\n "
+      "   set_param([gcb '/OU'],'Port','4','Side','Left');\n    set_param(gcb,'Name','RX');\n    L1Port='IU';\n    L2Po"
+      "rt='OU';\n    R1Port='IL';\n    R2Port='OL';\n    imgfile = 'Crossbar_RX_IMAGE.jpg';\nend\n%end"
+      MaskSelfModifiable      on
+      MaskDisplay	      "image(imread(imgfile));\nport_label('LConn',1,L1Port);\nport_label('LConn',2,L2Port);\nport_l"
+      "abel('RConn',1,R1Port);\nport_label('RConn',2,R2Port);\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "Scissor_Lift_Param.Link.Length|Scissor_Lift_Param.Link.Width|Scissor_Lift_Param.Link.Thic"
+      "kness|Scissor_Lift_Param.Link.Hole_Radius|Scissor_Lift_Param.Link.Density|Scissor_Lift_Param.Link.Color|Scissor_"
+      "Lift_Param.Link.Opacity|Scissor_Lift_Param.Link_Separation.Outer_Inner|Scissor_Lift_Param.Link_Pin.Radius|Scisso"
+      "r_Lift_Param.Link_Pin.Density|Scissor_Lift_Param.Link_Pin.Color|Scissor_Lift_Param.Link_Pin.Opacity|Right|Crossb"
+      "ar_RX_IMAGE.jpg|OU|IU|OL|IL"
+      MaskTabNameString	      "Links,Links,Links,Links,Links,Links,Links,Shaft,Shaft,Shaft,Shaft,Shaft,Shaft,Shaft,Sha"
+      "ft,Shaft,Shaft,Shaft"
+      System {
+	Name			"RX"
+	Location		[57, 226, 384, 436]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SIDHighWatermark	"587"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Inner\nLink"
+	  SID			  "544:443"
+	  Ports			  [0, 0, 0, 0, 0, 0, 3]
+	  Position		  [15, 80, 50, 140]
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Link\n3 Holes"
+	  SourceType		  "Connector Link, 2 Holes"
+	  L			  "link_length"
+	  W			  "link_width"
+	  T			  "link_thickness"
+	  r			  "link_hole_radius"
+	  rho			  "link_density"
+	  clr_string		  "Red"
+	  opc			  "link_opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Outer\nLink"
+	  SID			  "544:450"
+	  Ports			  [0, 0, 0, 0, 0, 0, 3]
+	  Position		  [265, 80, 300, 140]
+	  BlockMirror		  on
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Link\n3 Holes"
+	  SourceType		  "Connector Link, 2 Holes"
+	  L			  "link_length"
+	  W			  "link_width"
+	  T			  "link_thickness"
+	  r			  "link_hole_radius"
+	  rho			  "link_density"
+	  clr_string		  "Yellow"
+	  opc			  "link_opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Pin"
+	  SID			  "544:444"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [175, 89, 230, 131]
+	  BlockMirror		  on
+	  BackgroundColor	  "yellow"
+	  LibraryVersion	  "1.187"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "Scissor_Parts_Lib/Shaft"
+	  SourceType		  "Cylindrical Shaft"
+	  L			  "shaft_length"
+	  r			  "shaft_radius"
+	  theta			  "0"
+	  z_ori			  "Local +Z"
+	  Ro			  "shaft_density"
+	  clr			  "shaft_color"
+	  opc			  "shaft_opacity"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Rev Pin"
+	  SID			  "544:445"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [100, 90, 140, 130]
+	  ZOrder		  9
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Joints/Revolute Joint"
+	  SourceType		  ""
+	  ClassName		  "RevoluteJoint"
+	  SenseConstraintForceX	  "off"
+	  SenseConstraintForceY	  "off"
+	  SenseConstraintForceZ	  "off"
+	  SenseConstraintTorqueX  "off"
+	  SenseConstraintTorqueY  "off"
+	  SenseConstraintTorqueZ  "off"
+	  ConstraintWrenchDir	  "FollowerOnBase"
+	  ConstraintWrenchFrame	  "BaseFrame"
+	  EquilibriumPosition	  "0"
+	  EquilibriumPositionUnits "rad"
+	  SpringStiffness	  "0"
+	  SpringStiffnessUnits	  "N*m/rad"
+	  DampingCoefficient	  "0"
+	  DampingCoefficientUnits "N*m/(rad/s)"
+	  ActuationMode		  "NoActuation"
+	  SensePosition		  "off"
+	  SenseVelocity		  "off"
+	  SenseAcceleration	  "off"
+	  SenseTorqueForce	  "off"
+	  PositionTargetValue	  "0"
+	  PositionTargetValueUnits "rad"
+	  PositionTargetSpecify	  "off"
+	  PositionTargetPriority  "High"
+	  VelocityTargetValue	  "0"
+	  VelocityTargetValueUnits "rad/s"
+	  VelocityTargetSpecify	  "off"
+	  VelocityTargetPriority  "High"
+	  BlockFunction		  "simmechanics.library.joints.revolute_joint"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "IL"
+	  SID			  "544:446"
+	  Position		  [58, 165, 72, 195]
+	  BlockRotation		  270
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "1"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "OL"
+	  SID			  "544:447"
+	  Position		  [238, 165, 252, 195]
+	  BlockRotation		  270
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "2"
+	  Side			  "Right"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "IU"
+	  SID			  "544:448"
+	  Position		  [63, 20, 77, 50]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "3"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "OU"
+	  SID			  "544:449"
+	  Position		  [238, 15, 252, 45]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "4"
+	  Side			  "Left"
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Inner\nLink"
+	  SrcPort		  RConn3
+	  Points		  [5, 0]
+	  DstBlock		  "IU"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "OL"
+	  SrcPort		  RConn1
+	  Points		  [0, -20]
+	  DstBlock		  "Outer\nLink"
+	  DstPort		  RConn3
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "IL"
+	  SrcPort		  RConn1
+	  DstBlock		  "Inner\nLink"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "OU"
+	  SrcPort		  RConn1
+	  Points		  [0, 30]
+	  DstBlock		  "Outer\nLink"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Pin"
+	  SrcPort		  RConn1
+	  DstBlock		  "Rev Pin"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Rev Pin"
+	  SrcPort		  LConn1
+	  DstBlock		  "Inner\nLink"
+	  DstPort		  RConn2
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Pin"
+	  SrcPort		  LConn1
+	  DstBlock		  "Outer\nLink"
+	  DstPort		  RConn2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Shaft"
+      SID		      "128"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [140, 29, 195, 71]
+      BackgroundColor	      "yellow"
+      FontName		      "Arial"
+      FontSize		      12
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskType		      "Cylindrical Shaft"
+      MaskDescription	      "Cylindrical shaft. Ports are at shaft ends, and oriented such that the Z-axis is between "
+      "the ports.  Can be configured to have positive Z from B to F or from F to B."
+      MaskPromptString	      "Length (cm):|Radius (cm):|Twist (deg)|Orientation (B to F)|Density (kg/m^3):|Color:|Opac"
+      "ity"
+      MaskStyleString	      "edit,edit,edit,popup(Local +Z|Local -Z),edit,edit,edit"
+      MaskVariables	      "L=@1;r=@2;theta=@3;z_ori=@4;Ro=@5;clr=@6;opc=@7;"
+      MaskTunableValueString  "on,on,on,on,on,on,on"
+      MaskCallbackString      "||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on"
+      MaskInitialization      "if(z_ori == 2)\n    z_ori = -1;\nend"
+      MaskDisplay	      "image(imread('Shaft_IMAGE.jpg'));\nport_label('LConn',1,'B');\nport_label('RConn',1,'F');"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "port"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "10|5|0|Local -Z|1000|[0.0 0.6 0.8]|1"
+      MaskTabNameString	      "Dimensions,Dimensions,Dimensions,Dimensions,Material,Material,Material"
+      System {
+	Name			"Shaft"
+	Location		[100, 255, 361, 409]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Shaft"
+	  SID			  "133"
+	  Ports			  [0, 0, 0, 0, 0, 0, 1]
+	  Position		  [110, 15, 150, 55]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Body Elements/Solid"
+	  SourceType		  "Unknown"
+	  ClassName		  "Solid"
+	  InertiaType		  "CalculateFromGeometry"
+	  Mass			  "1"
+	  MassUnits		  "kg"
+	  CenterOfMass		  "[0 0 0]"
+	  CenterOfMassUnits	  "m"
+	  MomentsOfInertia	  "[1 1 1]"
+	  MomentsOfInertiaUnits	  "kg*m^2"
+	  ProductsOfInertia	  "[0 0 0]"
+	  ProductsOfInertiaUnits  "kg*m^2"
+	  DensityBased		  "on"
+	  Density		  "Ro"
+	  DensityUnits		  "kg/m^3"
+	  GraphicType		  "FromGeometry"
+	  MarkerShape		  "Sphere"
+	  MarkerSize		  "1"
+	  MarkerSizeUnits	  "m"
+	  GraphicVisPropType	  "SimpleVisualProperties"
+	  GraphicDiffuseColor	  "clr"
+	  GraphicSpecularColor	  "[0.2 0.2 0.2]"
+	  GraphicAmbientColor	  "[0.5 0.5 0.5]"
+	  GraphicEmissiveColor	  "[0.1 0.1 0.1]"
+	  GraphicShininess	  "24.0"
+	  GraphicOpacity	  "opc"
+	  GeometryShape		  "Cylinder"
+	  RectangleSize		  "[1 1]"
+	  RectangleSizeUnits	  "m"
+	  BrickDimensions	  "[1 1 1]"
+	  BrickDimensionUnits	  "m"
+	  CylinderRadius	  "r"
+	  CylinderRadiusUnits	  "cm"
+	  CylinderLength	  "L"
+	  CylinderLengthUnits	  "cm"
+	  SphereRadius		  "1"
+	  SphereRadiusUnits	  "m"
+	  EllipsoidRadii	  "[1 1 1]"
+	  EllipsoidRadiiUnits	  "m"
+	  ExtrusionCrossSection	  "[1 1; -1 1; -1 -1; 1 -1]"
+	  ExtrusionCrossSectionUnits "m"
+	  ExtrusionLength	  "1"
+	  ExtrusionLengthUnits	  "m"
+	  PolygonNumSides	  "1"
+	  PolygonOuterRadius	  "1"
+	  PolygonOuterRadiusUnits "m"
+	  ExtGeomFileUnits	  "m"
+	  BlockFunction		  "simmechanics.library.body_elements.solid"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transform\nShaftCtr"
+	  SID			  "138"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [65, 70, 105, 110]
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	  SourceType		  ""
+	  ClassName		  "RigidTransform"
+	  TranslationMethod	  "Cartesian"
+	  TranslationLengthUnit	  "cm"
+	  TranslationStandardAxis "+Z"
+	  TranslationStandardOffset "0"
+	  TranslationCartesianOffset "[0 0 L/2]*z_ori"
+	  TranslationROffset	  "0"
+	  TranslationROffsetUnits "m"
+	  TranslationZOffset	  "0"
+	  TranslationZOffsetUnits "m"
+	  TranslationThetaOffset  "0"
+	  TranslationThetaOffsetUnits "deg"
+	  RotationMethod	  "StandardAxis"
+	  RotationAngleUnits	  "deg"
+	  RotationStandardAxis	  "+Z"
+	  RotationAngle		  "theta"
+	  RotationArbitraryAxis	  "[0 0 1]"
+	  FollAlignAxisA	  "+X"
+	  BaseAlignAxisA	  "+Y"
+	  FollAlignAxisB	  "+Y"
+	  BaseAlignAxisB	  "+Z"
+	  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transform\nShaftF"
+	  SID			  "139"
+	  Ports			  [0, 0, 0, 0, 0, 1, 1]
+	  Position		  [155, 70, 195, 110]
+	  LibraryVersion	  "1.1"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  SourceBlock		  "sm_lib/Frames and\n Transforms/Rigid \nTransform"
+	  SourceType		  ""
+	  ClassName		  "RigidTransform"
+	  TranslationMethod	  "Cartesian"
+	  TranslationLengthUnit	  "cm"
+	  TranslationStandardAxis "+Z"
+	  TranslationStandardOffset "0"
+	  TranslationCartesianOffset "[0 0 L/2]*z_ori"
+	  TranslationROffset	  "0"
+	  TranslationROffsetUnits "m"
+	  TranslationZOffset	  "0"
+	  TranslationZOffsetUnits "m"
+	  TranslationThetaOffset  "0"
+	  TranslationThetaOffsetUnits "deg"
+	  RotationMethod	  "None"
+	  RotationAngleUnits	  "deg"
+	  RotationStandardAxis	  "+Z"
+	  RotationAngle		  "0"
+	  RotationArbitraryAxis	  "[0 0 1]"
+	  FollAlignAxisA	  "+X"
+	  BaseAlignAxisA	  "+Y"
+	  FollAlignAxisB	  "+Y"
+	  BaseAlignAxisB	  "+Z"
+	  BlockFunction		  "simmechanics.library.frames_transforms.rigid_transform"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "B"
+	  SID			  "140"
+	  Position		  [15, 80, 35, 100]
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "1"
+	  Side			  "Left"
+	}
+	Block {
+	  BlockType		  PMIOPort
+	  Name			  "F"
+	  SID			  "141"
+	  Position		  [225, 80, 245, 100]
+	  BlockMirror		  on
+	  FontName		  "Arial"
+	  FontSize		  12
+	  Port			  "2"
+	  Side			  "Right"
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Transform\nShaftCtr"
+	  SrcPort		  LConn1
+	  DstBlock		  "B"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "F"
+	  SrcPort		  RConn1
+	  DstBlock		  "Transform\nShaftF"
+	  DstPort		  RConn1
+	}
+	Line {
+	  LineType		  "Connection"
+	  SrcBlock		  "Shaft"
+	  SrcPort		  RConn1
+	  Points		  [0, 20]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    DstBlock		    "Transform\nShaftF"
+	    DstPort		    LConn1
+	  }
+	  Branch {
+	    ConnectType		    "DEST_DEST"
+	    SrcBlock		    "Transform\nShaftCtr"
+	    SrcPort		    RConn1
+	    Points		    [10, 0]
+	  }
+	}
+      }
+    }
+  }
+}

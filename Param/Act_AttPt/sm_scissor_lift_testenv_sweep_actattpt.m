@@ -1,5 +1,5 @@
 % Parameter sweep to test actuator attachement positions
-% Copyright 2017 MathWorks, Inc.
+% Copyright 2017-2018 MathWorks, Inc.
 
 doParallel  = 0;
 deleteFiles = 0;

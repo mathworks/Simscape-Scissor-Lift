@@ -3,7 +3,7 @@ function sm_scissor_lift_testenv_config_test(modelname,testname)
 %   sm_scissor_lift_testenv_config_test(modelname,testname)
 %   This function configures the model for the desired test.
 %
-% Copyright 2017 The MathWorks, Inc.
+% Copyright 2017-2018 The MathWorks, Inc.
 
 % Find Signal Builder block
 sig_h = find_system([modelname '/Input'],'Variants','AllVariants','FollowLinks','on','LookUnderMasks','all','MaskType','Sigbuilder block');

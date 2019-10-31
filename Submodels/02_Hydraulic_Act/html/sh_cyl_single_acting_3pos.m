@@ -6,7 +6,7 @@
 % P and A, connect ports A and T). This architecture is used for simple
 % actuation systems such as those with with up-neutral-down control.
 %
-% Copyright 2017 The MathWorks, Inc.
+% Copyright 2017-2018 The MathWorks, Inc.
 
 
 

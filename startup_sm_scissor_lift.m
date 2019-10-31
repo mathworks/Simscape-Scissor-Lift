@@ -29,5 +29,7 @@ cd(ScissLift_HomeDir)
 % Load default parameters
 SCL_Par = sm_scissor_lift_param;
 
+lift_extra_mass = 0; % kg Run-time parameter
+
 % Open web demo script
 web('sm_scissor_lift_Demo_Script.html');

@@ -49,7 +49,7 @@ end
 
 %% Run simulations
 % Fastest results with visualization off, Fast Restart on
-set_param(modelname_new,'SimMechanicsOpenEditorOnUpdate','off');
+set_param(modelname_new,'SimMechanicsOpenEditorOnUpdate','on');
 
 if(~doParallel)
     tic;
@@ -109,4 +109,5 @@ hold off
 if(deleteFiles)
     close_system(modelname_new,0)
     delete([modelname_new '.slx'])
+    delete([modelname_new '.slxc'])
 end

@@ -10,7 +10,7 @@
 % enables the designer to see the effect of the chosen hardware on the
 % behavior of the overall design.
 %
-% Copyright 2014-2018 The MathWorks, Inc.
+% Copyright 2014-2019 The MathWorks, Inc.
 
 
 %% Model

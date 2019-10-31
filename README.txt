@@ -1,35 +1,32 @@
 Scissor Lift Model in Simscape Multibody
 
-scissor lift model built using Simscape Multibody and Simscape. 
-The scissor lift model is assembled from a set of parameterized 
-component models, which are included in a separate library.  
-A number of intermediate models are also included to show you 
-the incremental steps of modeling this system.  
-A MATLAB GUI is also included that allows you to interactively change 
-the dimensions of the scissor lift.
+This file contains a scissor lift model with hydraulic actuation built using
+Simscape Multibody and Simscape Fluids. The scissor lift model is assembled
+from a library of parameterized component models. Intermediate models are 
+included to show you the steps of modeling this system. A MATLAB UI is also
+included that allows you to interactively change the dimensions of the scissor lift.  
+
+Run startup_sm_scissor_lift.m to begin.
+This sets up the path and opens a web page with links to models and documentation.
+Hyperlinks in the models guide you to options in the model that you can explore.
 
 Key parts of this submission:
-
-1. Run startup_Scissor_Lift.m to begin
-   This sets up the path and opens the completed scissor lift with an 
-   ideal actuator and controller.
+1. The model of the complete scissor lift with variants for actuation and testing
+   is in the root directory sm_scissor_lift_testenv.slx
 
 2. The parameterized components used to build the scissor lift
-   are in the file Scissor_Parts_Lib.mdl in subdirectory "Libraries".
+   are in the file sm_scissor_lift_lib.slx in subdirectory "Libraries".
+   This includes a crossbar assembly that can be used for the left or right side
+   of the lift by changing a dialog box parameter.
 
-3. Subdirectory 01_Scissor_Jack contains incremental steps for
-   building the scissor lift, including a "X" assembly that uses only
-   blocks from the standard Simscape Multibody libraries.
+3. Subdirectory Submodels/01_Defining Bodies contains incremental steps for
+   building the scissor lift.
 
-4. Subdirectory 02_Defining_Bodies contains incremental steps for
-   defining and parameterizing bodies, including a MATLAB GUI that
-   allows you to modify the dimensions of the lift.
+4. Subdirectory Submodels/02_Hydraulic_Act contains a standalone model of a
+   hydraulic actuation architecture similar to what is used in the main model.
 
-5. Subdirectory 03_Scissor_Lift contains incremental steps for
-   adding an actuator to the scissor lift.
+5. MATLAB scripts for defining extrusions are in subddirectory Scripts_Data.
+   (Extr_Data_Box.m, etc.)
 
-6. MATLAB scripts for defining extrusions are in subddirectory Scripts_Data.
-
-
-Copyright 2012-R2016 The MathWorks, Inc.
+Copyright 2012-2017 The MathWorks, Inc.
 

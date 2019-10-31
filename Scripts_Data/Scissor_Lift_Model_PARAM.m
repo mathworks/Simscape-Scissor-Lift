@@ -1,5 +1,5 @@
 % SCISSOR LIFT PARAMETERS
-% Copyright 2012 The MathWorks, Inc.
+% Copyright 2012-2016 The MathWorks, Inc.
 
 Scissor_Lift_Param.Colors.Yellow = [0.6 0.6 0.0];
 Scissor_Lift_Param.Colors.Red = [0.8 0.2 0.0];

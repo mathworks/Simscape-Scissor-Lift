@@ -11,7 +11,7 @@ function [xy_data] = Extr_Data_Link2Hole(L, W, r)
 %   of the function with no arguments
 %   >> Extr_Data_Link2Hole
 
-% Copyright 2012 The MathWorks, Inc.
+% Copyright 2012-2016 The MathWorks, Inc.
 
 % DEFAULT DATA TO SHOW DIAGRAM
 if (nargin == 0)

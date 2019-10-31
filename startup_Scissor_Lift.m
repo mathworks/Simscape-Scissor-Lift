@@ -1,4 +1,4 @@
-% STARTUP SCISSOR LIFT
+% Copyright 2012-2016 The MathWorks, Inc.
 
 addpath([pwd]);
 addpath([pwd '/Images']);
@@ -9,6 +9,4 @@ addpath([pwd '/02_Defining_Bodies']);
 addpath([pwd '/03_Scissor_Lift']);
 Scissor_Lift_Model_PARAM
 Scissor_Lift_3_Ideal_Actuator
-
-% Copyright 2012 The MathWorks, Inc.
 

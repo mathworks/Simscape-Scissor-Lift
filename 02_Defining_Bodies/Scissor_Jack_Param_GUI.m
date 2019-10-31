@@ -20,8 +20,6 @@ function varargout = Scissor_Jack_Param_GUI(varargin)
 %
 % See also: GUIDE, GUIDATA, GUIHANDLES
 
-% Copyright 2012 The MathWorks, Inc.
-
 % Edit the above text to modify the response to help Scissor_Jack_Param_GUI
 
 % Last Modified by GUIDE v2.5 13-Feb-2012 15:33:50
@@ -100,6 +98,7 @@ evalin('base','Scissor_Lift_Param.Crossbar.Init_Angle_Target = asin(Scissor_Lift
 
 set_param(bdroot, 'SimulationCommand', 'Update');
 
+% Copyright 2012-2016 The MathWorks, Inc.
 
 function LLET_Callback(hObject, eventdata, handles)
 % hObject    handle to LLET (see GCBO)

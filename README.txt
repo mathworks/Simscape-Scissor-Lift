@@ -1,6 +1,6 @@
-Scissor Lift Model in SimMechanics
+Scissor Lift Model in Simscape Multibody
 
-scissor lift model built using SimMechanics and Simscape. 
+scissor lift model built using Simscape Multibody and Simscape. 
 The scissor lift model is assembled from a set of parameterized 
 component models, which are included in a separate library.  
 A number of intermediate models are also included to show you 
@@ -19,7 +19,7 @@ Key parts of this submission:
 
 3. Subdirectory 01_Scissor_Jack contains incremental steps for
    building the scissor lift, including a "X" assembly that uses only
-   blocks from the standard SimMechanics libraries.
+   blocks from the standard Simscape Multibody libraries.
 
 4. Subdirectory 02_Defining_Bodies contains incremental steps for
    defining and parameterizing bodies, including a MATLAB GUI that
@@ -31,5 +31,5 @@ Key parts of this submission:
 6. MATLAB scripts for defining extrusions are in subddirectory Scripts_Data.
 
 
-Copyright 2012 The MathWorks, Inc.
+Copyright 2012-R2016 The MathWorks, Inc.
 

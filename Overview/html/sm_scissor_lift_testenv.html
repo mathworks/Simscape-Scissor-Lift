@@ -1,0 +1,297 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Scissor Lift Test Environment</title><meta name="generator" content="MATLAB 9.7"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-08-20"><meta name="DC.source" content="sm_scissor_lift_testenv.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>Scissor Lift Test Environment</h1><!--introduction--><p>This example shows a scissor lift modeled in Simscape Multibody.  The lift is run through some simple tests to explore requirements for the actuator and see how the entire system behaves.</p><p>The model contains three variants of the actuation system.  Inverse dynamics are used in the abstract variants to derive actuator sizing information from the performance specification.  A hydraulic network enables the designer to see the effect of the chosen hardware on the behavior of the overall design.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Model</a></li><li><a href="#3">Scissor Lift Subsystem</a></li><li><a href="#4">Stage 1 Subsystem</a></li><li><a href="#6">Evaluating Performance Specification using Inverse Dynamics</a></li><li><a href="#9">Parameter Sweep on Bracket Attachment Point</a></li><li><a href="#12">Ideal Actuation</a></li><li><a href="#15">Hydraulic Actuation</a></li><li><a href="#17">Driving and Steering</a></li><li><a href="#19">Simulink Dashboard Blocks for Manual input</a></li></ul></div><h2 id="1">Model</h2><img vspace="5" hspace="5" src="sm_scissor_lift_testenv_01.png" alt=""> <h2 id="3">Scissor Lift Subsystem</h2><p>This subsystem shows the model of the scissor lift.  The scissor mechanism has three stages of folding arms that constrain the movement of the platform relative to the cart.  An actuator extends and contracts to raise and lower the platform.  The actuator model can be configured for tests to refine high-level requirements, such as required force, or to investigate details of the hydraulic design.</p><p><a href="matlab:open_system('sm_scissor_lift_testenv');open_system('sm_scissor_lift_testenv/Scissor%20Lift','force');">Open Subsystem</a></p><img vspace="5" hspace="5" src="sm_scissor_lift_testenv_02.png" alt=""> <h2 id="4">Stage 1 Subsystem</h2><p>Each stage of the mechanism is modeled using four links.  The links are connected in two pairs at the center by pin and can rotate relative to one another.  The pairs are connected by two shafts, one at the front connecting the outer pair of links and one at the rear connecting the inner pair of links. Revolute joints connect the stages and constrain the motion of the mechanism.  There is only one degree of freedom in the entire scissor mechanism.</p><p>Simscape Multibody enables you to create parameterized mechanisms and reuse them in your model.  The pair of links on the left and right sides of the lift are created using the same subsystem (LX and RX below). Selecting left or right in the subsystem mask adjusts parameters within the subsystem to configure the linkage for assembly on the left or right side of the scissor mechanism.  Similarly, the bracket subsystem is the same in stage 1 and stage 3.  Mask parameters set the position relative to the end of the inner links.</p><p><a href="matlab:open_system('sm_scissor_lift_testenv');open_system('sm_scissor_lift_testenv/Scissor%20Lift/Stage%201','force');">Open Subsystem</a></p><img vspace="5" hspace="5" src="sm_scissor_lift_testenv_03.png" alt=""> <p>Parameterized components enable rapid assembly of mechanisms. The parts below were created by combining Simscape Multibody Solid and Rigid Transform blocks to create parameterized parts.</p><img vspace="5" hspace="5" src="sm_scissor_lift_testenv_04.png" alt=""> <h2 id="6">Evaluating Performance Specification using Inverse Dynamics</h2><p>Simulation is used to determine the actuator force and speed required to lift the platform.  Simscape Multibody enables easy mapping of performance specification to the required test.</p><p>The specification states that the platform must reach maximum height within 16 seconds.  Simscape Multibody enables you to prescribe the vertical motion of the platform and calculate the force that the actuator acting between stages 1 and 3 must provide. In a single simulation run you can solve an inverse dynamics problem where motion is prescribed along one degree of freedom and the calculated force is applied to a separate degree of freedom.</p><p>To achieve this, motion is prescribed along the z-axis of Joint Platform Height.  This is a 6-DOF joint that only constrains motion along the positive z-axis of the frame attached to its B port.  The Prismatic Joint constrains motion along the axis of the actuator.  This joint is configured to output the force required to produce the motion of the mechanism.  With these two joints in this configuration, we map the performance specification to the desired test to determine the requirements for our actuator.</p><p><b>Diagram showing test configuration</b></p><p><img vspace="5" hspace="5" src="sm_scissor_lift_testenv_platformLiftInverseDynamics.png" alt=""> </p><p><b>Subsystem in model</b></p><p><a href="matlab:open_system('sm_scissor_lift_testenv');open_system('sm_scissor_lift_testenv/Scissor%20Lift/Actuator/Actuator/Platform','force');">Open Subsystem</a></p><img vspace="5" hspace="5" src="sm_scissor_lift_testenv_05.png" alt=""> <h2 id="9">Parameter Sweep on Bracket Attachment Point</h2><p>Running a parameter sweep on the bracket attachment point makes it possible to evaluate options for the design.  As the attachment point moves towards the center of the linkage, the required force goes down but the required travel goes up.  Using runtime parameters, Fast Restart and parallel computing accelerate parameter sweeps and enable a more complete exploration of the design space.</p><p><img vspace="5" hspace="5" src="sm_scissor_lift_testenv_paramSweepActAttPt.png" alt=""> </p><img vspace="5" hspace="5" src="sm_scissor_lift_testenv_06.png" alt=""> <h2 id="12">Ideal Actuation</h2><p>In the next step of refining the model, an ideal actuator can be used to raise and lower the platform.  An input signal specifies the extension and contraction of the actuator, and inverse dynamics is used to calculate the force required.  This abstract model of the actuator can be connected to the control system, enabling the simulation to calculate the force required of the actuator in the context of the system-level design.</p><p><b>Diagram showing test configuration</b></p><p><img vspace="5" hspace="5" src="sm_scissor_lift_testenv_actuatorIdealInverseDynamics.png" alt=""> </p><p><b>Subsystem in model</b></p><img vspace="5" hspace="5" src="sm_scissor_lift_testenv_07.png" alt=""> <h2 id="15">Hydraulic Actuation</h2><p>The model can be configured so that a hydraulic network modeled in Simscape Fluids extends and contracts the actuator. A 3-Way valve controls the flow of hydraulic fluid into and out of a single-acting hydraulic cylinder.  This model assumes that the pump is sized to provide a nearly constant supply of hydraulic pressure regardless of the load. The hydraulic network interfaces with the prismatic joint.</p><p>In this configuration there is no prescribed motion.  The hydraulic network determines the pressure in the cylinder and the force it applies on the mechanical system.  The mechanical system is a load on the cylinder.  During simulation the equations for the mechanical and hydraulic systems are solved simultaneously at each time step.</p><p><a href="matlab:open_system('sm_scissor_lift_testenv');open_system('sm_scissor_lift_testenv/Scissor%20Lift/Actuator/Actuator/Hydraulic','force');">Open Subsystem</a></p><img vspace="5" hspace="5" src="sm_scissor_lift_testenv_08.png" alt=""> <p>The plots below show the actuator extension and the force applied during this test.  Oscillations due to the hydraulic network are visible.</p><pre class="codeoutput">Elapsed Sim Time = 27.3927
+</pre><img vspace="5" hspace="5" src="sm_scissor_lift_testenv_09.png" alt=""> <h2 id="17">Driving and Steering</h2><p>Modeling the normal and friction force between each wheel and the floor enables our scissor lift model to drive and steer.  This enables us to test logic for speed limits when the platform is raised and lowered and to measure the runtime for electric and hydraulic designs.</p><p><a href="matlab:open_system('sm_scissor_lift_testenv');open_system('sm_scissor_lift_testenv/Scissor%20Lift/Floor','force');">Open Subsystem</a></p><img vspace="5" hspace="5" src="sm_scissor_lift_testenv_10.png" alt=""> <p>The plot below shows the path of the scissor lift during this test.</p><img vspace="5" hspace="5" src="sm_scissor_lift_testenv_11.png" alt=""> <h2 id="19">Simulink Dashboard Blocks for Manual input</h2><p>The model can be configured to accept manual input.  Simulink dashboard blocks are included in one of the variants.  Pushing buttons will let you drive, steer, raise and lower the platform, and extend or retract the platform extension.</p><p><b>Dashboard Variant of Input Subsystem</b></p><img vspace="5" hspace="5" src="sm_scissor_lift_testenv_12.png" alt=""> <p class="footer">Copyright 2014-2019 The MathWorks, Inc.<br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2019b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Scissor Lift Test Environment
+% 
+% This example shows a scissor lift modeled in Simscape Multibody.  The
+% lift is run through some simple tests to explore requirements for the
+% actuator and see how the entire system behaves.
+%
+% The model contains three variants of the actuation system.  Inverse
+% dynamics are used in the abstract variants to derive actuator sizing
+% information from the performance specification.  A hydraulic network
+% enables the designer to see the effect of the chosen hardware on the
+% behavior of the overall design.
+%
+% Copyright 2014-2019 The MathWorks, Inc.
+
+
+%% Model
+
+open_system('sm_scissor_lift_testenv')
+
+set_param(find_system('sm_scissor_lift_testenv','FindAll', 'on','type','annotation','Tag','ModelFeatures'),'Interpreter','off')
+
+%% 
+%<<sm_scissor_lift_testenv_mechExp_IMAGE.png>>
+
+%% Scissor Lift Subsystem
+%
+% This subsystem shows the model of the scissor lift.  The scissor
+% mechanism has three stages of folding arms that constrain the movement of
+% the platform relative to the cart.  An actuator extends and contracts to
+% raise and lower the platform.  The actuator model can be configured for
+% tests to refine high-level requirements, such as required force, or
+% to investigate details of the hydraulic design.
+%
+% <matlab:open_system('sm_scissor_lift_testenv');open_system('sm_scissor_lift_testenv/Scissor%20Lift','force'); Open Subsystem>
+
+set_param('sm_scissor_lift_testenv/Scissor Lift','LinkStatus','none')
+open_system('sm_scissor_lift_testenv/Scissor Lift','force')
+
+%% Stage 1 Subsystem
+%
+% Each stage of the mechanism is modeled using four links.  The links are
+% connected in two pairs at the center by pin and can rotate relative to
+% one another.  The pairs are connected by two shafts, one at the front
+% connecting the outer pair of links and one at the rear connecting the
+% inner pair of links. Revolute joints connect the stages and constrain the
+% motion of the mechanism.  There is only one degree of freedom in the
+% entire scissor mechanism.
+%
+% Simscape Multibody enables you to create parameterized mechanisms and
+% reuse them in your model.  The pair of links on the left and right sides
+% of the lift are created using the same subsystem (LX and RX below).
+% Selecting left or right in the subsystem mask adjusts parameters within
+% the subsystem to configure the linkage for assembly on the left or right
+% side of the scissor mechanism.  Similarly, the bracket subsystem is the
+% same in stage 1 and stage 3.  Mask parameters set the position relative
+% to the end of the inner links.
+%
+% <matlab:open_system('sm_scissor_lift_testenv');open_system('sm_scissor_lift_testenv/Scissor%20Lift/Stage%201','force'); Open Subsystem>
+
+set_param('sm_scissor_lift_testenv/Scissor Lift/Stage 1','LinkStatus','none')
+open_system('sm_scissor_lift_testenv/Scissor Lift/Stage 1','force')
+
+%%
+% Parameterized components enable rapid assembly of mechanisms. The parts
+% below were created by combining Simscape Multibody Solid and Rigid
+% Transform blocks to create parameterized parts.
+
+set_param('sm_scissor_lift_testenv/Scissor Lift/Stage 1/LX','LinkStatus','none')
+open_system('sm_scissor_lift_testenv/Scissor Lift/Stage 1/LX','force')
+
+
+%% Evaluating Performance Specification using Inverse Dynamics
+%
+% Simulation is used to determine the actuator force and speed required to
+% lift the platform.  Simscape Multibody enables easy mapping of
+% performance specification to the required test.  
+%
+% The specification states that the platform must reach maximum height
+% within 16 seconds.  Simscape Multibody enables you to prescribe the
+% vertical motion of the platform and calculate the force that the actuator
+% acting between stages 1 and 3 must provide. In a single simulation run
+% you can solve an inverse dynamics problem where motion is prescribed 
+% along one degree of freedom and the calculated force is applied to a
+% separate degree of freedom.
+%
+% To achieve this, motion is prescribed along the z-axis of Joint Platform
+% Height.  This is a 6-DOF joint that only constrains motion along the
+% positive z-axis of the frame attached to its B port.  The Prismatic Joint
+% constrains motion along the axis of the actuator.  This joint is
+% configured to output the force required to produce the motion of the
+% mechanism.  With these two joints in this configuration, we map the
+% performance specification to the desired test to determine the
+% requirements for our actuator.
+%
+
+%%
+% *Diagram showing test configuration*
+%
+% <<sm_scissor_lift_testenv_platformLiftInverseDynamics.png>>
+
+%%
+% *Subsystem in model*
+%
+% <matlab:open_system('sm_scissor_lift_testenv');open_system('sm_scissor_lift_testenv/Scissor%20Lift/Actuator/Actuator/Platform','force'); Open Subsystem>
+
+sm_scissor_lift_testenv_config_actuator('sm_scissor_lift_testenv','Platform')
+set_param('sm_scissor_lift_testenv/Scissor Lift/Actuator/Actuator/Platform','LinkStatus','none')
+open_system('sm_scissor_lift_testenv/Scissor Lift/Actuator/Actuator/Platform','force')
+
+
+%% Parameter Sweep on Bracket Attachment Point
+%
+% Running a parameter sweep on the bracket attachment point makes it
+% possible to evaluate options for the design.  As the attachment point
+% moves towards the center of the linkage, the required force goes down but
+% the required travel goes up.  Using runtime parameters, Fast Restart and
+% parallel computing accelerate parameter sweeps and enable a more complete
+% exploration of the design space.
+
+%curDir = pwd;
+%[ps_folder,~] = fileparts(which('sm_scissor_lift_testenv_sweep_actattpt.m'));
+%cd(ps_folder)
+%sm_scissor_lift_testenv_sweep_actattpt
+%cd(curDir)
+%open_system('sm_scissor_lift_testenv');
+
+%%
+% <<sm_scissor_lift_testenv_paramSweepActAttPt.png>>
+
+%%
+%
+open('sm_scissor_lift_testenv_sweep_actattpt.fig')
+
+
+%% Ideal Actuation
+%
+% In the next step of refining the model, an ideal actuator can be used to
+% raise and lower the platform.  An input signal specifies the extension
+% and contraction of the actuator, and inverse dynamics is used to
+% calculate the force required.  This abstract model of the actuator can be
+% connected to the control system, enabling the simulation to calculate the
+% force required of the actuator in the context of the system-level design.
+%
+
+%%
+% *Diagram showing test configuration*
+%
+% <<sm_scissor_lift_testenv_actuatorIdealInverseDynamics.png>>
+
+%%
+% *Subsystem in model*
+%
+
+% <matlab:open_system('sm_scissor_lift_testenv');open_system('sm_scissor_lift_testenv/Scissor%20Lift/Actuator/Actuator/Ideal','force'); Open Subsystem>
+
+sm_scissor_lift_testenv_config_actuator('sm_scissor_lift_testenv','Ideal')
+set_param('sm_scissor_lift_testenv/Scissor Lift/Actuator/Actuator/Ideal','LinkStatus','none')
+open_system('sm_scissor_lift_testenv/Scissor Lift/Actuator/Actuator/Ideal','force')
+
+%% Hydraulic Actuation
+%
+% The model can be configured so that a hydraulic network modeled in
+% Simscape Fluids extends and contracts the actuator. A 3-Way valve
+% controls the flow of hydraulic fluid into and out of a single-acting
+% hydraulic cylinder.  This model assumes that the pump is sized to provide
+% a nearly constant supply of hydraulic pressure regardless of the load.
+% The hydraulic network interfaces with the prismatic joint.  
+%
+% In this configuration there is no prescribed motion.  The hydraulic
+% network determines the pressure in the cylinder and the force it applies
+% on the mechanical system.  The mechanical system is a load on the
+% cylinder.  During simulation the equations for the mechanical and
+% hydraulic systems are solved simultaneously at each time step.
+%
+% <matlab:open_system('sm_scissor_lift_testenv');open_system('sm_scissor_lift_testenv/Scissor%20Lift/Actuator/Actuator/Hydraulic','force'); Open Subsystem>
+
+sm_scissor_lift_testenv_config_actuator('sm_scissor_lift_testenv','Hydraulic')
+set_param('sm_scissor_lift_testenv/Scissor Lift/Actuator/Actuator/Hydraulic','LinkStatus','none')
+open_system('sm_scissor_lift_testenv/Scissor Lift/Actuator/Actuator/Hydraulic','force')
+
+%%
+%
+% The plots below show the actuator extension and the force applied during
+% this test.  Oscillations due to the hydraulic network are visible.
+%
+
+sm_scissor_lift_testenv_plot2act;
+
+%% Driving and Steering
+%
+% Modeling the normal and friction force between each wheel and the floor
+% enables our scissor lift model to drive and steer.  This enables us to
+% test logic for speed limits when the platform is raised and lowered and
+% to measure the runtime for electric and hydraulic designs.
+%
+% <matlab:open_system('sm_scissor_lift_testenv');open_system('sm_scissor_lift_testenv/Scissor%20Lift/Floor','force'); Open Subsystem>
+
+set_param('sm_scissor_lift_testenv/Scissor Lift/Floor','LinkStatus','none')
+open_system('sm_scissor_lift_testenv/Scissor Lift/Floor','force')
+
+%%
+% The plot below shows the path of the scissor lift during this test.
+%
+
+sm_scissor_lift_testenv_plot1path;
+
+%% Simulink Dashboard Blocks for Manual input
+%
+% The model can be configured to accept manual input.  Simulink dashboard
+% blocks are included in one of the variants.  Pushing buttons will let you
+% drive, steer, raise and lower the platform, and extend or retract the
+% platform extension.
+%
+% *Dashboard Variant of Input Subsystem*
+
+set_param('sm_scissor_lift_testenv/Input','OverrideUsingVariant','Dashboard');
+open_system('sm_scissor_lift_testenv/Input/Dashboard');
+
+%%
+
+bdclose all
+close all
+
+
+##### SOURCE END #####
+--></body></html>

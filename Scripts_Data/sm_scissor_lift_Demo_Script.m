@@ -6,7 +6,7 @@
 % <tr>   <img src="sm_scissor_lift_demoScript_IMAGE.png" alt="Scissor Lift Image"><br>
 % <br>
 % <tr><b><u>Model</u></b><br>
-% <tr>1.  Scissor Lift Test Environment: <a href="matlab:cd(ScissLift_HomeDir);open_system('sm_scissor_lift_testenv');">Open Model</a>, <a href="matlab:cd(ScissLift_HomeDir);web('sm_scissor_lift_testenv.html');">Documentation</a><br>
+% <tr>1.  Scissor Lift Test Environment: <a href="matlab:cd(fileparts(which('sm_scissor_lift_testenv.slx')));open_system('sm_scissor_lift_testenv');">Open Model</a>, <a href="matlab:cd(ScissLift_HomeDir);web('sm_scissor_lift_testenv.html');">Documentation</a><br>
 % <br>
 % <tr><b><u>Library</u></b><br>
 % <tr>2.  <a href="matlab:open_system('sm_scissor_lift_lib');">Open Scissor Lift Parts Library</a><br>

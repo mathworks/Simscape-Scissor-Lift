@@ -118,6 +118,6 @@ cleanup_rt_test
 % Reset runtime parameter
 clear lift_extra_mass
 lift_extra_mass = 0;
-% Copyright 2013-2019 The MathWorks(TM), Inc.
+% Copyright 2013-2020 The MathWorks(TM), Inc.
 
 %warning('off','MATLAB:subscripting:noSubscriptsSpecified')

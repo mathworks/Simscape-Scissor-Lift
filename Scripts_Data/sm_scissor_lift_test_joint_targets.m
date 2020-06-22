@@ -1,4 +1,4 @@
-% Copyright 2012-2019 The MathWorks, Inc.
+% Copyright 2012-2020 The MathWorks, Inc.
 
 rev_joint_h = find_system(bdroot,'ReferenceBlock','sm_lib/Joints/Revolute Joint');
 

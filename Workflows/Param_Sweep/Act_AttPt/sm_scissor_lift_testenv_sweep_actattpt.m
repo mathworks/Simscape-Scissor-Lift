@@ -1,8 +1,11 @@
-% Parameter sweep to test actuator attachement positions
-% Copyright 2017-2019 MathWorks, Inc.
+% Parameter sweep to test actuator attachment positions
+% Copyright 2017-2020 MathWorks, Inc.
 
 doParallel  = 0;
-deleteFiles = 0;
+deleteFiles = 1;
+
+% Move to folder where script is saved
+cd(fileparts(which(mfilename)));
 
 %% Save model under new name
 modelname = 'sm_scissor_lift_testenv';
@@ -47,30 +50,45 @@ for i=1:length(flange_offset_set)
     simInput(i) = simInput(i).setVariable('AttPtOffset_MLwksp',flange_offset_set(i));
 end
 
+%% Run one simulation to see time used
+timerVal = tic;
+sim(modelname_new)
+Elapsed_Sim_Time_single = toc(timerVal);
+disp(['Elapsed Simulation Time Single Run: ' num2str(Elapsed_Sim_Time_single)]);
+
 %% Run simulations
 % Fastest results with visualization off, Fast Restart on
-set_param(modelname_new,'SimMechanicsOpenEditorOnUpdate','on');
 
 if(~doParallel)
+    set_param(modelname_new,'SimMechanicsOpenEditorOnUpdate','on');
     tic;
     simOut = sim(simInput,'UseFastRestart','on');
     toc
 else
+    set_param(modelname_new,'SimMechanicsOpenEditorOnUpdate','off');
     save_system(modelname_new); % Necessary for parallel simulations only
     tic;
-    simOut = parsim(simInput);
-    %simOut = parsim(simInput,'UseFastRestart','on');
+    simOut = parsim(simInput,'ShowSimulationManager','on',...
+    'ShowProgress','on','UseFastRestart','on',...
+    'TransferBaseWorkspaceVariables','on');
     toc
 end
 
+%% Calculate elapsed time less setup of parallel
+Elapsed_Time_Sweep = ...
+    (datenum(simOut(end).SimulationMetadata.TimingInfo.WallClockTimestampStop) - ...
+    datenum(simOut(1).SimulationMetadata.TimingInfo.WallClockTimestampStart)) * 86400;
+disp(['Elapsed Sweep Time Total:       ' sprintf('%5.2f',Elapsed_Time_Sweep)]);
+disp(['Elapsed Sweep Time/(Num Tests): ' sprintf('%5.2f',Elapsed_Time_Sweep/length(simOut))]);
+
 %% Plot results
 % Create figure
-if ~exist('h3_sm_scissor_lift_testenv', 'var') || ...
-        ~isgraphics(h3_sm_scissor_lift_testenv, 'figure')
-    h3_sm_scissor_lift_testenv = figure('Name', 'sm_scissor_lift_testenv');
+if ~exist('h3_sm_scissor_lift_testenv_pct', 'var') || ...
+        ~isgraphics(h3_sm_scissor_lift_testenv_pct, 'figure')
+    h3_sm_scissor_lift_testenv_pct = figure('Name', 'sm_scissor_lift_testenv');
 end
-figure(h3_sm_scissor_lift_testenv)
-clf(h3_sm_scissor_lift_testenv)
+figure(h3_sm_scissor_lift_testenv_pct)
+clf(h3_sm_scissor_lift_testenv_pct)
 
 simlog_handles(1) = subplot(2, 1, 1);
 grid on
@@ -105,9 +123,11 @@ end
 legend(legendstr,'Location','Best')
 hold off
 
+%% Close parallel pool
+delete(gcp);
+
 %% Close model and delete .slx file
 if(deleteFiles)
     close_system(modelname_new,0)
     delete([modelname_new '.slx'])
-    delete([modelname_new '.slxc'])
 end

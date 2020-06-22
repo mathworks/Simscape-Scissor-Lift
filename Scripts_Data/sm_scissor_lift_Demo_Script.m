@@ -17,15 +17,16 @@
 % <tr>5.  Parameterizing Bodies with Masks: <a href="matlab:open_system('Bodies_4_Parameterized_Link_3Hole');">Link with Basic Mask</a><br>
 % <tr>6.  Component Reuse: <a href="matlab:open_system('Bodies_5_Parameterized_Mechanism');">Single Link Pair</a>, <a href="matlab:open_system('Bodies_6_Scissor_2_Stage');">Scissor Mechanism 2 Stages</a><br>
 % <tr>7.  Guiding Assembly: <a href="matlab:open_system('Bodies_7_Scissor_3_Stage');">Scissor Mechanism 3 Stages</a><br>
+% <tr>8.  Attachment Point Analysis: <a href="matlab:edit('sm_scissor_lift_testenv_sweep_actattpt');">Code for Parameter Sweep</a>, <a href="matlab:open('sm_scissor_lift_testenv_sweep_actattpt.fig');">Plot of Results</a><br>
 % <br>
 % <tr><b><u>Actuator Design</u></b><br>
-% <tr>8.  Hydraulic Actuation: <a href="matlab:open_system('sh_cyl_single_acting_3pos');">Open Model</a>, <a href="matlab:web('sh_cyl_single_acting_3pos.html');">Documentation</a><br>
-% <tr>9.  <a href="matlab:open_system('Bodies_8_Lift_Actuation');">Scissor Lift Actuation</a><br>
+% <tr>9.  Hydraulic Actuation: <a href="matlab:open_system('sh_cyl_single_acting_3pos');">Open Model</a>, <a href="matlab:web('sh_cyl_single_acting_3pos.html');">Documentation</a><br>
+% <tr>10. <a href="matlab:open_system('Bodies_8_Lift_Actuation');">Scissor Lift Actuation</a><br>
 % <br>
 % </style>
 % </style>
 % </html>
 % 
 %
-% Copyright 2016-2019 The MathWorks, Inc.
+% Copyright 2016-2020 The MathWorks, Inc.
 

@@ -31,5 +31,5 @@ Key parts of this submission:
 5. MATLAB scripts for defining extrusions are in subddirectory Scripts_Data.
    (Extr_Data_Box.m, etc.)
 
-Copyright 2012-2019 The MathWorks, Inc.
+Copyright 2012-2020 The MathWorks, Inc.
 

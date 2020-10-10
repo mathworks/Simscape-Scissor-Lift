@@ -23,6 +23,9 @@
 % <tr>9.  Hydraulic Actuation: <a href="matlab:open_system('sh_cyl_single_acting_3pos');">Open Model</a>, <a href="matlab:web('sh_cyl_single_acting_3pos.html');">Documentation</a><br>
 % <tr>10. <a href="matlab:open_system('Bodies_8_Lift_Actuation');">Scissor Lift Actuation</a><br>
 % <br>
+% <tr><b><u>HIL Testing</u></b><br>
+% <tr>11.  <a href="matlab:cd(fileparts(which('sm_scissor_lift_SLRT.m')));edit('sm_scissor_lift_SLRT.m');">Configure for Real-Time Simulation</a><br>
+% <br>
 % </style>
 % </style>
 % </html>

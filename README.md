@@ -1,6 +1,8 @@
 # **Scissor Lift Model in Simscape Multibody**
 Copyright 2012-2020 The MathWorks(TM), Inc.
 
+[![View Scissor Lift Model in Simscape Multibody on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/36553-scissor-lift-model-in-simscape-multibody)
+
 This file contains a scissor lift model with hydraulic actuation built using
 Simscape Multibody and Simscape Fluids. The scissor lift model is assembled
 from a library of parameterized component models. Intermediate models are 

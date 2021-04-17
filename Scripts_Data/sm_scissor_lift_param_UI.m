@@ -106,7 +106,7 @@ set(handles.LLET,'String',NewLL);
 evalin('base',['SCL_Par = sm_scissor_lift_param(' num2str(NewLL) ',' num2str(CurrLW) ',' num2str(CurrPW) ',' num2str(CurrIH) ');']);
 set_param(bdroot, 'SimulationCommand', 'Update');
 
-% Copyright 2012-2020 The MathWorks, Inc.
+% Copyright 2012-2021 The MathWorks, Inc.
 
 function LLET_Callback(hObject, eventdata, handles)
 % hObject    handle to LLET (see GCBO)

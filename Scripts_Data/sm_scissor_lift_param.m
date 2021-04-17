@@ -15,7 +15,7 @@ function SCL_Par = sm_scissor_lift_param(varargin)
 %   For example to override the link length and platform initial lift:
 %   >> SCL_Par = sm_scissor_lift_param(250,[],[],55);
 %
-% Copyright 2017-2020 The MathWorks, Inc.
+% Copyright 2017-2021 The MathWorks, Inc.
 
 % Default values
 default_values = {...

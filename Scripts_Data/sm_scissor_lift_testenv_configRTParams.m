@@ -1,6 +1,6 @@
 function sm_scissor_lift_testenv_configRTParams(mdl)
 % Add Simscape run-time parameters to Scissor Lift example
-% Copyright 2018-2020 The MathWorks, Inc.
+% Copyright 2018-2021 The MathWorks, Inc.
 
 %% Define Simulink.Parameter objects
 tval = evalin('base','lift_extra_mass');

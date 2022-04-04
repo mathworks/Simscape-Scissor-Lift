@@ -3,7 +3,7 @@
 %
 % The plot below shows the path of the scissor lift during this test.
 %
-% Copyright 2017-2021 The MathWorks, Inc.
+% Copyright 2017-2022 The MathWorks, Inc.
 
 % Generate simulation results if they don't exist
 if ~exist('simlog_sm_scissor_lift_testenv', 'var')

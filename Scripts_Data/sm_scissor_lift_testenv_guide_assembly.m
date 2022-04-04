@@ -12,7 +12,7 @@ function sm_scissor_lift_testenv_guide_assembly(modelname,target_config)
 %                   This almost always results in a valid initial configuration.
 %   'none'          Disables height and stage joint targets
 %
-% Copyright 2017-2021 The MathWorks, Inc.
+% Copyright 2017-2022 The MathWorks, Inc.
 
 % Find blocks where targets can be enabled/disabled
 height_target_h = char(find_system(modelname,'FollowLinks','on','LookUnderMasks','all','Name','Joint Platform Height'));

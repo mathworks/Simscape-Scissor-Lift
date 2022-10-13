@@ -17,7 +17,7 @@
 
 open_system('sm_scissor_lift_testenv')
 
-set_param(find_system('sm_scissor_lift_testenv','FindAll', 'on','type','annotation','Tag','ModelFeatures'),'Interpreter','off')
+set_param(find_system('sm_scissor_lift_testenv','MatchFilter',@Simulink.match.allVariants,'FindAll', 'on','type','annotation','Tag','ModelFeatures'),'Interpreter','off')
 
 %% 
 %<<sm_scissor_lift_testenv_mechExp_IMAGE.png>>

@@ -14,7 +14,7 @@
 
 open_system('sh_cyl_single_acting_3pos')
 
-set_param(find_system('sh_cyl_single_acting_3pos','FindAll', 'on','type','annotation','Tag','ModelFeatures'),'Interpreter','off')
+set_param(find_system('sh_cyl_single_acting_3pos','MatchFilter',@Simulink.match.allVariants,'FindAll', 'on','type','annotation','Tag','ModelFeatures'),'Interpreter','off')
 
 %% Simulation Results from Simscape Logging
 

@@ -20,7 +20,7 @@ set_param(modelname_new,'StopTime','25');
 
 %% Set up run time parameters
 % Find bracket subsystems
-bracket_h = find_system(bdroot,'LookUnderMasks','all','Name','Bracket');
+bracket_h = find_system(bdroot,'MatchFilter',@Simulink.match.allVariants,'LookUnderMasks','all','Name','Bracket');
 for i=1:length(bracket_h)
     % Break links to library
     set_param(char(bracket_h(i)),'LinkStatus','none');

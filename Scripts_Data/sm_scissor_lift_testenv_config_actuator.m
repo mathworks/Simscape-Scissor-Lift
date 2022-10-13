@@ -8,7 +8,7 @@ function sm_scissor_lift_testenv_config_actuator(modelname,actuator_config)
 % Copyright 2016-2022 The MathWorks(TM), Inc.
 
 % Find Actuator variant subsystem
-actuator_h = char(find_system(modelname,'FollowLinks','on','LookUnderMasks','all','Name','Actuator','Variant','on'));
+actuator_h = char(find_system(modelname,'MatchFilter',@Simulink.match.allVariants,'FollowLinks','on','LookUnderMasks','all','Name','Actuator','Variant','on'));
 
 % Select variant
 switch lower(actuator_config)

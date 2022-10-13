@@ -6,7 +6,7 @@ function sm_scissor_lift_testenv_config_test(modelname,testname)
 % Copyright 2017-2022 The MathWorks, Inc.
 
 % Find Signal Builder block
-sig_h = find_system([modelname '/Input'],'Variants','AllVariants','FollowLinks','on','LookUnderMasks','all','MaskType','Sigbuilder block');
+sig_h = find_system([modelname '/Input'],'MatchFilter',@Simulink.match.allVariants,'FollowLinks','on','LookUnderMasks','all','MaskType','Sigbuilder block');
 
 % Get settings based on requested test
 switch lower(testname)

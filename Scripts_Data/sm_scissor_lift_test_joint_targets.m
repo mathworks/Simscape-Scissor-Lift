@@ -1,6 +1,6 @@
 % Copyright 2012-2022 The MathWorks, Inc.
 
-rev_joint_h = find_system(bdroot,'ReferenceBlock','sm_lib/Joints/Revolute Joint');
+rev_joint_h = find_system(bdroot,'MatchFilter',@Simulink.match.allVariants,'ReferenceBlock','sm_lib/Joints/Revolute Joint');
 
 for i=1:length(rev_joint_h)
     joint_tgt_info{i,1} = get_param(rev_joint_h(i),'PositionTargetSpecify');

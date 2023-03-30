@@ -1,5 +1,5 @@
 % Parameter sweep to test actuator attachment positions
-% Copyright 2017-2022 MathWorks, Inc.
+% Copyright 2017-2023 MathWorks, Inc.
 
 doParallel  = 0;
 deleteFiles = 1;
@@ -17,6 +17,8 @@ save_system(modelname,modelname_new);
 sm_scissor_lift_testenv_config_actuator(modelname_new,'Platform');
 signalbuilder([modelname_new '/Input/Input/Signal Builder'], 'activegroup', 2);
 set_param(modelname_new,'StopTime','25');
+set_param([modelname_new '/Scissor Lift/Actuator/Actuator/Platform/Simulink-PS Converter1'],...
+    'InputFilterTimeConstant','0.1');
 
 %% Set up run time parameters
 % Find bracket subsystems

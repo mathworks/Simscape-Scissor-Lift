@@ -110,7 +110,7 @@ hold off
 legend({'Reference','Fixed-Step','Real-Time','Modified'},'Location','NorthWest');
 
 %save(['sm_scissor_lift_testenv_slrt_res_' datestr(now,'yyddmm_HHMM')],'t_slrt1','y_slrt1','t_slrt2','y_slrt2','t_ref','y_ref','t_fs','y_fs');
-% Copyright 2013-2022 The MathWorks(TM), Inc.
+% Copyright 2013-2023 The MathWorks(TM), Inc.
 
 %% CLEAN UP DIRECTORY
 %cleanup_rt_test

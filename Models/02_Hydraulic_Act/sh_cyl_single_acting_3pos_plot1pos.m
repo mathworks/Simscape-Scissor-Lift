@@ -1,6 +1,6 @@
 % Code to plot simulation results from sh_cyl_single_acting_3pos
 %
-% Copyright 2017-2022 The MathWorks, Inc.
+% Copyright 2017-2023 The MathWorks, Inc.
 
 % Generate simulation results if they don't exist
 if ~exist('simlog_sh_cyl_single_acting_3pos', 'var')
@@ -19,8 +19,8 @@ clf(h1_sh_cyl_single_acting_3pos)
 simlog_t = simlog_sh_cyl_single_acting_3pos.Valve_Actuator.A.series.time;
 simlog_valveA = simlog_sh_cyl_single_acting_3pos.Valve_Actuator.A.series.values('1');
 simlog_valveB = simlog_sh_cyl_single_acting_3pos.Valve_Actuator.B.series.values('1');
-simlog_valveP = simlog_sh_cyl_single_acting_3pos.Valve_Actuator.P.series.values('m');
-simlog_cylP = simlog_sh_cyl_single_acting_3pos.Cylinder.P.series.values('m');
+simlog_valveP = simlog_sh_cyl_single_acting_3pos.Valve_Actuator.S.series.values('m');
+simlog_cylP = simlog_sh_cyl_single_acting_3pos.Cylinder.p_out.series.values('m');
 
 % Plot results
 simlog_handles(1) = subplot(2, 1, 1);

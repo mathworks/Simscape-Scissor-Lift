@@ -1,2 +1,2 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<Info Type="StartUp" Visible="0" Icon="" File="Scripts_Data/startup_sm_scissor_lift.m" Name="startup_sm_scissor_lift"/>
+<Info File="Scripts_Data/startup_sm_scissor_lift.m" Icon="" Name="startup_sm_scissor_lift" Type="StartUp" Visible="0"/>

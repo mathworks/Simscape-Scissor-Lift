@@ -5,7 +5,7 @@ function sm_scissor_lift_testenv_config_actuator(modelname,actuator_config)
 %   scissor lift model.  Abstract variants use inverse dynamics to
 %   calculate actuator requirements based on performance specifications.
 %
-% Copyright 2016-2023 The MathWorks(TM), Inc.
+% Copyright 2016-2024 The MathWorks(TM), Inc.
 
 % Find Actuator variant subsystem
 actuator_h = char(find_system(modelname,'MatchFilter',@Simulink.match.allVariants,'FollowLinks','on','LookUnderMasks','all','Name','Actuator','Variant','on'));

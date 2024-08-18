@@ -1,6 +1,6 @@
 % Code to plot simulation results from sh_cyl_single_acting_3pos
 %
-% Copyright 2017-2023 The MathWorks, Inc.
+% Copyright 2017-2024 The MathWorks, Inc.
 
 % Generate simulation results if they don't exist
 if ~exist('simlog_sh_cyl_single_acting_3pos', 'var')

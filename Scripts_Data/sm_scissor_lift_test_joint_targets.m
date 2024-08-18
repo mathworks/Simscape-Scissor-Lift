@@ -1,4 +1,4 @@
-% Copyright 2012-2023 The MathWorks, Inc.
+% Copyright 2012-2024 The MathWorks, Inc.
 
 rev_joint_h = find_system(bdroot,'MatchFilter',@Simulink.match.allVariants,'ReferenceBlock','sm_lib/Joints/Revolute Joint');
 

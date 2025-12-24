@@ -7,9 +7,9 @@ This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
       -->
 <title>Scissor Lift Test Environment</title>
-<meta name="generator" content="MATLAB 24.2">
+<meta name="generator" content="MATLAB 25.1">
 <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
-<meta name="DC.date" content="2024-09-12">
+<meta name="DC.date" content="2025-12-16">
 <meta name="DC.source" content="sm_scissor_lift_testenv.m">
 <style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
@@ -162,19 +162,19 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 <a href="matlab:open_system('sm_scissor_lift_testenv');open_system('sm_scissor_lift_testenv/Scissor%20Lift/Actuator/Actuator/Hydraulic','force');">Open Subsystem</a>
 </p>
 <img vspace="5" hspace="5" src="sm_scissor_lift_testenv_08.png" alt=""> <p>The plots below show the actuator extension and the force applied during this test. Oscillations due to the hydraulic network are visible.</p>
-<img vspace="5" hspace="5" src="sm_scissor_lift_testenv_09.png" alt=""> <img vspace="5" hspace="5" src="sm_scissor_lift_testenv_10.png" alt=""> <h2 id="17">Driving and Steering</h2>
+<img vspace="5" hspace="5" src="sm_scissor_lift_testenv_09.png" alt=""> <h2 id="17">Driving and Steering</h2>
 <p>Modeling the normal and friction force between each wheel and the floor enables our scissor lift model to drive and steer. This enables us to test logic for speed limits when the platform is raised and lowered and to measure the runtime for electric and hydraulic designs.</p>
 <p>
 <a href="matlab:open_system('sm_scissor_lift_testenv');open_system('sm_scissor_lift_testenv/Scissor%20Lift/Floor','force');">Open Subsystem</a>
 </p>
-<img vspace="5" hspace="5" src="sm_scissor_lift_testenv_11.png" alt=""> <p>The plot below shows the path of the scissor lift during this test.</p>
-<img vspace="5" hspace="5" src="sm_scissor_lift_testenv_12.png" alt=""> <h2 id="19">Simulink Dashboard Blocks for Manual input</h2>
+<img vspace="5" hspace="5" src="sm_scissor_lift_testenv_10.png" alt=""> <p>The plot below shows the path of the scissor lift during this test.</p>
+<img vspace="5" hspace="5" src="sm_scissor_lift_testenv_11.png" alt=""> <h2 id="19">Simulink Dashboard Blocks for Manual input</h2>
 <p>The model can be configured to accept manual input. Simulink dashboard blocks are included in one of the variants. Pushing buttons will let you drive, steer, raise and lower the platform, and extend or retract the platform extension.</p>
 <p>
 <b>Dashboard Variant of Input Subsystem</b>
 </p>
-<img vspace="5" hspace="5" src="sm_scissor_lift_testenv_13.png" alt=""> <p class="footer">Copyright 2014-2024 The MathWorks, Inc.<br>
-<a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2024b</a>
+<img vspace="5" hspace="5" src="sm_scissor_lift_testenv_12.png" alt=""> <p class="footer">Copyright 2014-2025 The MathWorks, Inc.<br>
+<a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2025a</a>
 <br>
 </p>
 </div>
@@ -192,7 +192,7 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 % enables the designer to see the effect of the chosen hardware on the
 % behavior of the overall design.
 %
-% Copyright 2014-2024 The MathWorks, Inc.
+% Copyright 2014-2025 The MathWorks, Inc.
 
 
 %% Model
@@ -338,6 +338,7 @@ open('sm_scissor_lift_testenv_sweep_actattpt.fig')
 sm_scissor_lift_testenv_config_actuator('sm_scissor_lift_testenv','Ideal')
 set_param('sm_scissor_lift_testenv/Scissor Lift/Actuator/Actuator/Ideal','LinkStatus','none')
 open_system('sm_scissor_lift_testenv/Scissor Lift/Actuator/Actuator/Ideal','force')
+close(gcf)
 
 %% Hydraulic Actuation
 %

@@ -10,7 +10,7 @@
 % enables the designer to see the effect of the chosen hardware on the
 % behavior of the overall design.
 %
-% Copyright 2014-2024 The MathWorks, Inc.
+% Copyright 2014-2025 The MathWorks, Inc.
 
 
 %% Model
@@ -156,6 +156,7 @@ open('sm_scissor_lift_testenv_sweep_actattpt.fig')
 sm_scissor_lift_testenv_config_actuator('sm_scissor_lift_testenv','Ideal')
 set_param('sm_scissor_lift_testenv/Scissor Lift/Actuator/Actuator/Ideal','LinkStatus','none')
 open_system('sm_scissor_lift_testenv/Scissor Lift/Actuator/Actuator/Ideal','force')
+close(gcf)
 
 %% Hydraulic Actuation
 %

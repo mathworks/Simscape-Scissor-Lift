@@ -1,4 +1,4 @@
-% Copyright 2012-2024 The MathWorks, Inc.
+% Copyright 2012-2025 The MathWorks, Inc.
 L=75;W=15;rad=5;nH=3;
 xy_data = Extr_Data_Ring_withBoxFillet(0.05,0.025,0.08,0.002);
 

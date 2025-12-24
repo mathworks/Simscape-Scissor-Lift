@@ -1,5 +1,5 @@
 function solverBlock_pth = sm_scissor_lift_testenv_setsolver(mdl,deskreal)
-% Copyright 2011-2024 The MathWorks, Inc.
+% Copyright 2011-2025 The MathWorks, Inc.
 
 desktop_solver = 'ode15s';
 
